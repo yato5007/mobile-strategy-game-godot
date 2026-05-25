@@ -222,3 +222,18 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why acceptable: The node caps timers, requires icon-first control widgets, and defines future validation metrics. Presentation/UX localisation branches must simplify or throttle cues that exceed 360px portrait fit.
 - Later verification: Future timing config tests, FFA/2v2 QA walkthroughs, strategy-shift simulator metrics, leader volatility metrics, localization portrait fit tests, and presentation/UX branch review.
 - Artifact proof: 12 required depth-4 Spec Kit files under `rising-debate-pacing/`; concrete timing table at spec.md line 17; AUTONOMOUS_DECISION with options comparison; acceptance criteria at spec.md line 82; integration notes connecting to state machine, Claim state, action economy, multiplayer/bots, balance, presentation, and localization systems.
+## 2026-05-25 — Final Petition Pacing Depth-4 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing/`
+- Decision made: Accept Final Petition Pacing as a concrete, non-template-like depth-4 leaf. Continue to `duration-cap-and-interruption-validation`.
+- Options compared:
+  - BLOCKED_NEEDS_SHARPENING: rejected. This leaf is not template-like. It contains explicit phase 7-9 timing table (55/55/50s), 6 named game-object outputs (Claim-Final Path Indicators, Counterplay Window, Last-Chance Markers, Seal Indicators, Urgency Lanterns, No-Early-Victory Banner), AUTONOMOUS_DECISION with options comparison, FFA multi-player final-path requirements, 2v2 paired-seal ceremony, localization key families, 360px portrait constraints, 6 integration events, and 7 acceptance criteria. Satisfies Strict Depth-4 Quality Rule.
+  - ASK_USER: rejected by Full Autonomy Rule.
+  - CONTINUE: accepted.
+- Why it serves the final game: Phases 7-9 give Banner of the Majlis its climactic closing act. The accelerated cadence, explicit counterplay window, seal-commit ceremony, and no-early-victory enforcement together ensure the match feels like it is building toward a final decision without premature endings.
+- Potential downside: 6 game-object outputs plus richer reveal beats may overcrowd 360px portrait.
+- Why acceptable: Priority ranking embedded (lanterns + window + banner required; path/markers/seals throttleable). Future presentation/UX branches can simplify.
+- Later verification: Timing config tests, FFA/2v2 walkthroughs, counterplay effectiveness simulator metrics, final-phase uncertainty metrics, Arabic/English portrait fit tests.
+- Artifact proof: 12 required depth-4 Spec Kit files; concrete timing values; AUTONOMOUS_DECISION with options comparison; acceptance criteria; 6 integration event contracts; tracing updates.

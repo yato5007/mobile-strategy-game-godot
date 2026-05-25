@@ -13,6 +13,7 @@ Parent: `.spec-tree/core-match-systems/match-flow-and-phase-structure/`
 - DEC-CMS-PCTE-001: Use a variable capped 9-phase timing envelope targeting 18-23 minutes and hard-capped under 30 minutes.
 - DEC-CMS-OCP-001: Opening Council phases 1-3 use a guided strategic ramp with 90/75/70 second planning targets, short lock grace, localized icon-first briefs, and capped early Claim swings.
 - DEC-CMS-RDP-001: Rising Debate phases 4-6 use a compressed pressure cadence with 65/60/60 second planning targets, 4-5s lock grace, 40-50s reveal/update, leader-threat, strategy-shift, FFA threat, and 2v2 teammate-awareness cues.
+- DEC-CMS-FPP-001: Final Petition phases 7-9 use an accelerated urgency cadence with 55/55/50s planning, explicit phase-8 counterplay window, seal-commit ceremony, urgency lanterns, final-path indicators, and strict no-early-victory enforcement. Victory only at Final Majlis Reveal.
 - Keep final outcome evaluation only after phase 9 Final Majlis Reveal.
 - Use one shared phase count for FFA and 2v2, with mode-specific brief/update attention.
 - Allow only short capped mobile interruption recovery; no indefinite pauses.
@@ -49,8 +50,9 @@ Planning only. No Godot project, scripts, scenes, assets, simulator code, or run
 - Review: PASS for depth-3 planning scope.
 - Completed leaf validation: `opening-council-pacing` checklist/QA/review PASS for planning scope.
 - Completed leaf validation: `rising-debate-pacing` checklist/QA/review PASS for planning scope.
-- Future validation: duration tables, simulator distribution, FFA/2v2 human QA, reconnect stress scenarios.
+- Completed leaf validation: `final-petition-pacing` checklist/QA/review PASS for planning scope.
+- Future validation: duration tables, simulator distribution, FFA/2v2 human QA, reconnect stress scenarios, FPP timing walkthroughs, and counterplay effectiveness metrics.
 
 ## Next Step
 
-Execute next depth-4 leaf under this node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing/`.
+Execute remaining depth-4 leaf under this node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/duration-cap-and-interruption-validation/`.

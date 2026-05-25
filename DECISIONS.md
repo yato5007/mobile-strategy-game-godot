@@ -236,3 +236,20 @@ Only significant decisions are recorded here.
 - Why downside is acceptable: The node caps timing, requires icon-first game-object cues, and defines future duration/readability metrics.
 - Later verification: Future timing config tests, FFA/2v2 QA walkthroughs, simulator metrics for leader conversion/strategy-shift effectiveness/dogpile risk, and RTL/LTR portrait layout checks.
 - Artifact proof: Complete depth-4 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/`.
+
+## DEC-CMS-FPP-001 — Final Petition uses accelerated urgency cadence
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Use phases 7-9 as an accelerated final act with 55/55/50s planning targets, explicit phase-8 final counterplay window, seal-commit ceremony in phase 9, urgency lantern trio, final-path indicators, and strict no-early-victory enforcement. Victory only at Final Majlis Reveal after phase 9.
+- Options compared:
+  - Same 60-65s mid-match timers: rejected because final act needs urgency.
+  - Drastically shorter 35-40s timers: rejected because they violate strategic/no-reaction-speed constraint.
+  - Victory inside phase 9: rejected because it breaks parent no-early-victory rule.
+  - Accelerated but not rushed fixed timers: accepted.
+- Why this serves the final game: It makes the final act feel like a closing petition, preserves strategic quality, and reinforces that no one wins before the final reveal ceremony.
+- Potential downside: 6 game-object outputs plus richer reveal beats may challenge 360px portrait space.
+- Why downside is acceptable: Capped timers and icon-first approach constrain scope; future presentation/UX branches can throttle non-critical cues.
+- Later verification: Timing config tests, FFA/2v2 walkthroughs, counterplay effectiveness simulator metrics, final-phase uncertainty metrics, Arabic/English portrait fit tests.
+- Artifact proof: Full depth-4 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing/`.

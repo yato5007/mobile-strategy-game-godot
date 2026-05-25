@@ -52,6 +52,12 @@ Any branch that changes a system contract must update this file and request `int
 |---|---|---|---|---|---|
 | Rising Debate Pacing | Match mode (FFA/2v2), phase index 4-6, ready/commit status, public Claim totals/deltas, action-family history, teammate contribution/alignment signals | Phase 4-6 timing targets/ranges, lock grace, reveal/update budget, leader-threat cue requirements, strategy-shift cue requirements, FFA leader/challenger context, 2v2 teammate-awareness context, no-pre-final-victory constraint | Future core match configuration/state machine | Exact Claim formula, action legality, conflict resolution, bot personality, UI layout, animation/SFX assets, network timeout policy | Depth-4 linked; future implementation must consume `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/` |
 
+## Final Petition Pacing Contract
+
+| System | Inputs | Outputs | State Owner | Must Not Control | Status |
+|---|---|---|---|---|---|
+| Final Petition Pacing | Match mode (FFA/2v2), phase index 7-9, ready/commit status, public Claim totals/deltas, counterplay window state, team/player alignment signals | Phase 7-9 timing targets/ranges, lock grace, reveal/update budget, counterplay-window requirements, seal-commit ceremony requirements, urgency-cue requirements, no-early-victory enforcement, Final Majlis Reveal trigger event | Future core match configuration/state machine | Exact Claim formula, action legality, conflict resolution, bot personality, UI layout, animation/SFX assets, network timeout policy, reveal ceremony visuals | Depth-4 linked; future implementation must consume `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing/` |
+
 ## Root Cross-Branch Interfaces
 
 Detailed notes live in `.spec-tree/root/integration-notes.md`. No final contract is stable until the relevant depth-1 branch completes full Spec Kit.

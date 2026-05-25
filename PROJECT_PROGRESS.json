@@ -1,13 +1,13 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "rising-debate-pacing-depth-4-complete",
-  "overallPercent": 35,
+  "phase": "final-petition-pacing-depth-4-complete",
+  "overallPercent": 36,
   "areas": {
-    "mainSpecKit": 21,
-    "recursiveSpecTree": 47,
-    "gameDesignDecisions": 25,
-    "coreGameLogic": 10,
+    "mainSpecKit": 22,
+    "recursiveSpecTree": 48,
+    "gameDesignDecisions": 26,
+    "coreGameLogic": 11,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
@@ -15,6 +15,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 3
   },
-  "nextStep": "Resume from the first true TODO: core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing. Preserve DEC-PDR-001 sequencing: after minimum core-match contracts complete through depth 4, bring presentation-art-audio-motion forward to protect game feel.",
+  "nextStep": "Complete duration-cap-and-interruption-validation depth-4 leaf. Then continue to phase-state-machine-and-handoffs depth-3 per DEC-PDR-001 minimum core-match contracts trigger.",
   "blocked": []
 }
