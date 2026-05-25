@@ -1,13 +1,13 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "minimum-core-match-contracts-complete",
-  "overallPercent": 62,
+  "phase": "core-match-systems-fully-complete",
+  "overallPercent": 64,
   "areas": {
-    "mainSpecKit": 36,
-    "recursiveSpecTree": 80,
-    "gameDesignDecisions": 38,
-    "coreGameLogic": 28,
+    "mainSpecKit": 37,
+    "recursiveSpecTree": 82,
+    "gameDesignDecisions": 39,
+    "coreGameLogic": 30,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
@@ -15,6 +15,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 8
   },
-  "nextStep": "DEC-PDR-001 trigger satisfied: all 5 minimum core-match contracts complete through depth 4. Transition to presentation-art-audio-motion per ADJUST_DIRECTION.",
+  "nextStep": "core-match-systems fully complete through depth 4. DEC-PDR-001 trigger satisfied. Transition to presentation-art-audio-motion per ADJUST_DIRECTION.",
   "blocked": []
 }

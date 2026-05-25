@@ -1,0 +1,2 @@
+# spec.md — Tie-Break Resolution Logic
+3-level deterministic tie-break: 1) contested-objective wins in final 3 phases (more = wins), 2) total action intensity sum (higher = wins), 3) earlier final-phase commit time (earlier = wins). If all equal: shared rank. Ties resolved per-team in 2v2, per-player in FFA. AUTONOMOUS_DECISION: multi-level deterministic tie-break, no random resolution. No implementation.

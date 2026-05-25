@@ -1,0 +1,2 @@
+# spec.md — FFA Final Standings Presentation
+4-player ranking by Claim (descending). Winner: Majlis banner at top (largest), 2nd-4th: rank medallions in compact horizontal row below. Portrait layout: winner centered top 40%, remaining 3 in row bottom 60%. Arabic/English localized. Icon-first ranking (gold/silver/bronze/participation medallions). No table. AUTONOMOUS_DECISION: stacked portrait layout with winner prominence, not horizontal scoreboard. No implementation.
