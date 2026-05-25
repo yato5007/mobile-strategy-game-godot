@@ -23,4 +23,4 @@ Progress is an indicator, not proof of quality.
 
 ## Overall
 
-Root Spec Kit, the full game-concept subtree, core-match-systems depth-1, `match-flow-and-phase-structure` depth-2, `phase-count-and-timing-envelope` depth-3, and three timing depth-4 leaves (`opening-council-pacing`, `rising-debate-pacing`, `final-petition-pacing`) are complete. `PROJECT_DIRECTION_REVIEW.md` is complete and accepted with `ADJUST_DIRECTION`. The next required work is `duration-cap-and-interruption-validation`. The game is not implemented yet by design.
+Root Spec Kit, the full game-concept subtree, core-match-systems depth-1, `match-flow-and-phase-structure` depth-2, `phase-count-and-timing-envelope` depth-3 with all four depth-4 leaves complete (`opening-council-pacing`, `rising-debate-pacing`, `final-petition-pacing`, `duration-cap-and-interruption-validation`). `PROJECT_DIRECTION_REVIEW.md` is complete and accepted with `ADJUST_DIRECTION`. The next required work is `phase-state-machine-and-handoffs`. The game is not implemented yet by design.

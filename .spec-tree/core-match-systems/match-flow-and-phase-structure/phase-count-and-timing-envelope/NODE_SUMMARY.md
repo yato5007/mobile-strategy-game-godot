@@ -48,11 +48,12 @@ Planning only. No Godot project, scripts, scenes, assets, simulator code, or run
 - Checklist: PASS for depth-3 planning scope.
 - QA: PASS for depth-3 planning scope.
 - Review: PASS for depth-3 planning scope.
-- Completed leaf validation: `opening-council-pacing` checklist/QA/review PASS for planning scope.
-- Completed leaf validation: `rising-debate-pacing` checklist/QA/review PASS for planning scope.
-- Completed leaf validation: `final-petition-pacing` checklist/QA/review PASS for planning scope.
-- Future validation: duration tables, simulator distribution, FFA/2v2 human QA, reconnect stress scenarios, FPP timing walkthroughs, and counterplay effectiveness metrics.
+- Completed leaf validation: `opening-council-pacing` checklist/QA/review PASS.
+- Completed leaf validation: `rising-debate-pacing` checklist/QA/review PASS.
+- Completed leaf validation: `final-petition-pacing` checklist/QA/review PASS.
+- Completed leaf validation: `duration-cap-and-interruption-validation` checklist/QA/review PASS.
+- Future validation: duration tables, simulator distribution, FFA/2v2 human QA, reconnect stress scenarios, counterplay effectiveness metrics.
 
 ## Next Step
 
-Execute remaining depth-4 leaf under this node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/duration-cap-and-interruption-validation/`.
+`phase-count-and-timing-envelope` is complete with all four depth-4 leaves. Continue to the next depth-3 child under `match-flow-and-phase-structure`: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-state-machine-and-handoffs/`.

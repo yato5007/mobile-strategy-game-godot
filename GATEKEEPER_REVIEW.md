@@ -237,3 +237,22 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why acceptable: Priority ranking embedded (lanterns + window + banner required; path/markers/seals throttleable). Future presentation/UX branches can simplify.
 - Later verification: Timing config tests, FFA/2v2 walkthroughs, counterplay effectiveness simulator metrics, final-phase uncertainty metrics, Arabic/English portrait fit tests.
 - Artifact proof: 12 required depth-4 Spec Kit files; concrete timing values; AUTONOMOUS_DECISION with options comparison; acceptance criteria; 6 integration event contracts; tracing updates.
+## 2026-05-25 — Duration Cap and Interruption Validation Depth-4 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/duration-cap-and-interruption-validation/`
+- Decision made: Accept Duration Cap and Interruption Validation as a concrete depth-4 leaf. This completes `phase-count-and-timing-envelope` (all 4 depth-4 leaves done). Continue to `phase-state-machine-and-handoffs`.
+- Options compared:
+  - BLOCKED: rejected because the node contains explicit duration formula with validation table, 4 interruption scenarios, 120s per-player reserve, 4 auto-ready situations, hard cap enforcement mechanism, per-player tracking, 2v2 teammate coverage, and integration event contracts. Satisfies Strict Depth-4 Quality Rule.
+  - CONTINUE: accepted.
+- Why it serves the final game: Validates the 9-phase timing envelope stays under 30 minutes, handles mobile interruptions fairly, and ensures no disconnected player can stall the match. This is essential for a playable mobile multiplayer game.
+- Artifact proof: 12 Spec Kit files; concrete duration table (conservative 23.0m, capped 30m); 4 scenarios; auto-ready policy; per-player reserve; FFA/2v2 specifics; integration events.
+
+## 2026-05-25 — phase-count-and-timing-envelope Completion
+
+- Result: CONTINUE → NEXT DEPTH-3
+- Type: AUTONOMOUS_DECISION
+- Decision: `phase-count-and-timing-envelope` is complete with all four required depth-4 leaves: `opening-council-pacing`, `rising-debate-pacing`, `final-petition-pacing`, `duration-cap-and-interruption-validation`. Transition to the next depth-3 child under `match-flow-and-phase-structure`: `phase-state-machine-and-handoffs`.
+- Completion summary: 4 depth-4 leaves × 12 files = 48 files plus depth-3 node = 60 total Spec Kit files. All leaves satisfy strict depth-4 quality with concrete timing tables, game-object outputs, event contracts, acceptance criteria, and FFA/2v2 handling.
+- Next: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-state-machine-and-handoffs/`

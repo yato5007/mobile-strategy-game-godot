@@ -1,20 +1,20 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "final-petition-pacing-depth-4-complete",
-  "overallPercent": 36,
+  "phase": "phase-count-and-timing-envelope-complete",
+  "overallPercent": 38,
   "areas": {
-    "mainSpecKit": 22,
-    "recursiveSpecTree": 48,
-    "gameDesignDecisions": 26,
-    "coreGameLogic": 11,
+    "mainSpecKit": 23,
+    "recursiveSpecTree": 50,
+    "gameDesignDecisions": 27,
+    "coreGameLogic": 12,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
     "androidIosReadiness": 0,
     "testsBalanceQa": 0,
-    "integrationDocumentationHandoff": 3
+    "integrationDocumentationHandoff": 4
   },
-  "nextStep": "Complete duration-cap-and-interruption-validation depth-4 leaf. Then continue to phase-state-machine-and-handoffs depth-3 per DEC-PDR-001 minimum core-match contracts trigger.",
+  "nextStep": "phase-count-and-timing-envelope complete (all 4 depth-4 leaves). Continue to phase-state-machine-and-handoffs depth-3 under match-flow-and-phase-structure per DEC-PDR-001 minimum contracts trigger.",
   "blocked": []
 }

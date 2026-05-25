@@ -72,7 +72,7 @@ root: mobile-strategy-game-godot (depth 0)
 │   │   │   ├── opening-council-pacing (depth 4, DONE)
 │   │   │   ├── rising-debate-pacing (depth 4, DONE)
 │   │   │   ├── final-petition-pacing (depth 4, DONE)
-│   │   │   └── duration-cap-and-interruption-validation (depth 4, TODO)
+│   │   │   └── duration-cap-and-interruption-validation (depth 4, DONE)
 │   │   ├── phase-state-machine-and-handoffs (depth 3, TODO)
 │   │   └── final-reveal-and-mode-completion (depth 3, TODO)
 │   ├── simultaneous-planning-and-resolution (depth 2, TODO)
@@ -89,9 +89,9 @@ root: mobile-strategy-game-godot (depth 0)
 
 All current depth-2 branches under `game-concept-and-win-condition` are complete through depth 4.
 
-1. Continue the next TODO depth-4 leaf under `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`: `duration-cap-and-interruption-validation`.
-2. Complete the final remaining depth-4 leaf for `phase-count-and-timing-envelope`.
-3. Continue remaining depth-3 and depth-2 branches under `core-match-systems` until all branches reach required depth 4.
+1. `phase-count-and-timing-envelope` is complete with all four depth-4 leaves.
+2. Continue to the next depth-3 child under `match-flow-and-phase-structure`: `phase-state-machine-and-handoffs`.
+3. Complete remaining depth-3 and depth-2 branches under `core-match-systems` until all branches reach required depth 4.
 4. Do not implement game code until leaf-node tasks explicitly authorize implementation.
 
 ## Root Artifacts
