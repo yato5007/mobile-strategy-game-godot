@@ -53,3 +53,19 @@ Only significant decisions are recorded here.
 - Why downside is acceptable: The User Taste Proxy Rule, Options Comparison Rule, Final Game Quality Rule, Artifact Proof Rule, Fun Validation Rule, reviews, and checkpoints constrain and document decisions.
 - Later verification: Review `DECISIONS.md`, `GATEKEEPER_REVIEW.md`, Spec Kit artifacts, QA/reviewer/integration results, and git checkpoints.
 - Artifact proof: Governance files and OpenCode agents updated; checkpoint `add full autonomy rule and autonomous decision workflow`.
+## DEC-GCWC-002 — Concept presentation adopts Arabic-first Majlis game-object identity
+
+- Date: 2026-05-25
+- Node: `.spec-tree/game-concept-and-win-condition/concept-presentation-and-theme/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Present Banner of the Majlis as an Arabic-first council arena where Claims appear as banners, seals, carpet medallions, and illuminated tokens instead of tables or text-only panels.
+- Options compared:
+  - Plain dashboard/scoreboard: rejected because it violates MASTER 4.1.7 Anti-Spreadsheet Game Rule.
+  - Generic fantasy board: rejected because it weakens the Arabic cultural identity and does not serve the Majlis premise.
+  - Arabic-first Majlis game-object identity: accepted because it supports Final Game Quality, portrait readability, Claim clarity, and future Godot presentation.
+- Why this serves the final game: It makes the visible Claim win condition feel like a real mobile strategy game and gives future art/UI branches concrete direction.
+- Potential downside: Ornament and theme could clutter the 360-414px portrait play space.
+- Why downside is acceptable: The node requires low-contrast ornament, icon grammar, reusable Godot Theme/StyleBox resources, and QA comparison against a spreadsheet baseline.
+- Later verification: Future Godot scenes, screenshots, ASSET_MANIFEST.md, RTL/LTR checks, and QA/reviewer results must prove the game does not look like an admin panel.
+- Artifact proof: Complete 104-file depth-2 through depth-4 Spec Kit subtree for `concept-presentation-and-theme`.
+

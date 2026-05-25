@@ -41,7 +41,19 @@ root: mobile-strategy-game-godot (depth 0)
 │   │       ├── leader-vulnerability-windows (depth 4, DONE)
 │   │       └── comeback-threshold-adaptation (depth 4, DONE)
 │   ├── anti-dominant-strategy-and-active-play (depth 2, TODO)
-│   └── concept-presentation-and-theme (depth 2, TODO)
+│   └── concept-presentation-and-theme (depth 2, DONE)
+│       ├── visual-identity-definition (depth 3, DONE)
+│       │   ├── arabic-cultural-mandalas (depth 4, DONE)
+│       │   ├── color-palette-assignment (depth 4, DONE)
+│       │   └── typography-and-icon-set (depth 4, DONE)
+│       ├── game-space-presentation (depth 3, DONE)
+│       │   ├── majlis-board-layout (depth 4, DONE)
+│       │   ├── claim-token-visualization (depth 4, DONE)
+│       │   └── spatial-atmosphere-design (depth 4, DONE)
+│       └── theme-narrative-framing (depth 3, DONE)
+│           ├── majlis-council-concept (depth 4, DONE)
+│           ├── match-narrative-arc (depth 4, DONE)
+│           └── arabic-patronage-naming (depth 4, DONE)
 ├── core-match-systems (depth 1, TODO)
 ├── multiplayer-and-bots (depth 1, TODO)
 ├── balance-and-validation (depth 1, TODO)
@@ -52,12 +64,12 @@ root: mobile-strategy-game-godot (depth 0)
 
 ## Next Required Step
 
-Continue the next TODO depth-2 branch under `game-concept-and-win-condition`:
+Continue the remaining TODO depth-2 branch under `game-concept-and-win-condition`:
 
-1. `.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/`
+1. `.spec-tree/game-concept-and-win-condition/anti-dominant-strategy-and-active-play/`
 2. Expand it to meaningful depth-3 and depth-4 leaves.
-3. Continue all sibling nodes until the full branch reaches required depth 4.
-4. Do not implement game code until leaf-node tasks exist.
+3. Then continue remaining depth-1 branches until all branches reach required depth 4.
+4. Do not implement game code until leaf-node tasks explicitly authorize implementation.
 
 ## Root Artifacts
 
@@ -70,3 +82,4 @@ Depth-3 `win-loss-explanation` artifacts live in `.spec-tree/game-concept-and-wi
 Depth-3 `team-and-ffa-win-readability` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability/`.
 
 Depth-2 `strategic-tension-and-comeback` artifacts live in `.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/` with three depth-3 children and nine depth-4 leaves.
+Depth-2 `concept-presentation-and-theme` artifacts live in `.spec-tree/game-concept-and-win-condition/concept-presentation-and-theme/` with three depth-3 children and nine depth-4 leaves.

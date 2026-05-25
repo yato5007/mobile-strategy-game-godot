@@ -31,14 +31,26 @@
 | game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/leader-vulnerability-windows | 4 | DONE | Leader exposure windows planned |
 | game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/comeback-threshold-adaptation | 4 | DONE | Max-one-Claim adaptation planned |
 | game-concept-and-win-condition/anti-dominant-strategy-and-active-play | 2 | TODO | Must prevent one perfect plan and passive hiding |
-| game-concept-and-win-condition/concept-presentation-and-theme | 2 | TODO | Must prevent text-square concept presentation |
+| game-concept-and-win-condition/concept-presentation-and-theme | 2 | DONE | Full depth-2 through depth-4 presentation/theme subtree complete with 104 planning files |
+| game-concept-and-win-condition/concept-presentation-and-theme/visual-identity-definition | 3 | DONE | Core visual language, motifs, palette, typography, and icons planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/visual-identity-definition/arabic-cultural-mandalas | 4 | DONE | Geometric Arabic pattern use planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/visual-identity-definition/color-palette-assignment | 4 | DONE | Four-player and state color palette planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/visual-identity-definition/typography-and-icon-set | 4 | DONE | Arabic-first typography and icon style planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/game-space-presentation | 3 | DONE | Majlis board/arena presentation planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/game-space-presentation/majlis-board-layout | 4 | DONE | Portrait gathering-hall board layout planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/game-space-presentation/claim-token-visualization | 4 | DONE | Banner/carpet/seal Claim token visualization planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/game-space-presentation/spatial-atmosphere-design | 4 | DONE | 2D Godot ambient depth and lighting direction planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing | 3 | DONE | Council premise and match story framing planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing/majlis-council-concept | 4 | DONE | Majlis council premise planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing/match-narrative-arc | 4 | DONE | Match visual narrative arc planned |
+| game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing/arabic-patronage-naming | 4 | DONE | Arabic/English patronage naming conventions planned |
 | core-match-systems | 1 | TODO | Must reach depth 4 |
 | multiplayer-and-bots | 1 | TODO | Must reach depth 4 |
 | balance-and-validation | 1 | TODO | Must reach depth 4 |
 | presentation-art-audio-motion | 1 | TODO | Must reach depth 4 |
 | mobile-ux-localization-accessibility | 1 | TODO | Must reach depth 4 |
 | godot-architecture-and-delivery | 1 | TODO | Must reach depth 4 |
-| Depth-2 nodes | 2 | IN_PROGRESS | Two remaining game-concept-and-win-condition depth-2 branches pending |
+| Depth-2 nodes | 2 | IN_PROGRESS | anti-dominant-strategy-and-active-play remains pending under game-concept-and-win-condition |
 | Depth-3 nodes under win-condition-clarity | 3 | DONE | claim-progress-display, win-loss-explanation, and team-and-ffa-win-readability complete |
 | Depth-4 nodes under win-condition-clarity | 4 | DONE | Eight depth-4 leaves complete under the depth-2 node |
 
