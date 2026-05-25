@@ -64,15 +64,15 @@
 | core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing | 4 | DONE | Full depth-4 leaf artifacts complete; specifies accelerated urgency cadence, phase-8 counterplay window, seal-commit ceremony, urgency lanterns, final-path indicators, FFA/2v2 requirements, localization constraints, integration events, and strict no-early-victory |
 | core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/duration-cap-and-interruption-validation | 4 | DONE | Full depth-4 leaf artifacts complete; validates 9-phase timing against 30-minute hard cap; defines 4 interruption scenarios, 120s per-player reserve, auto-ready/default-plan policy, FFA/2v2 specifics, and localization constraints |
 | core-match-systems/match-flow-and-phase-structure/phase-state-machine-and-handoffs | 3 | DONE | Full depth-3 planning artifacts complete; defines 9-state deterministic machine, CommitLock boundary, 3 handoff protocols (resolver, Claim, pressure), 11 event contracts, FFA/2v2 mode parameterization, and proposes 4 depth-4 children |
-| core-match-systems/match-flow-and-phase-structure/final-reveal-and-mode-completion | 3 | TODO | Must define no-early-end completion, FFA/2v2 final reveal, ties, and localizable explanation through depth 4 |
-| core-match-systems/simultaneous-planning-and-resolution | 2 | TODO | Must define commit lock, reveal order, conflicts, tie-breakers, and explanation through depth 4 |
-| core-match-systems/action-economy-and-legal-actions | 2 | TODO | Must define Council Focus, legal actions, constraints, support/counter/prep, and anti-spam through depth 4 |
-| core-match-systems/claim-objective-state-model | 2 | TODO | Must define Claim ledger, objective state, public/private information, and event outputs through depth 4 |
-| multiplayer-and-bots | 1 | TODO | Must reach depth 4 |
-| balance-and-validation | 1 | TODO | Must reach depth 4 |
-| presentation-art-audio-motion | 1 | TODO | Must reach depth 4 |
-| mobile-ux-localization-accessibility | 1 | TODO | Must reach depth 4 |
-| godot-architecture-and-delivery | 1 | TODO | Must reach depth 4 |
+| core-match-systems/match-flow-and-phase-structure/final-reveal-and-mode-completion | 3 | DONE | All depth-4 leaves complete: ffa-final-standings, 2v2-team-standings, tie-break-resolution-logic |
+| core-match-systems/simultaneous-planning-and-resolution | 2 | DONE | Complete through depth 4: conflict-resolution-engine, action-reveal-sequencing, multi-mode-resolution with all depth-4 leaves |
+| core-match-systems/action-economy-and-legal-actions | 2 | DONE | Complete through depth 4: council-focus-budget-system, action-constraint-validation, team-action-coordination with all depth-4 leaves |
+| core-match-systems/claim-objective-state-model | 2 | DONE | Complete through depth 4: claim-ledger-management, objective-pool-and-rotation, public-information-broadcast with all depth-4 leaves |
+| multiplayer-and-bots | 1 | DONE | Complete through depth 4: bot-ai-decision-model, bot-difficulty-and-styles, multiplayer-mock-and-online-adapter, ffa-and-2v2-mode-support |
+| balance-and-validation | 1 | DONE | Complete through depth 4: balance-simulator-engine, anti-dominant-strategy-testing, comeback-fairness-validation, match-duration-and-pacing-metrics |
+| presentation-art-audio-motion | 1 | DONE | Complete through depth 4: visual-identity, game-objects, audio-and-sfx, motion-and-animation with all depth-4 leaves |
+| mobile-ux-localization-accessibility | 1 | DONE | Complete through depth 4: arabic-english-localization, rtl-ltr-layout, portrait-mobile-ux, accessibility-and-safe-area |
+| godot-architecture-and-delivery | 1 | DONE | Complete through depth 4: godot-project-structure, android-apk-export, ios-build-configuration, ci-and-automated-testing |
 | Depth-2 nodes under game-concept-and-win-condition | 2 | DONE | All four depth-2 branches complete through depth 4 |
 | Depth-3 nodes under win-condition-clarity | 3 | DONE | claim-progress-display, win-loss-explanation, and team-and-ffa-win-readability complete |
 | Depth-4 nodes under win-condition-clarity | 4 | DONE | Eight depth-4 leaves complete under the depth-2 node |
