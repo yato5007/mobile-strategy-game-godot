@@ -48,3 +48,19 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why acceptable: Each section is independently skippable. The decision algorithm is simple (claim availability only) to avoid incorrect judgments. UX polish iterations will refine the layout.
 - Later verification: Future mobile UX QA on 6-inch portrait viewport: all three sections readable, skip button accessible, closeness bars comparable at a glance. Playable readability test: loser understands why they lost within 10 seconds.
 - Artifact proof: Full depth-3 Spec Kit under `win-loss-explanation/` and full depth-4 Spec Kit under `win-postmortem/`, `loss-decision-crossroads/`, and `closeness-gauge/` (32 files total).
+
+## 2026-05-25 — Team & FFA Win Readability Depth 3+4 Subtree Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed nodes: `.spec-tree/game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability/` and its 3 depth-4 leaves (`team-contribution-display`, `ffa-final-standings-board`, `mode-specific-hud-adaptation`)
+- Decision: Accept all 4 nodes (1 depth-3 + 3 depth-4) and continue automatically to remaining depth-2 siblings.
+- Options compared:
+  - Stop and ask user about HUD adaptation choices: rejected by Full Autonomy Rule.
+  - Rework any leaf now: rejected because all 32 files are concrete with Godot node references, RTL analysis, and mobile portrait focus.
+  - Continue to strategic-tension-and-comeback: accepted.
+- Why it serves the final game: 2v2 and FFA are required by MASTER_PROJECT_PLAN. These nodes ensure the win display adapts to team mode (showing individual contribution to prevent carry-feel), FFA mode (every player sees their rank), and the HUD changes during the match to match the mode. This directly supports Multiplayer and Clear Win Condition requirements.
+- Potential downside: Mode-specific HUD adaptation adds complexity to the match UI. The HUD needs to detect and switch between 2v2 and FFA layouts in real-time.
+- Why acceptable: The HUD adaptation spec defines a simple mode enum with clear layout rules (2v2: paired colors, team claim total; FFA: individual colors, solo claim count). The adaptation layer is thin and doesn't affect game rules.
+- Later verification: Future mobile UX QA on both 2v2 and FFA modes: HUD correctly shows team vs individual claims, contribution display works in win screen, FFA standings show all 4 ranks.
+- Artifact proof: Full depth-3 Spec Kit under `team-and-ffa-win-readability/` and full depth-4 Spec Kit under 3 leaf nodes (32 files total). Table entries in SPEC_TREE_STATUS.md, SPEC_TREE.md, and REQUIREMENTS_TRACE.md updated.

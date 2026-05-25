@@ -15,12 +15,18 @@ Bootstrap prepared. Root Spec Kit completed for planning scope. Game implementat
 ```text
 root: mobile-strategy-game-godot (depth 0)
 ├── game-concept-and-win-condition (depth 1, DONE planning; expands below)
-│   ├── win-condition-clarity (depth 2, TODO)
-│   │   ├── claim-progress-display (depth 3, TODO)
-│   │   │   ├── leader-threat-indicator (depth 4, TODO)
+│   ├── win-condition-clarity (depth 2, DONE)
+│   │   ├── claim-progress-display (depth 3, DONE)
+│   │   │   ├── leader-threat-indicator (depth 4, DONE)
 │   │   │   └── comeback-path-cue (depth 4, DONE)
-│   │   ├── win-loss-explanation (depth 3, TODO)
-│   │   └── team-and-ffa-win-readability (depth 3, TODO)
+│   │   ├── win-loss-explanation (depth 3, DONE)
+│   │   │   ├── win-postmortem (depth 4, DONE)
+│   │   │   ├── loss-decision-crossroads (depth 4, DONE)
+│   │   │   └── closeness-gauge (depth 4, DONE)
+│   │   └── team-and-ffa-win-readability (depth 3, DONE)
+│   │       ├── team-contribution-display (depth 4, DONE)
+│   │       ├── ffa-final-standings-board (depth 4, DONE)
+│   │       └── mode-specific-hud-adaptation (depth 4, DONE)
 │   ├── strategic-tension-and-comeback (depth 2, TODO)
 │   ├── anti-dominant-strategy-and-active-play (depth 2, TODO)
 │   └── concept-presentation-and-theme (depth 2, TODO)
@@ -34,12 +40,12 @@ root: mobile-strategy-game-godot (depth 0)
 
 ## Next Required Step
 
-Run full Spec Kit for the first depth-4 node under the first depth-3 node:
+Continue the next TODO depth-2 branch under `game-concept-and-win-condition`:
 
-1. `.spec-tree/game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/`
-2. Expand it to meaningful depth-4 leaves.
+1. `.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/`
+2. Expand it to meaningful depth-3 and depth-4 leaves.
 3. Continue all sibling nodes until the full branch reaches required depth 4.
-3. Do not implement game code until leaf-node tasks exist.
+4. Do not implement game code until leaf-node tasks exist.
 
 ## Root Artifacts
 
@@ -48,3 +54,5 @@ Root artifacts live in `.spec-tree/root/` and include constitution, spec, clarif
 Depth-1 `game-concept-and-win-condition` artifacts live in `.spec-tree/game-concept-and-win-condition/`.
 Depth-2 `win-condition-clarity` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/`.
 Depth-3 `claim-progress-display` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/`.
+Depth-3 `win-loss-explanation` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/`.
+Depth-3 `team-and-ffa-win-readability` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability/`.

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Progress Dashboard</title>
-  <!-- lastDashboardUpdate: 2026-05-25T19:47:07Z -->
+  <!-- lastDashboardUpdate: 2026-05-25T20:02:11Z -->
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -81,7 +81,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:8%; background:var(--good); }
+    .bar > div { height:100%; width:12%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -118,32 +118,32 @@
   <!-- ===== LIVE PROGRESS PULSE (highest priority) ===== -->
   <section class="pulse-section">
     <div class="pulse-header">
-      <div class="pulse-dot bad"></div>
-      <div class="pulse-status bad">🔴 BLOCKED</div>
+      <div class="pulse-dot good"></div>
+      <div class="pulse-status good">🟢 WORKING</div>
     </div>
     <div style="font-size:.85rem;color:var(--muted);margin-bottom:8px;">
-      Blocked in: SPEC_TREE_STATUS.md
+      Last activity 14m ago — recent
     </div>
     <div class="pulse-grid">
       <div class="pulse-item">
         <div class="pulse-label">Last Dashboard Update</div>
-        <div class="pulse-value">2026-05-25 19:47:07 UTC</div>
+        <div class="pulse-value">2026-05-25 20:02:11 UTC</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Checkpoint</div>
-        <div class="pulse-value">add live progress pulse to mobile dashboard</div>
+        <div class="pulse-value">complete depth3-4 win-loss-explanation subtree with 3 depth4 leaves</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Completed Node</div>
-        <div class="pulse-value">game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/closeness-gauge</div>
+        <div class="pulse-value">Depth-4 nodes under win-condition-clarity</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Current Node / Task</div>
-        <div class="pulse-value">Continue game-concept-and-win-condition autonomously with team-and-ffa-win-readability at depth 3 an...</div>
+        <div class="pulse-value">Complete remaining depth-2 branches under game-concept-and-win-condition: strategic-tension-and-come...</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Checkpoints / Commits</div>
-        <div class="pulse-value">12 checkpoints · 13 total commits</div>
+        <div class="pulse-value">13 checkpoints · 14 total commits</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Decision Mode</div>
@@ -156,31 +156,32 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">8%</div>
+    <div class="percent">12%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> depth4-win-loss-explanation-complete</p>
+    <p><strong>Current phase:</strong> depth4-team-ffa-win-readability-complete</p>
     <p><strong>Current wave:</strong> No active wave file</p>
     <p><strong>User intervention needed:</strong> <span class="badge good-bg">NO</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">Continue game-concept-and-win-condition autonomously with team-and-ffa-win-readability at depth 3 and its depth-4 leaves.</div>
+  <div class="card">Complete remaining depth-2 branches under game-concept-and-win-condition: strategic-tension-and-comeback, anti-dominant-strategy-and-active-play, concept-presentation-and-theme.</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
-    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — Win-Loss Explanation Depth 3+4 Subtree Review</span></div>
+    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — Team &amp; FFA Win Readability Depth 3+4 Subtree Review</span></div>
     <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-AUTO-001 — Full Autonomy Rule adopted</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: add live progress pulse to mobile dashboard</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete depth3-4 win-loss-explanation subtree with 3 depth4 leaves</span></div>
   </div>
 
   <h2>Recent Activity</h2>
   <div class="card activity-list">
+    <div class="activity-item"><span class="commit-hash">53c7de6</span> checkpoint: complete depth3-4 win-loss-explanation subtree with 3 depth4 leaves</div>
     <div class="activity-item"><span class="commit-hash">4aafc8e</span> checkpoint: add live progress pulse to mobile dashboard</div>
     <div class="activity-item"><span class="commit-hash">0bb79a1</span> checkpoint: complete depth4 comeback path cue spec kit</div>
     <div class="activity-item"><span class="commit-hash">f7b37da</span> checkpoint: add full autonomy rule and autonomous decision workflow</div>
     <div class="activity-item"><span class="commit-hash">c8dac20</span> checkpoint: add mobile progress dashboard</div>
-    <div class="activity-item"><span class="commit-hash">61f314b</span> checkpoint: complete depth4 leader threat indicator spec kit</div>
   </div>
+
 
   <h2>Branches and Status</h2>
   <div class="grid">
@@ -195,7 +196,10 @@
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/win-postmortem</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/loss-decision-crossroads</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/closeness-gauge</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
-    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 3 · Must define 2v2/FFA readability differences</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · Full depth-3 artifacts complete; depth-4 children complete</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability/team-contribution-display</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability/ffa-final-standings-board</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability/mode-specific-hud-adaptation</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/strategic-tension-and-comeback</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must define fair comeback and tension model</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must prevent one perfect plan and passive hiding</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/concept-presentation-and-theme</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must prevent text-square concept presentation</div></div>
@@ -206,8 +210,8 @@
     <div class="card"><div class="row"><strong>mobile-ux-localization-accessibility</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
     <div class="card"><div class="row"><strong>godot-architecture-and-delivery</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
     <div class="card"><div class="row"><strong>Depth-2 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 2 · First depth-1 branch has four meaningful depth-2 nodes pending</div></div>
-    <div class="card"><div class="row"><strong>Depth-3 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 3 · Two depth-3 nodes complete; remaining depth-3 sibling pending</div></div>
-    <div class="card"><div class="row"><strong>Depth-4 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 4 · Five depth-4 leaves complete; remaining depth-4 siblings still pending</div></div>
+    <div class="card"><div class="row"><strong>Depth-3 nodes under win-condition-clarity</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · claim-progress-display, win-loss-explanation, and team-and-ffa-win-readability complete</div></div>
+    <div class="card"><div class="row"><strong>Depth-4 nodes under win-condition-clarity</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Eight depth-4 leaves complete under the depth-2 node</div></div>
   </div>
 
   <h2>Progress Areas</h2>
@@ -226,10 +230,10 @@
 
   <h2>Blocked / Problems</h2>
   <div class="card"><ul>
-    <li><span class="badge bad-bg">BLOCKED</span> Game implementation is intentionally blocked until leaf Spec Kit tasks exist.</li>
+    <li><span class="badge good-bg">OK</span> All systems clear — no real BLOCKED items.</li>
   </ul></div>
 
-  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 19:47:07 UTC · Static HTML only.</footer>
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 20:02:11 UTC · Static HTML only.</footer>
 </main>
 </body>
 </html>
