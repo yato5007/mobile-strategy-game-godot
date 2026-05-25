@@ -1,20 +1,20 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "core-match-systems-depth3-complete",
-  "overallPercent": 55,
+  "phase": "minimum-core-match-contracts-complete",
+  "overallPercent": 62,
   "areas": {
-    "mainSpecKit": 32,
-    "recursiveSpecTree": 72,
-    "gameDesignDecisions": 36,
-    "coreGameLogic": 24,
+    "mainSpecKit": 36,
+    "recursiveSpecTree": 80,
+    "gameDesignDecisions": 38,
+    "coreGameLogic": 28,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
     "androidIosReadiness": 0,
     "testsBalanceQa": 0,
-    "integrationDocumentationHandoff": 7
+    "integrationDocumentationHandoff": 8
   },
-  "nextStep": "All 9 depth-3 nodes complete. DEC-PDR-001: create remaining depth-4 leaves (~27) for simultaneous-planning, action-economy, and claim-objective-state-model to complete minimum contracts through depth 4.",
+  "nextStep": "DEC-PDR-001 trigger satisfied: all 5 minimum core-match contracts complete through depth 4. Transition to presentation-art-audio-motion per ADJUST_DIRECTION.",
   "blocked": []
 }
