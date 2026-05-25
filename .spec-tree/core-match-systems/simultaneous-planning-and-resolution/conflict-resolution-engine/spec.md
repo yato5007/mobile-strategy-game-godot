@@ -1,0 +1,2 @@
+# spec.md — Conflict Resolution Engine
+Define multi-way conflict rules, intensity comparison logic, support/counter cascading, edge cases (3+ player conflicts), and per-phase resolution order. AUTONOMOUS_DECISION: use intensity + commit-time two-tier tie-break, no random resolution. 3 depth-4 children: `intensity-comparison-logic`, `multi-way-conflict-resolution`, `support-counter-cascading`. No implementation.
