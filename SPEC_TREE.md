@@ -17,6 +17,8 @@ root: mobile-strategy-game-godot (depth 0)
 ├── game-concept-and-win-condition (depth 1, DONE planning; expands below)
 │   ├── win-condition-clarity (depth 2, TODO)
 │   │   ├── claim-progress-display (depth 3, TODO)
+│   │   │   ├── leader-threat-indicator (depth 4, TODO)
+│   │   │   └── comeback-path-cue (depth 4, TODO)
 │   │   ├── win-loss-explanation (depth 3, TODO)
 │   │   └── team-and-ffa-win-readability (depth 3, TODO)
 │   ├── strategic-tension-and-comeback (depth 2, TODO)
@@ -32,10 +34,10 @@ root: mobile-strategy-game-godot (depth 0)
 
 ## Next Required Step
 
-Run full Spec Kit for the first depth-3 node under the first depth-2 node:
+Run full Spec Kit for the first depth-4 node under the first depth-3 node:
 
-1. `.spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/`
-2. Continue this branch until required depth 4.
+1. `.spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/leader-threat-indicator/`
+2. Continue all sibling nodes until the full branch reaches required depth 4.
 3. Do not implement game code until leaf-node tasks exist.
 
 ## Root Artifacts
@@ -44,3 +46,4 @@ Root artifacts live in `.spec-tree/root/` and include constitution, spec, clarif
 
 Depth-1 `game-concept-and-win-condition` artifacts live in `.spec-tree/game-concept-and-win-condition/`.
 Depth-2 `win-condition-clarity` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/`.
+Depth-3 `claim-progress-display` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/`.

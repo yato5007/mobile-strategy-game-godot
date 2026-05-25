@@ -6,7 +6,9 @@
 | Root Spec Kit | 0 | DONE | Root artifacts created in `.spec-tree/root/`; no game implementation |
 | game-concept-and-win-condition | 1 | DONE | Full depth-1 artifacts complete; child nodes must reach depth 4 |
 | game-concept-and-win-condition/win-condition-clarity | 2 | DONE | Full depth-2 artifacts complete; child nodes must reach depth 4 |
-| game-concept-and-win-condition/win-condition-clarity/claim-progress-display | 3 | TODO | Must define visible Claim progress representation |
+| game-concept-and-win-condition/win-condition-clarity/claim-progress-display | 3 | DONE | Full depth-3 artifacts complete; depth-4 children pending |
+| game-concept-and-win-condition/win-condition-clarity/claim-progress-display/leader-threat-indicator | 4 | TODO | Must define visible leader danger/closeness cues |
+| game-concept-and-win-condition/win-condition-clarity/claim-progress-display/comeback-path-cue | 4 | TODO | Must define visible route back cues for trailing players |
 | game-concept-and-win-condition/win-condition-clarity/win-loss-explanation | 3 | TODO | Must define final explanation model |
 | game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability | 3 | TODO | Must define 2v2/FFA readability differences |
 | game-concept-and-win-condition/strategic-tension-and-comeback | 2 | TODO | Must define fair comeback and tension model |
@@ -20,7 +22,7 @@
 | godot-architecture-and-delivery | 1 | TODO | Must reach depth 4 |
 | Depth-2 nodes | 2 | IN_PROGRESS | First depth-1 branch has four meaningful depth-2 nodes pending |
 | Depth-3 nodes | 3 | IN_PROGRESS | First depth-2 node has three meaningful depth-3 nodes pending |
-| Depth-4 nodes | 4 | TODO | Required; no placeholders |
+| Depth-4 nodes | 4 | IN_PROGRESS | First depth-3 node has two meaningful depth-4 nodes pending |
 
 ## Current Blockers
 
