@@ -1,8 +1,8 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "phase-state-machine-depth3-complete",
-  "overallPercent": 40,
+  "phase": "commit-lock-depth4-complete",
+  "overallPercent": 41,
   "areas": {
     "mainSpecKit": 24,
     "recursiveSpecTree": 52,
