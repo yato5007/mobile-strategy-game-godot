@@ -11,5 +11,11 @@
     "prune": true,
     "reserved": 10000
   },
-  "permission": "allow"
+  "permission": "allow",
+  "mcp": {
+    "https://mcp.context7.com/mcp": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    }
+  }
 }

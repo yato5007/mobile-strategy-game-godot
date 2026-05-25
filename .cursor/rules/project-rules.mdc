@@ -1,0 +1,11 @@
+---
+description: Project rules for mobile strategy Godot game
+alwaysApply: true
+---
+
+Read MASTER_PROJECT_PLAN.md first.
+Follow AGENTS.md.
+Use Godot.
+Required Spec Kit depth is 4.
+Do not create shallow placeholder nodes.
+Prioritize final game quality over prototype shortcuts.
