@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Progress Dashboard</title>
-  <!-- lastDashboardUpdate: 2026-05-25T20:07:21Z -->
+  <!-- lastDashboardUpdate: 2026-05-25T20:29:13Z -->
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -81,7 +81,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:18%; background:var(--good); }
+    .bar > div { height:100%; width:28%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -122,16 +122,16 @@
       <div class="pulse-status good">🟢 WORKING</div>
     </div>
     <div style="font-size:.85rem;color:var(--muted);margin-bottom:8px;">
-      Last activity 5m ago — recent
+      Last activity 1m ago — recent
     </div>
     <div class="pulse-grid">
       <div class="pulse-item">
         <div class="pulse-label">Last Dashboard Update</div>
-        <div class="pulse-value">2026-05-25 20:07:21 UTC</div>
+        <div class="pulse-value">2026-05-25 20:29:13 UTC</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Checkpoint</div>
-        <div class="pulse-value">complete depth3-4 team-and-ffa-win-readability subtree and fix dashboard blocked false positive</div>
+        <div class="pulse-value">complete anti-dominant active-play depth2-4 subtree</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Completed Node</div>
@@ -139,11 +139,11 @@
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Current Node / Task</div>
-        <div class="pulse-value">Complete remaining depth-2 branches: anti-dominant-strategy-and-active-play, concept-presentation-an...</div>
+        <div class="pulse-value">Start the next depth-1 branch core-match-systems and expand it to required depth 4.</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Checkpoints / Commits</div>
-        <div class="pulse-value">14 checkpoints · 15 total commits</div>
+        <div class="pulse-value">17 checkpoints · 18 total commits</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Decision Mode</div>
@@ -156,30 +156,30 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">18%</div>
+    <div class="percent">28%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> depth4-strategic-tension-comeback-complete</p>
+    <p><strong>Current phase:</strong> game-concept-branch-complete</p>
     <p><strong>Current wave:</strong> No active wave file</p>
     <p><strong>User intervention needed:</strong> <span class="badge good-bg">NO</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">Complete remaining depth-2 branches: anti-dominant-strategy-and-active-play, concept-presentation-and-theme.</div>
+  <div class="card">Start the next depth-1 branch core-match-systems and expand it to required depth 4.</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
-    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — Strategic Tension &amp; Comeback Depth 2-4 Subtree Review</span></div>
-    <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-AUTO-001 — Full Autonomy Rule adopted</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete depth3-4 team-and-ffa-win-readability subtree and fix dashboard blocked false positive</span></div>
+    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — game-concept-and-win-condition Depth-1 Branch Completion</span></div>
+    <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-GCWC-003 — Anti-dominance uses visible active-play pressure</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete anti-dominant active-play depth2-4 subtree</span></div>
   </div>
 
   <h2>Recent Activity</h2>
   <div class="card activity-list">
+    <div class="activity-item"><span class="commit-hash">93ff9ba</span> checkpoint: complete anti-dominant active-play depth2-4 subtree</div>
+    <div class="activity-item"><span class="commit-hash">12f8244</span> checkpoint: complete concept-presentation-and-theme depth2-4 subtree</div>
+    <div class="activity-item"><span class="commit-hash">b86de03</span> checkpoint: complete strategic-tension-and-comeback depth2-4 subtree with 104 spec kit files</div>
     <div class="activity-item"><span class="commit-hash">e3ecd48</span> checkpoint: complete depth3-4 team-and-ffa-win-readability subtree and fix dashboard blocked false positive</div>
     <div class="activity-item"><span class="commit-hash">53c7de6</span> checkpoint: complete depth3-4 win-loss-explanation subtree with 3 depth4 leaves</div>
-    <div class="activity-item"><span class="commit-hash">4aafc8e</span> checkpoint: add live progress pulse to mobile dashboard</div>
-    <div class="activity-item"><span class="commit-hash">0bb79a1</span> checkpoint: complete depth4 comeback path cue spec kit</div>
-    <div class="activity-item"><span class="commit-hash">f7b37da</span> checkpoint: add full autonomy rule and autonomous decision workflow</div>
   </div>
 
 
@@ -213,24 +213,25 @@
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/claim-cost-escalation</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Progressive claim effort planned</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/leader-vulnerability-windows</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Leader exposure windows planned</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/comeback-threshold-adaptation</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Max-one-Claim adaptation planned</div></div>
-    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must prevent one perfect plan and passive hiding</div></div>
-    <div class="card"><div class="row"><strong>game-concept-and-win-condition/concept-presentation-and-theme</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must prevent text-square concept presentation</div></div>
-    <div class="card"><div class="row"><strong>core-match-systems</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
-    <div class="card"><div class="row"><strong>multiplayer-and-bots</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
-    <div class="card"><div class="row"><strong>balance-and-validation</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
-    <div class="card"><div class="row"><strong>presentation-art-audio-motion</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
-    <div class="card"><div class="row"><strong>mobile-ux-localization-accessibility</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
-    <div class="card"><div class="row"><strong>godot-architecture-and-delivery</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
-    <div class="card"><div class="row"><strong>Depth-2 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 2 · Two remaining game-concept-and-win-condition depth-2 branches pending</div></div>
-    <div class="card"><div class="row"><strong>Depth-3 nodes under win-condition-clarity</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · claim-progress-display, win-loss-explanation, and team-and-ffa-win-readability complete</div></div>
-    <div class="card"><div class="row"><strong>Depth-4 nodes under win-condition-clarity</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Eight depth-4 leaves complete under the depth-2 node</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play</strong><span class="badge good">DONE</span></div><div class="muted">Depth 2 · Full depth-2 through depth-4 subtree complete with 104 planning files</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · Strategy variety, objective rotation, adaptive response, and repetition detection planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement/objective-variety-rotation</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Objective family rotation planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement/adaptive-opponent-response</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Public adaptive response planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement/strategy-punishment-detection</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Repetition pressure detection planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · Momentum, idle, and surge incentives planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives/claim-momentum-bonus</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Capped active Claim momentum planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives/idle-penalty-mechanism</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Passive hiding warning and standing decay planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives/engagement-surge-events</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Public surge events planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-counterplay-visibility</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · Pattern display, counter hints, and shift incentives planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-counterplay-visibility/opponent-claim-pattern-display</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Opponent Claim pattern display planned</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-counterplay-visibility/counter-strategy-indicator</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Counter hint indicator planned</div></div>
   </div>
 
   <h2>Progress Areas</h2>
   <div class="grid">
     <div class="card"><div class="row"><strong>Main Spec Kit</strong><span class="badge neutral">4%</span></div><div class="muted">Weight 10% · Root and first depth-1 branch artifacts complete</div></div>
-    <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">6%</span></div><div class="muted">Weight 15% · Two depth-4 leaves completed; remaining branch siblings pending</div></div>
-    <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">2%</span></div><div class="muted">Weight 10% · Provisional visible Claim win-condition direction selected</div></div>
+    <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">9%</span></div><div class="muted">Weight 15% · All game-concept depth-2 branches are complete through depth 4; remaining depth-1 branches pending</div></div>
+    <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">4%</span></div><div class="muted">Weight 10% · Claim win condition, comeback tension, Majlis presentation, and anti-dominance active-play direction selected</div></div>
     <div class="card"><div class="row"><strong>Core Game Logic</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 15% · Not started during bootstrap</div></div>
     <div class="card"><div class="row"><strong>Bots and AI Opponents</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
     <div class="card"><div class="row"><strong>Multiplayer Mock / Online Ready</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
@@ -245,7 +246,7 @@
     <li><span class="badge good-bg">OK</span> All systems clear — no real BLOCKED items.</li>
   </ul></div>
 
-  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 20:07:21 UTC · Static HTML only.</footer>
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 20:29:13 UTC · Static HTML only.</footer>
 </main>
 </body>
 </html>

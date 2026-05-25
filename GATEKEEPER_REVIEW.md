@@ -80,3 +80,34 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why acceptable: All mechanics are bounded — catch-up bonus is capped at 1 claim worth of advantage, threshold adaptation maxes at 1 claim reduction. Phase progression uses clear UI markers (phase banners, color shifts) that experienced sibling nodes like claim-progress-display already handle. Balance simulator (future branch) will validate tuning.
 - Later verification: Playtest scenarios: (1) early leader wins less than 40% of matches, (2) trailing player at mid-point can still win within final phase, (3) no match ends before 50% of time has elapsed.
 - Artifact proof: 104 Spec Kit files under `strategic-tension-and-comeback/` covering all depth levels. Table entries in SPEC_TREE_STATUS.md, SPEC_TREE.md, and REQUIREMENTS_TRACE.md updated automatically.
+
+## 2026-05-25 — Anti-Dominant Strategy & Active Play Depth 2-4 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/game-concept-and-win-condition/anti-dominant-strategy-and-active-play/` (104 files, 13 nodes)
+- Decision: Accept and continue. This completes the third of four depth-2 branches under game-concept-and-win-condition.
+- Why it serves: Prevents single-strategy dominance (MASTER 7) and rewards active play (MASTER 6.16-17). Three pillars: strategy diversity enforcement, active play incentives, counterplay visibility.
+- Artifact proof: 104 Spec Kit files. Updated SPEC_TREE.md, SPEC_TREE_STATUS.md, REQUIREMENTS_TRACE.md, DECISIONS.md (DEC-GCWC-003).
+
+## 2026-05-25 — Concept Presentation & Theme Depth 2-4 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/game-concept-and-win-condition/concept-presentation-and-theme/` (104 files, 13 nodes)
+- Decision: Accept and continue. This completes the fourth and final depth-2 branch under game-concept-and-win-condition.
+- Why it serves: Defines the Arabic-first "Banner of the Majlis" visual identity with three pillars: visual identity (colors, motifs, typography), game space presentation (majlis board, claim tokens, atmosphere), and theme narrative (council concept, match arc, naming). Directly addresses Anti-Spreadsheet Game Rule (MASTER 4.1.7).
+- Artifact proof: 104 Spec Kit files. Updated SPEC_TREE.md, SPEC_TREE_STATUS.md, REQUIREMENTS_TRACE.md, DECISIONS.md (DEC-GCWC-002).
+
+## 2026-05-25 — game-concept-and-win-condition Depth-1 Branch Completion
+
+- Result: CONTINUE → NEXT BRANCH
+- Type: AUTONOMOUS_DECISION
+- Decision: The entire `game-concept-and-win-condition` depth-1 branch is complete through depth 4 (52 nodes, 416 files). Gatekeeper authorizes transition to next priority depth-1 branch.
+- Completion summary:
+  - win-condition-clarity: 3 depth-3 + 8 depth-4 leaves = 11 sub-nodes
+  - strategic-tension-and-comeback: 3 depth-3 + 9 depth-4 leaves = 12 sub-nodes
+  - anti-dominant-strategy-and-active-play: 3 depth-3 + 9 depth-4 leaves = 12 sub-nodes
+  - concept-presentation-and-theme: 3 depth-3 + 9 depth-4 leaves = 12 sub-nodes
+  - Plus depth-1 and 4 depth-2 nodes = 52 total nodes, 416 files
+- Next branch priority: `core-match-systems` (P1 — Core Fun and Gameplay), per Priority System section 4.2.1.
