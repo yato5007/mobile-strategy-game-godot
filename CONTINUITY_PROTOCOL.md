@@ -33,6 +33,18 @@ After resuming, do not ask the user which design, technical, gameplay, art, bala
 
 Only stop for user input when there is a true external blocker that cannot be solved inside the project, such as credentials, external accounts, legal/financial approval, or an explicit user stop/change request.
 
+## No Report-Only Stop Rule
+
+After resuming and providing a brief status report, if no external blocker exists, the agent **must** continue immediately to the first TODO or IN_PROGRESS item. Pausing after a status report to wait for the user is **forbidden**. Allowed stop reasons:
+
+- external login / missing account,
+- API key / missing or expired credential,
+- payment required,
+- missing permission,
+- destructive action needing explicit approval,
+- unresolvable ambiguity in `MASTER_PROJECT_PLAN.md`,
+- explicit user stop or change request.
+
 ## Checkpoints
 
 Use `./scripts/checkpoint.sh "short description"` after important progress, including bootstrap completion, Spec Kit milestones, node completion, QA/review/integration, and progress updates.

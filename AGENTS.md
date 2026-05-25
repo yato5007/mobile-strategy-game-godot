@@ -69,6 +69,18 @@ State:
 4. Appropriate effort level.
 5. Artifact proving completion.
 
+## No Report-Only Stop Rule
+
+After any brief status report, unless there is a true external blocker, the agent **must** immediately continue to the first TODO or IN_PROGRESS item. Stopping after a report to wait for the user is **forbidden**. The only allowed stop conditions are:
+
+- external login (missing account),
+- API key (missing or expired credential),
+- payment required,
+- missing permission,
+- destructive action that needs explicit user approval,
+- ambiguity that cannot be resolved from `MASTER_PROJECT_PLAN.md`,
+- explicit user stop or change request.
+
 ## Continuity
 
 Run `./scripts/status.sh` when resuming. Continue from the first TODO, IN_PROGRESS, or BLOCKED item. Use `./scripts/checkpoint.sh "short description"` after important progress.

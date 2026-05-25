@@ -58,6 +58,18 @@ For high-impact decisions, require options comparison, `spec-critic` review, `in
 
 Stop for the user only for true external blockers that cannot be solved inside the project, such as missing external accounts, credentials, legal/financial approval, or an explicit user stop/change request.
 
+## No Report-Only Stop Rule
+
+After any brief status report, if no external blocker exists, the director **must** immediately continue to the first TODO or IN_PROGRESS item. Pausing after a report to wait for the user is **forbidden**. The only allowed stop reasons:
+
+- external login / missing account,
+- API key / missing or expired credential,
+- payment required,
+- missing permission,
+- destructive action needing explicit approval,
+- unresolvable ambiguity in `MASTER_PROJECT_PLAN.md`,
+- explicit user stop or change request.
+
 ## Resume Workflow
 
 Run `./scripts/status.sh`, inspect progress files, continue from the first TODO/IN_PROGRESS/BLOCKED item, update trace/status/progress after milestones, and checkpoint after important progress.
