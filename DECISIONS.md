@@ -134,3 +134,19 @@ Only significant decisions are recorded here.
 - Why downside is acceptable: Objective rotation, public counterpressure, team support limits, and phase progression add depth without bookkeeping.
 - Later verification: Balance tests must check action diversity, dominant spam, passive success, and decision clarity.
 - Artifact proof: `.spec-tree/core-match-systems/` tasks require `action-economy-and-legal-actions` depth-2 branch.
+
+## DEC-CMS-MFPS-001 — Match flow uses nine scheduled Majlis phases
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Use a 9-phase fixed match grouped into three acts: Opening Council, Rising Debate, and Final Petition. Victory is evaluated only during Final Majlis Reveal after phase 9.
+- Options compared:
+  - 6 phases: rejected because it is too compressed for comeback opportunities, objective variety, and 4-player adaptation.
+  - 9 phases: accepted because it supports a clear strategic arc, enough adaptation, and under-30-minute mobile pacing.
+  - 12 phases: rejected because it risks mobile fatigue and exceeding the match length target.
+- Why this serves the final game: It gives Banner of the Majlis a readable beginning/middle/end, keeps every player active in simultaneous planning, and preserves fixed-length drama without early match termination.
+- Potential downside: Nine phases can feel repetitive if objectives and pressure shifts are weak.
+- Why downside is acceptable: Future child and sibling nodes must define pressure shifts, objective variety, leader exposure, and balance validation.
+- Later verification: QA and balance simulator must validate match duration, perceived variety, comeback frequency, passive win rate, and final-phase uncertainty.
+- Artifact proof: Full depth-2 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/`.

@@ -50,4 +50,4 @@ Planning only. No Godot code, scenes, assets, networking, bots, or simulator imp
 
 ## Next Step
 
-Create full Spec Kit for `.spec-tree/core-match-systems/match-flow-and-phase-structure/` and continue all children to depth 4.
+Continue `.spec-tree/core-match-systems/match-flow-and-phase-structure/` through depth 4, starting with depth-3 child `phase-count-and-timing-envelope`.

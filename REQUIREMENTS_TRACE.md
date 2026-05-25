@@ -38,6 +38,12 @@ No final PASS is allowed while requirements are unlinked.
 | Compact action economy | MASTER 6.6-7, 4.1.7 | `.spec-tree/core-match-systems/`, future `action-economy-and-legal-actions` | DEC-CMS-003 | Future leaf tasks documented | Depth-1 checklist PASS | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
 | Under-30-minute match envelope | MASTER 6.8 | `.spec-tree/core-match-systems/`, future `match-flow-and-phase-structure` | DEC-CMS-001 | Future leaf tasks documented | Depth-1 checklist PASS | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
 
+| Fixed 9-phase match flow | MASTER 6.8, 6.19-20 | `.spec-tree/core-match-systems/match-flow-and-phase-structure/`, future `phase-count-and-timing-envelope` | DEC-CMS-MFPS-001 | Future leaf tasks documented | Depth-2 checklist PASS | Depth-2 QA PASS | Depth-2 review PASS | D2_LINKED |
+| No early victory final reveal | MASTER 6.19-20, 4.1.4 | `.spec-tree/core-match-systems/match-flow-and-phase-structure/`, future `final-reveal-and-mode-completion` | DEC-CMS-MFPS-001 | Future leaf tasks documented | Depth-2 checklist PASS | Depth-2 QA PASS | Depth-2 review PASS | D2_LINKED |
+| Simultaneous phase flow with commit lock | MASTER 6.4, 10 | `.spec-tree/core-match-systems/match-flow-and-phase-structure/`, future `phase-state-machine-and-handoffs` | DEC-CMS-001, DEC-CMS-MFPS-001 | Future leaf tasks documented | Depth-2 checklist PASS | Depth-2 QA PASS | Depth-2 review PASS | D2_LINKED |
+| Per-phase Claim update and pressure shift | MASTER 4.1.4, 6.16-17, 7 | `.spec-tree/core-match-systems/match-flow-and-phase-structure/`, future `phase-state-machine-and-handoffs` | DEC-CMS-MFPS-001, DEC-GCWC-003 | Future leaf tasks documented | Depth-2 checklist PASS | Depth-2 QA PASS | Depth-2 review PASS | D2_LINKED |
+| FFA and 2v2 match completion readability | MASTER 10, 4.1.4 | `.spec-tree/core-match-systems/match-flow-and-phase-structure/`, future `final-reveal-and-mode-completion` | DEC-CMS-MFPS-001 | Future leaf tasks documented | Depth-2 checklist PASS | Depth-2 QA PASS | Depth-2 review PASS | D2_LINKED |
+
 Root links are planning-level links. Future child nodes must replace remaining `Pending` items with exact artifacts before implementation claims.
 
 | Strategic comeback opportunities | MASTER 6.10, 6.22 | `.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/` | DEC-GCWC-001 | Future leaf tasks documented | Depth-2 checklist PASS | Planning QA represented | Planning review represented | D2_LINKED |

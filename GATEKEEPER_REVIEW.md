@@ -127,3 +127,19 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why the downside is acceptable: Depth-1 is correctly scoped to define the system frame and child boundaries, not formulas. The four proposed depth-2 children are necessary, non-duplicative, and explicitly tasked to resolve those details through depth 4 before any implementation is authorized.
 - Later verification method: Future gatekeeper/QA/reviewer checks must verify that `match-flow-and-phase-structure`, `simultaneous-planning-and-resolution`, `action-economy-and-legal-actions`, and `claim-objective-state-model` each complete full Spec Kit to depth 4, provide deterministic rule details, preserve DEC-GCWC-001/002/003, and avoid authorizing game code before leaf tasks.
 - Artifact proof: Required files exist under `.spec-tree/core-match-systems/` (`constitution.md`, `spec.md`, `clarification.md`, `plan.md`, `tasks.md`, `analysis.md`, `checklist.md`, `implementation-result.md`, `qa-result.md`, `review-result.md`, `integration-notes.md`, `NODE_SUMMARY.md`); `SPEC_TREE.md`, `SPEC_TREE_STATUS.md`, `REQUIREMENTS_TRACE.md`, `DECISIONS.md`, `SYSTEM_CONTRACTS.md`, `PROGRESS_DASHBOARD.md`, and `PROJECT_PROGRESS.json` reflect the completed depth-1 node and pending depth-2 children.
+
+## 2026-05-25 — Match Flow and Phase Structure Depth-2 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/`
+- Decision made: Accept the depth-2 node for planning scope and continue automatically to the first depth-3 child, `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`.
+- Options compared:
+  - BLOCKED_EXTERNAL_ONLY: rejected because no external blocker, credential, account, legal, or financial dependency is present.
+  - FIX_AUTONOMOUSLY: rejected because all required Spec Kit artifacts exist, checklist/QA/review are PASS, no game code was created, and identified risks are correctly deferred to depth-3/4 children and sibling nodes.
+  - CONTINUE: accepted because the node concretely justifies a 9-phase/no-early-end simultaneous flow, supports 4p FFA and 2v2 under the 30-minute target, and proposes meaningful depth-3 children.
+- Why it serves the final game goal: The accepted 9-phase three-act flow gives `Banner of the Majlis` a readable strategic arc, preserves simultaneous play without turn waiting, protects comeback and active-play windows, prevents early victory endings, and keeps the match suitable for portrait mobile sessions.
+- Potential downside: Exact transition payloads, final reveal tie handling, and duration validation remain unresolved at this depth.
+- Why the downside is acceptable: This depth-2 node is scoped to choose the match envelope and branch boundaries; the planned depth-3 children explicitly cover timing validation, state-machine handoffs, and final reveal/mode completion before implementation can begin.
+- Later verification method: Gatekeeper/QA/reviewer must verify the three depth-3 children and their depth-4 leaves define timing scenarios, transition contracts, lock boundaries, no-early-end completion, FFA/2v2 reveal readability, and integration with resolver/Claim systems.
+- Artifact proof: Required node artifacts exist (`constitution.md`, `spec.md`, `clarification.md`, `plan.md`, `tasks.md`, `analysis.md`, `checklist.md`, `implementation-result.md`, `qa-result.md`, `review-result.md`, `integration-notes.md`, `NODE_SUMMARY.md`); `DECISIONS.md` includes DEC-CMS-MFPS-001; `SPEC_TREE.md`, `SPEC_TREE_STATUS.md`, `REQUIREMENTS_TRACE.md`, and `SYSTEM_CONTRACTS.md` link the node and pending children.

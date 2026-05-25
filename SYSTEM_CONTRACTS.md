@@ -27,6 +27,13 @@ Any branch that changes a system contract must update this file and request `int
 | Action Economy | Player state, Council Focus, Influence/position constraints | Legal action set, spend/constraint results | Future core rules state | Claim presentation, bot personality | Depth-1 linked; refine in `core-match-systems/action-economy-and-legal-actions` |
 | Claim Objective State | Objective state, resolved actions, phase pressure | Claim ledger updates, public state events, final reveal data | Future core objective/Claim state | Art/audio, localization, build/export | Depth-1 linked; refine in `core-match-systems/claim-objective-state-model` |
 
+## Match Flow and Phase Structure Contract
+
+| System | Inputs | Outputs | State Owner | Must Not Control | Status |
+|---|---|---|---|---|---|
+| 9-Phase Match Flow | Match config, mode, phase index, ready/commit status, resolver completion events | Phase state transitions, timer boundaries, final reveal trigger, Claim update handoff, pressure shift handoff | Future core match state | Conflict formulas, action costs, Claim math, rendering, network transport | Depth-2 linked; refine in `core-match-systems/match-flow-and-phase-structure/phase-state-machine-and-handoffs` |
+| Final Majlis Reveal | Phase-9 resolved Claim state, mode context, explanation events | Winner/standing reveal, no-early-end completion event, localizable final explanation needs | Future core match completion state | UI art direction, localization implementation, tiebreak formulas not yet specified | Depth-2 linked; refine in `core-match-systems/match-flow-and-phase-structure/final-reveal-and-mode-completion` |
+
 ## Root Cross-Branch Interfaces
 
 Detailed notes live in `.spec-tree/root/integration-notes.md`. No final contract is stable until the relevant depth-1 branch completes full Spec Kit.
