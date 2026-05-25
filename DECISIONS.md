@@ -219,3 +219,20 @@ Only significant decisions are recorded here.
 - Why downside is acceptable: A pause to repair weak depth-4 output is cheaper than building on shallow specifications or producing a text-square game.
 - Later verification: Gatekeeper, spec-critic, reviewer, and director checks must require each depth-4 leaf to include concrete game-serving content such as data contracts, UI/game-object outputs, simulator metrics, Godot-facing acceptance criteria, asset/audio/motion requirements, gameplay decisions, or validation rules.
 - Artifact proof: User correction request, updated `PROJECT_DIRECTION_REVIEW.md`, updated `SPEC_TREE_RULES.md`, and this decision entry.
+
+## DEC-CMS-RDP-001 — Rising Debate uses compressed pressure cadence
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Use phases 4-6 as a compressed Rising Debate pressure cadence with 65/60/60 second planning targets, 4-5s lock grace, 40-50s reveal/update, visible leader-threat and strategy-shift cues, and mode-specific FFA/2v2 awareness outputs.
+- Options compared:
+  - Opening-like 70-75s timers: rejected because mid-match would lack urgency and drag.
+  - 40-50s short timers: rejected because they risk reaction-speed play and poor Arabic/English readability.
+  - Dynamic timers by Claim gap: rejected because they complicate fairness, synchronization, bots, and tests.
+  - Fixed compressed mid-act cadence with richer reveal/update: accepted because it increases pressure while preserving strategic decision quality.
+- Why this serves the final game: It makes the middle act a real strategic crossroads, exposes FFA leader/challenger threat, supports 2v2 teammate awareness, and prepares players for the final act without early victory.
+- Potential downside: Richer reveal/update and pressure cues can clutter portrait UI or exceed duration budgets.
+- Why downside is acceptable: The node caps timing, requires icon-first game-object cues, and defines future duration/readability metrics.
+- Later verification: Future timing config tests, FFA/2v2 QA walkthroughs, simulator metrics for leader conversion/strategy-shift effectiveness/dogpile risk, and RTL/LTR portrait layout checks.
+- Artifact proof: Complete depth-4 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/`.

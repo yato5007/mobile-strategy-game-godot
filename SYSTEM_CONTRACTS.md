@@ -46,6 +46,12 @@ Any branch that changes a system contract must update this file and request `int
 |---|---|---|---|---|---|
 | Opening Council Pacing | Match mode (FFA/2v2), phase index 1-3, first-match/replay context, ready/commit status, localized objective/Claim context | Phase brief content requirements, planning target/range, lock grace, reveal/update budget, no-early-victory reminder, opening anti-runaway constraints | Future core match configuration/state machine | Exact Claim formula, action legality, UI layout, animation assets, networking/default-plan policy | Depth-4 linked; future implementation must consume `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing/` |
 
+## Rising Debate Pacing Contract
+
+| System | Inputs | Outputs | State Owner | Must Not Control | Status |
+|---|---|---|---|---|---|
+| Rising Debate Pacing | Match mode (FFA/2v2), phase index 4-6, ready/commit status, public Claim totals/deltas, action-family history, teammate contribution/alignment signals | Phase 4-6 timing targets/ranges, lock grace, reveal/update budget, leader-threat cue requirements, strategy-shift cue requirements, FFA leader/challenger context, 2v2 teammate-awareness context, no-pre-final-victory constraint | Future core match configuration/state machine | Exact Claim formula, action legality, conflict resolution, bot personality, UI layout, animation/SFX assets, network timeout policy | Depth-4 linked; future implementation must consume `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/` |
+
 ## Root Cross-Branch Interfaces
 
 Detailed notes live in `.spec-tree/root/integration-notes.md`. No final contract is stable until the relevant depth-1 branch completes full Spec Kit.

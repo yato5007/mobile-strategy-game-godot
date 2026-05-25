@@ -207,3 +207,18 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why the downside is acceptable: Immediate repair of weak depth-4 leaves is required to protect real game quality and is cheaper than implementing from shallow specs.
 - Later verification method: Future gatekeeper/spec-critic/reviewer checks must reject depth-4 leaves lacking concrete game-serving content such as contracts, UI/game-object outputs, simulator metrics, Godot-facing criteria, asset/audio/motion requirements, gameplay decisions, or validation rules.
 - Artifact proof: `DEC-PDR-002` added; `SPEC_TREE_RULES.md` contains the Strict Depth-4 Quality Rule; `PROJECT_DIRECTION_REVIEW.md` rejects template-like final acceptance; `SPEC_TREE_STATUS.md` records quality enforcement notes. No checkpoint or push performed.
+## 2026-05-25 — Rising Debate Pacing Depth-4 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/`
+- Decision made: Accept the Rising Debate Pacing depth-4 leaf as a concrete, non-template-like Spec Kit node and continue to the next pending timing leaf `final-petition-pacing`.
+- Options compared:
+  - BLOCKED_NEEDS_SHARPENING: rejected because this leaf is not template-like. It contains a timing table with explicit values, six named UI/game-object outputs (Leader Threat Ring, Pressure Lanterns, Strategy Shift Tile, Comeback Lane Marker, FFA Threat Fan, Teammate Intent Braid), FFA and 2v2 mode differences, localization/portrait constraints, acceptance criteria, and AUTONOMOUS_DECISION with options comparison. This satisfies the Strict Depth-4 Quality Rule from SPEC_TREE_RULES.md.
+  - ASK_USER_FOR_PACING_PREFERENCE: rejected by Full Autonomy Rule.
+  - CONTINUE: accepted.
+- Why it serves the final game: Phases 4-6 give Banner of the Majlis its strategic crossroads. The compressed cadence, leader-threat cues, strategy-shift prompts, FFA leader/challenger visibility, and 2v2 teammate-awareness outputs together prevent the middle act from being a flat timing bridge between opening and finale.
+- Potential downside: Six game-object outputs plus per-phase reveal/update beats may overload portrait HUD or exceed per-phase timing budgets.
+- Why acceptable: The node caps timers, requires icon-first control widgets, and defines future validation metrics. Presentation/UX localisation branches must simplify or throttle cues that exceed 360px portrait fit.
+- Later verification: Future timing config tests, FFA/2v2 QA walkthroughs, strategy-shift simulator metrics, leader volatility metrics, localization portrait fit tests, and presentation/UX branch review.
+- Artifact proof: 12 required depth-4 Spec Kit files under `rising-debate-pacing/`; concrete timing table at spec.md line 17; AUTONOMOUS_DECISION with options comparison; acceptance criteria at spec.md line 82; integration notes connecting to state machine, Claim state, action economy, multiplayer/bots, balance, presentation, and localization systems.

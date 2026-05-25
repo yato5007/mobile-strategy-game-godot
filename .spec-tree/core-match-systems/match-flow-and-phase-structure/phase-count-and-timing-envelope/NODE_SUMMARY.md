@@ -12,6 +12,7 @@ Parent: `.spec-tree/core-match-systems/match-flow-and-phase-structure/`
 
 - DEC-CMS-PCTE-001: Use a variable capped 9-phase timing envelope targeting 18-23 minutes and hard-capped under 30 minutes.
 - DEC-CMS-OCP-001: Opening Council phases 1-3 use a guided strategic ramp with 90/75/70 second planning targets, short lock grace, localized icon-first briefs, and capped early Claim swings.
+- DEC-CMS-RDP-001: Rising Debate phases 4-6 use a compressed pressure cadence with 65/60/60 second planning targets, 4-5s lock grace, 40-50s reveal/update, leader-threat, strategy-shift, FFA threat, and 2v2 teammate-awareness cues.
 - Keep final outcome evaluation only after phase 9 Final Majlis Reveal.
 - Use one shared phase count for FFA and 2v2, with mode-specific brief/update attention.
 - Allow only short capped mobile interruption recovery; no indefinite pauses.
@@ -29,7 +30,7 @@ Parent: `.spec-tree/core-match-systems/match-flow-and-phase-structure/`
 - DEC-CMS-001/002/003 and DEC-GCWC-001/003.
 - Future siblings: phase state machine, final reveal, simultaneous resolution, action economy, Claim state.
 - Future branches: multiplayer/bots, balance validation, mobile UX/localization, presentation.
-- Completed leaf dependency: `opening-council-pacing` now constrains future phase state machine, Claim formulas, and opening UX brief implementation.
+- Completed leaf dependencies: `opening-council-pacing` constrains future phase state machine, Claim formulas, and opening UX brief implementation; `rising-debate-pacing` constrains mid-match threat/strategy-shift events, FFA leader/challenger display, and 2v2 teammate-awareness cues.
 
 ## Integration Risks
 
@@ -47,8 +48,9 @@ Planning only. No Godot project, scripts, scenes, assets, simulator code, or run
 - QA: PASS for depth-3 planning scope.
 - Review: PASS for depth-3 planning scope.
 - Completed leaf validation: `opening-council-pacing` checklist/QA/review PASS for planning scope.
+- Completed leaf validation: `rising-debate-pacing` checklist/QA/review PASS for planning scope.
 - Future validation: duration tables, simulator distribution, FFA/2v2 human QA, reconnect stress scenarios.
 
 ## Next Step
 
-Execute next depth-4 leaf under this node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/`.
+Execute next depth-4 leaf under this node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing/`.
