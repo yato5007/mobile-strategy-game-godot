@@ -5,8 +5,8 @@ Progress is an indicator, not proof of quality.
 | Area | Weight | Status | Notes |
 |---|---:|---|---|
 | Main Spec Kit | 10% | 4% | Root and first depth-1 branch artifacts complete |
-| Recursive Spec Tree | 15% | 8% | concept-presentation-and-theme depth-2 through depth-4 subtree complete; anti-dominant branch remains |
-| Game Design Decisions | 10% | 3% | Claim win condition and Arabic-first Majlis presentation identity selected |
+| Recursive Spec Tree | 15% | 9% | All game-concept depth-2 branches are complete through depth 4; remaining depth-1 branches pending |
+| Game Design Decisions | 10% | 4% | Claim win condition, comeback tension, Majlis presentation, and anti-dominance active-play direction selected |
 | Core Game Logic | 15% | 0% | Not started during bootstrap |
 | Bots and AI Opponents | 10% | 0% | Pending |
 | Multiplayer Mock / Online Ready | 10% | 0% | Pending |
@@ -23,4 +23,4 @@ Progress is an indicator, not proof of quality.
 
 ## Overall
 
-Root Spec Kit, game-concept planning work, strategic tension subtree, and concept-presentation-and-theme subtree are complete for planning scope. The game is not implemented yet by design.
+Root Spec Kit and all current game-concept depth-2 through depth-4 subtrees are complete for planning scope, including anti-dominant active-play. The game is not implemented yet by design.

@@ -69,3 +69,20 @@ Only significant decisions are recorded here.
 - Later verification: Future Godot scenes, screenshots, ASSET_MANIFEST.md, RTL/LTR checks, and QA/reviewer results must prove the game does not look like an admin panel.
 - Artifact proof: Complete 104-file depth-2 through depth-4 Spec Kit subtree for `concept-presentation-and-theme`.
 
+
+
+## DEC-GCWC-003 — Anti-dominance uses visible active-play pressure
+
+- Date: 2026-05-25
+- Node: `.spec-tree/game-concept-and-win-condition/anti-dominant-strategy-and-active-play/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Prevent dominant and passive strategies through visible objective variety, public adaptive counterpressure, capped active-play incentives, idle warnings, and counterplay readability tied to DEC-GCWC-001 Claim.
+- Options compared:
+  - Hidden penalties: rejected because players would not trust Claim outcomes.
+  - Pure static balance tuning: rejected because solved openings can still emerge.
+  - Visible adaptive board pressure: accepted because it preserves agency, teaches counterplay, and supports future simulator proof.
+- Why this serves the final game: It keeps Banner of the Majlis strategically replayable, active, readable, and fair in both FFA and 2v2.
+- Potential downside: Extra indicators can clutter portrait screens or feel punitive.
+- Why downside is acceptable: The subtree requires icon-first Control widgets, tap-to-expand Label cards, capped Resources, and RTL/LTR QA checks.
+- Later verification: Future balance simulator metrics must check passive win rate, strategy repetition success, strategy shift frequency, FFA dogpile risk, and 2v2 support fairness.
+- Artifact proof: Complete 104-file depth-2 through depth-4 Spec Kit subtree for `anti-dominant-strategy-and-active-play`.

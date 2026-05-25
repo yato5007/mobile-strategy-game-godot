@@ -40,7 +40,19 @@ root: mobile-strategy-game-godot (depth 0)
 │   │       ├── claim-cost-escalation (depth 4, DONE)
 │   │       ├── leader-vulnerability-windows (depth 4, DONE)
 │   │       └── comeback-threshold-adaptation (depth 4, DONE)
-│   ├── anti-dominant-strategy-and-active-play (depth 2, TODO)
+│   ├── anti-dominant-strategy-and-active-play (depth 2, DONE)
+│   │   ├── strategy-diversity-enforcement (depth 3, DONE)
+│   │   │   ├── objective-variety-rotation (depth 4, DONE)
+│   │   │   ├── adaptive-opponent-response (depth 4, DONE)
+│   │   │   └── strategy-punishment-detection (depth 4, DONE)
+│   │   ├── active-play-incentives (depth 3, DONE)
+│   │   │   ├── claim-momentum-bonus (depth 4, DONE)
+│   │   │   ├── idle-penalty-mechanism (depth 4, DONE)
+│   │   │   └── engagement-surge-events (depth 4, DONE)
+│   │   └── strategy-counterplay-visibility (depth 3, DONE)
+│   │       ├── opponent-claim-pattern-display (depth 4, DONE)
+│   │       ├── counter-strategy-indicator (depth 4, DONE)
+│   │       └── strategy-shift-incentives (depth 4, DONE)
 │   └── concept-presentation-and-theme (depth 2, DONE)
 │       ├── visual-identity-definition (depth 3, DONE)
 │       │   ├── arabic-cultural-mandalas (depth 4, DONE)
@@ -64,11 +76,11 @@ root: mobile-strategy-game-godot (depth 0)
 
 ## Next Required Step
 
-Continue the remaining TODO depth-2 branch under `game-concept-and-win-condition`:
+All current depth-2 branches under `game-concept-and-win-condition` are complete through depth 4.
 
-1. `.spec-tree/game-concept-and-win-condition/anti-dominant-strategy-and-active-play/`
-2. Expand it to meaningful depth-3 and depth-4 leaves.
-3. Then continue remaining depth-1 branches until all branches reach required depth 4.
+1. Continue the next TODO depth-1 branch: `.spec-tree/core-match-systems/`.
+2. Expand it to meaningful depth-2, depth-3, and depth-4 nodes.
+3. Continue remaining depth-1 branches until all branches reach required depth 4.
 4. Do not implement game code until leaf-node tasks explicitly authorize implementation.
 
 ## Root Artifacts
@@ -83,3 +95,5 @@ Depth-3 `team-and-ffa-win-readability` artifacts live in `.spec-tree/game-concep
 
 Depth-2 `strategic-tension-and-comeback` artifacts live in `.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/` with three depth-3 children and nine depth-4 leaves.
 Depth-2 `concept-presentation-and-theme` artifacts live in `.spec-tree/game-concept-and-win-condition/concept-presentation-and-theme/` with three depth-3 children and nine depth-4 leaves.
+
+Depth-2 `anti-dominant-strategy-and-active-play` artifacts live in `.spec-tree/game-concept-and-win-condition/anti-dominant-strategy-and-active-play/` with three depth-3 children and nine depth-4 leaves.

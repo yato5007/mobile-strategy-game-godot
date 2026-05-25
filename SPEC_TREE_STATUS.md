@@ -30,7 +30,19 @@
 | game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/claim-cost-escalation | 4 | DONE | Progressive claim effort planned |
 | game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/leader-vulnerability-windows | 4 | DONE | Leader exposure windows planned |
 | game-concept-and-win-condition/strategic-tension-and-comeback/anti-snowball-and-balance/comeback-threshold-adaptation | 4 | DONE | Max-one-Claim adaptation planned |
-| game-concept-and-win-condition/anti-dominant-strategy-and-active-play | 2 | TODO | Must prevent one perfect plan and passive hiding |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play | 2 | DONE | Full depth-2 through depth-4 subtree complete with 104 planning files |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement | 3 | DONE | Strategy variety, objective rotation, adaptive response, and repetition detection planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement/objective-variety-rotation | 4 | DONE | Objective family rotation planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement/adaptive-opponent-response | 4 | DONE | Public adaptive response planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-diversity-enforcement/strategy-punishment-detection | 4 | DONE | Repetition pressure detection planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives | 3 | DONE | Momentum, idle, and surge incentives planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives/claim-momentum-bonus | 4 | DONE | Capped active Claim momentum planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives/idle-penalty-mechanism | 4 | DONE | Passive hiding warning and standing decay planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/active-play-incentives/engagement-surge-events | 4 | DONE | Public surge events planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-counterplay-visibility | 3 | DONE | Pattern display, counter hints, and shift incentives planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-counterplay-visibility/opponent-claim-pattern-display | 4 | DONE | Opponent Claim pattern display planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-counterplay-visibility/counter-strategy-indicator | 4 | DONE | Counter hint indicator planned |
+| game-concept-and-win-condition/anti-dominant-strategy-and-active-play/strategy-counterplay-visibility/strategy-shift-incentives | 4 | DONE | Mid-match strategy shift rewards planned |
 | game-concept-and-win-condition/concept-presentation-and-theme | 2 | DONE | Full depth-2 through depth-4 presentation/theme subtree complete with 104 planning files |
 | game-concept-and-win-condition/concept-presentation-and-theme/visual-identity-definition | 3 | DONE | Core visual language, motifs, palette, typography, and icons planned |
 | game-concept-and-win-condition/concept-presentation-and-theme/visual-identity-definition/arabic-cultural-mandalas | 4 | DONE | Geometric Arabic pattern use planned |
@@ -50,7 +62,7 @@
 | presentation-art-audio-motion | 1 | TODO | Must reach depth 4 |
 | mobile-ux-localization-accessibility | 1 | TODO | Must reach depth 4 |
 | godot-architecture-and-delivery | 1 | TODO | Must reach depth 4 |
-| Depth-2 nodes | 2 | IN_PROGRESS | anti-dominant-strategy-and-active-play remains pending under game-concept-and-win-condition |
+| Depth-2 nodes under game-concept-and-win-condition | 2 | DONE | All four depth-2 branches complete through depth 4 |
 | Depth-3 nodes under win-condition-clarity | 3 | DONE | claim-progress-display, win-loss-explanation, and team-and-ffa-win-readability complete |
 | Depth-4 nodes under win-condition-clarity | 4 | DONE | Eight depth-4 leaves complete under the depth-2 node |
 

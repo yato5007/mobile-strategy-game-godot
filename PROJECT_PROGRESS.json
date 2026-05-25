@@ -1,16 +1,16 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "depth4-concept-presentation-theme-complete",
+  "phase": "game-concept-depth2-subtrees-complete",
   "gameImplementationStarted": false,
   "fullAutonomyRule": true,
   "decisionMode": "AUTONOMOUS_DECISION_BY_DEFAULT",
   "requiredDepth": 4,
   "maxDepth": 4,
-  "overallPercent": 20,
+  "overallPercent": 22,
   "areas": {
     "mainSpecKit": 10,
-    "recursiveSpecTree": 30,
+    "recursiveSpecTree": 35,
     "gameDesignDecisions": 12,
     "coreGameLogic": 0,
     "botsAndAiOpponents": 0,
@@ -20,6 +20,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 2
   },
-  "nextStep": "Complete remaining depth-2 branch anti-dominant-strategy-and-active-play, then continue remaining depth-1 branches.",
+  "nextStep": "Start the next depth-1 branch core-match-systems and expand it to required depth 4.",
   "blocked": []
 }
