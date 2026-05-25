@@ -38,7 +38,26 @@ Before doing any work, read:
 - Use tools proactively when they improve the game, but only with artifact proof.
 - Any major decision must compare options by benefit, downside, fit, and recommendation.
 - Do not accept claims without artifacts.
+- Full Autonomy Rule: do not ask the user for design, technical, gameplay, art, balance, branch-splitting, continue/fix, weak-node, or design-conflict decisions. `speckit-director` and `report-gatekeeper` decide autonomously using project truth files, priority rules, user taste proxy, options comparison, final game quality, artifact proof, and fun validation.
 - Do not start from scratch after interruption unless the user literally says: `ابدأ من الصفر`.
+
+## Autonomous Decision Workflow
+
+Use `AUTONOMOUS_DECISION` instead of `USER_DECISION_REQUIRED` in most cases.
+
+An `AUTONOMOUS_DECISION` must include:
+
+1. Decision made.
+2. Options compared.
+3. Why it serves the final game goal.
+4. Potential downside.
+5. Why the downside is acceptable.
+6. How it will be verified later.
+7. Artifact proving the decision.
+
+For high-impact decisions, also require options comparison, `spec-critic` review, `integration-architect` review when systems are affected, checkpoint before execution, and checkpoint after execution.
+
+Only stop for the user when there is a true external blocker that cannot be solved inside the project, such as credentials, external accounts, legal/financial approvals, or an explicit user stop/change request.
 
 ## Before Large Tasks
 

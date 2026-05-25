@@ -48,3 +48,19 @@ Before enabling a new optional tool, record:
 7. Stop condition.
 
 Tools serve the game. The game does not serve the tools.
+
+## Full Autonomy Tool Decisions
+
+Do not ask the user routine tool decisions such as whether to use Blender, Context7, Repomix, BMAD, Task Master, Kiro, or another justified tool. Use `AUTONOMOUS_DECISION` when the tool decision affects design, implementation, art, balance, workflow, or delivery.
+
+Document:
+
+1. Tool decision made.
+2. Options compared.
+3. Priority served.
+4. Why it serves the final game goal.
+5. Potential downside and why acceptable.
+6. Verification method.
+7. Artifact produced.
+
+Stop for the user only for external blockers such as accounts, credentials, legal/financial approval, or explicit user stop/change request.

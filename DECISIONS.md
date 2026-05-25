@@ -37,3 +37,19 @@ Only significant decisions are recorded here.
   - Mandatory area control: rejected because area control is allowed but not required by the master plan.
   - Hidden victory conditions: rejected because players may not understand why they won or lost.
 - Impact: Child nodes must make Claim display, final win/loss explanation, comeback windows, anti-passive play, and visual presentation concrete before implementation.
+
+## DEC-AUTO-001 — Full Autonomy Rule adopted
+
+- Date: 2026-05-25
+- Node: governance/global
+- Type: AUTONOMOUS_DECISION
+- Decision: Adopt Full Autonomy Rule and replace `USER_DECISION_REQUIRED` in most cases with `AUTONOMOUS_DECISION`. `speckit-director` and `report-gatekeeper` make design, technical, gameplay, art, balance, branch, continue/fix, weak-node, and design-conflict decisions without asking the user.
+- Options compared:
+  - Keep asking the user for ongoing decisions: rejected because the user wants monitoring only.
+  - Make fully autonomous decisions without safeguards: rejected because high-impact decisions need quality gates.
+  - Use autonomous decisions with options comparison, review, artifacts, and checkpoints: accepted.
+- Why this serves the final game: It keeps the mandatory depth-4 Spec Kit workflow moving while preserving quality and traceability.
+- Potential downside: The system may choose a direction the user would not have chosen manually.
+- Why downside is acceptable: The User Taste Proxy Rule, Options Comparison Rule, Final Game Quality Rule, Artifact Proof Rule, Fun Validation Rule, reviews, and checkpoints constrain and document decisions.
+- Later verification: Review `DECISIONS.md`, `GATEKEEPER_REVIEW.md`, Spec Kit artifacts, QA/reviewer/integration results, and git checkpoints.
+- Artifact proof: Governance files and OpenCode agents updated; checkpoint `add full autonomy rule and autonomous decision workflow`.

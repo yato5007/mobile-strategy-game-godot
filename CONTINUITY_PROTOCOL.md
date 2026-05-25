@@ -27,6 +27,12 @@ Do not restart from scratch after interruption unless the user literally says: `
 
 Continue from the first item marked TODO, IN_PROGRESS, or BLOCKED. Do not discard previous work without a documented decision and checkpoint.
 
+## Full Autonomy Resume Rule
+
+After resuming, do not ask the user which design, technical, gameplay, art, balance, branch, continue/fix, weak-node, or design-conflict choice to make. Use `AUTONOMOUS_DECISION`, document it, and continue from the first actionable TODO/IN_PROGRESS/BLOCKED item.
+
+Only stop for user input when there is a true external blocker that cannot be solved inside the project, such as credentials, external accounts, legal/financial approval, or an explicit user stop/change request.
+
 ## Checkpoints
 
 Use `./scripts/checkpoint.sh "short description"` after important progress, including bootstrap completion, Spec Kit milestones, node completion, QA/review/integration, and progress updates.

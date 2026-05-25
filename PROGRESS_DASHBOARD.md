@@ -15,6 +15,12 @@ Progress is an indicator, not proof of quality.
 | Tests / Balance Simulator / QA | 10% | 0% | Pending |
 | Integration / Documentation / Handoff | 5% | 2% | Bootstrap and root docs scaffolded |
 
+## Governance
+
+- Full Autonomy Rule: active.
+- Default decision mode: `AUTONOMOUS_DECISION` instead of `USER_DECISION_REQUIRED`.
+- User intervention is only required for true external blockers.
+
 ## Overall
 
 Root Spec Kit, first P1 depth-1 branch, first depth-2 child, first depth-3 child, and first depth-4 leaf are complete for planning scope. The game is not implemented yet by design.
