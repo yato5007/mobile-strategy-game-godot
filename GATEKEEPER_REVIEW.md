@@ -191,3 +191,19 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why the downside is acceptable: Bots and multiplayer need stable rule/state contracts, and P2 game feel is required for final game quality rather than optional polish.
 - Later verification method: Future reviews must verify completion of the listed P1 contract trigger, then ensure `presentation-art-audio-motion`, `ASSET_MANIFEST.md`, `ASSET_PIPELINE.md`, and later Godot scene artifacts prove Claim/feedback as game objects.
 - Artifact proof: `PROJECT_DIRECTION_REVIEW.md` lines 250-303 contain the corrected autonomous decision and artifact proof; `DECISIONS.md` contains `DEC-PDR-001`; `SPEC_TREE_STATUS.md` identifies `rising-debate-pacing` as the next TODO; no implementation or checkpoint was created for this review.
+
+## 2026-05-25 — Strict Depth-4 Correction Gatekeeper Check
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed artifacts: `PROJECT_DIRECTION_REVIEW.md`, `DECISIONS.md`, `SPEC_TREE_RULES.md`, `SPEC_TREE_STATUS.md`
+- Decision made: Accept the strict depth-4 correction. It preserves `ADJUST_DIRECTION` as a sequencing adjustment while explicitly enforcing `REQUIRED_DEPTH=4`, `MAX_DEPTH=4`, full Spec Kit per node, and immediate sharpening of any weak, generic, repetitive-without-game-value, or template-like depth-4 leaf when discovered.
+- Options compared:
+  - BLOCKED_EXTERNAL_ONLY: rejected because no external blocker exists.
+  - FIX_AUTONOMOUSLY: rejected because the correction now aligns the reviewed files with the master plan and does not weaken depth 4.
+  - CONTINUE: accepted because the correction strengthens depth-4 quality gates without rebooting the concept or starting implementation.
+- Why it serves the final game goal: It keeps `Banner of the Majlis` and the P2 sequencing adjustment intact while preventing placeholder depth and documentation-only progress.
+- Potential downside: Future node work may pause more often for targeted repairs.
+- Why the downside is acceptable: Immediate repair of weak depth-4 leaves is required to protect real game quality and is cheaper than implementing from shallow specs.
+- Later verification method: Future gatekeeper/spec-critic/reviewer checks must reject depth-4 leaves lacking concrete game-serving content such as contracts, UI/game-object outputs, simulator metrics, Godot-facing criteria, asset/audio/motion requirements, gameplay decisions, or validation rules.
+- Artifact proof: `DEC-PDR-002` added; `SPEC_TREE_RULES.md` contains the Strict Depth-4 Quality Rule; `PROJECT_DIRECTION_REVIEW.md` rejects template-like final acceptance; `SPEC_TREE_STATUS.md` records quality enforcement notes. No checkpoint or push performed.

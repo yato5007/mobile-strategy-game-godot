@@ -193,13 +193,29 @@ Only significant decisions are recorded here.
 - Decision: Continue with `Banner of the Majlis`, Godot 4.x, portrait-only Android/iOS, REQUIRED_DEPTH=4/MAX_DEPTH=4, and no premature implementation; adjust sequencing so P2 game-feel proof is brought forward after minimum P1 core-match contracts are complete through depth 4.
 - Options compared:
   - CONTINUE_AS_PLANNED with no adjustment: rejected because it could let abstract rules continue while visual/game-feel proof remains weak.
-  - REWORK_WEAK_NODES now: rejected because broad rework would duplicate completed planning; weak leaves should be sharpened only before implementation consumes them.
+  - REWORK_WEAK_NODES globally now: rejected because broad rework would duplicate completed planning without targeted evidence; however, any specific weak/template-like depth-4 leaf discovered by director, spec-critic, gatekeeper, reviewer, or integration review must be sharpened immediately, not deferred to implementation.
   - PRIORITIZE_GAME_FEEL immediately: rejected as immediate next step because art/motion would be detached from incomplete state/action/Claim contracts, but accepted as the next major emphasis after the trigger.
   - PRIORITIZE_GODOT_PROTOTYPE_PREPARATION now: rejected because it risks premature implementation before sufficient leaf-node contracts exist.
   - ADJUST_DIRECTION: accepted because it preserves the current strong concept while reducing the risk of a documentation-heavy, artifact-poor project.
-- Concrete trigger: after `phase-count-and-timing-envelope`, `phase-state-machine-and-handoffs`, `simultaneous-planning-and-resolution`, `action-economy-and-legal-actions`, and `claim-objective-state-model` complete through depth 4, prioritize `presentation-art-audio-motion` before extended P3 work.
+- Concrete trigger: after `phase-count-and-timing-envelope`, `phase-state-machine-and-handoffs`, `simultaneous-planning-and-resolution`, `action-economy-and-legal-actions`, and `claim-objective-state-model` complete through depth 4 with no weak/template-like depth-4 leaves accepted, prioritize `presentation-art-audio-motion` before extended P3 work.
 - Why this serves the final game: It keeps P1 core rules coherent while enforcing P2 game feel as a near-term requirement, preventing the game from becoming a text-square dashboard.
 - Potential downside: Some P3 bots/multiplayer/balance work may start later than a strict root branch order.
 - Why downside is acceptable: Bots and multiplayer need stable rule contracts, and the master plan treats game feel as essential rather than decorative.
 - Later verification: `presentation-art-audio-motion`, `ASSET_MANIFEST.md`, `ASSET_PIPELINE.md`, future Godot scenes, and QA/reviewer checks must prove Claim and feedback appear as game objects with visual/audio/motion clarity.
 - Artifact proof: `PROJECT_DIRECTION_REVIEW.md`, gatekeeper/spec-critic/integration reviews, and this decision entry.
+
+## DEC-PDR-002 — Strict depth-4 quality correction adopted
+
+- Date: 2026-05-25
+- Node: project-direction-review/global
+- Type: USER_APPROVED_CORRECTION / AUTONOMOUS_ENFORCEMENT
+- Decision: Keep `ADJUST_DIRECTION`, but explicitly reject any interpretation that weakens REQUIRED_DEPTH=4. Any depth-4 node found to be formal, generic, repetitive without game value, or template-like must be sharpened immediately when discovered and cannot receive final acceptance as-is.
+- Options compared:
+  - Accept template-like depth-4 leaves until implementation: rejected because it undermines the user’s mandatory depth-4 rule and risks placeholder planning.
+  - Rebuild all completed depth-4 nodes immediately: rejected because it may waste effort without evidence that every leaf is weak.
+  - Enforce immediate targeted sharpening on discovery: accepted because it preserves forward motion while keeping depth 4 strict and meaningful.
+- Why this serves the final game: It ensures the recursive Spec Kit tree produces concrete game value, not formal depth filling, and protects the project from becoming documentation-only.
+- Potential downside: Future node work may pause when weak leaves are detected.
+- Why downside is acceptable: A pause to repair weak depth-4 output is cheaper than building on shallow specifications or producing a text-square game.
+- Later verification: Gatekeeper, spec-critic, reviewer, and director checks must require each depth-4 leaf to include concrete game-serving content such as data contracts, UI/game-object outputs, simulator metrics, Godot-facing acceptance criteria, asset/audio/motion requirements, gameplay decisions, or validation rules.
+- Artifact proof: User correction request, updated `PROJECT_DIRECTION_REVIEW.md`, updated `SPEC_TREE_RULES.md`, and this decision entry.

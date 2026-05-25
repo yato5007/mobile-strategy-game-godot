@@ -179,7 +179,7 @@ No major tool bloat yet. MCP/Context7/Repomix are planned but not overused. BMAD
 
 ### Is depth 4 real or formal?
 
-Mixed but acceptable. Many depth-4 leaves are real enough to guide later work. Some are more template-like and need sharpening before implementation.
+Mixed quality was detected, and this is **not acceptable as a final state** for any depth-4 node. Many depth-4 leaves are real enough to guide later work, but any leaf found to be shape-only, overly general, or template-like must be sharpened immediately when discovered. The project must never treat `acceptable but template-like` as a final PASS condition.
 
 ### Do depth-4 nodes produce decisions, tasks, and acceptance criteria?
 
@@ -202,11 +202,13 @@ Yes. The following areas show repeated risk/decision language across leaves:
 - `anti-dominant-strategy-and-active-play/**`
 - `concept-presentation-and-theme/**`
 
-This is not severe enough to rework immediately, but before implementation these leaves should be cross-checked against concrete data contracts, UI elements, and simulator metrics.
+This repetition is a quality warning. It does not require restarting the project, but it does require immediate repair for any specific depth-4 leaf that a critic, reviewer, gatekeeper, or director identifies as weak. Weak depth-4 leaves must not be deferred indefinitely and must not be used as final implementation input.
 
-### Targeted weak-leaf handling rule
+### Strict depth-4 quality correction
 
-Before any implementation task consumes a weak or template-like depth-4 leaf, that leaf must be sharpened in place with at least one concrete artifact category:
+REQUIRED_DEPTH=4, MAX_DEPTH=4, and Full Spec Kit per node remain strict and unchanged. No branch may stop before depth 4. No depth-4 node is complete if it is formal, generic, repetitive without game value, or template-like.
+
+When a weak depth-4 node is discovered, it must be sharpened now or at the point of discovery, not postponed to implementation. The sharpened node must include at least one important concrete artifact category:
 
 - data contract or event schema,
 - UI/game-object output definition,
@@ -214,8 +216,10 @@ Before any implementation task consumes a weak or template-like depth-4 leaf, th
 - Godot-facing acceptance criterion,
 - localization/RTL layout rule,
 - asset/audio/motion requirement linked to `ASSET_MANIFEST.md` or `ASSET_PIPELINE.md`.
+- concrete gameplay decision,
+- concrete validation rule.
 
-This is not a command to rework all completed nodes now. It is a quality gate before weak leaves become implementation input.
+If no strong depth-4 split or concrete artifact can be found, the director must call `spec-critic` to propose meaningful branches or repairs instead of creating placeholders. Final acceptance requires usefulness to the actual game, not merely satisfying the depth count.
 
 ## 11. Risks
 
@@ -228,7 +232,7 @@ This is not a command to rework all completed nodes now. It is a quality gate be
 | Balance/comeback feels unfair | Medium-high | Capped comeback, leader pressure | Needs simulator branch |
 | Multiplayer synchronization ambiguity | Medium-high | Commit lock planned | Needs mock multiplayer and state-machine contracts |
 | Bots delayed | Medium | Future branch | Must not be postponed past core rules clarity |
-| Repetitive depth-4 content | Medium | Gatekeeper reviews | Needs targeted sharpening, not wholesale rework |
+| Repetitive or template-like depth-4 content | High | Gatekeeper/spec-critic reviews plus strict depth-4 correction | Any weak depth-4 node discovered must be sharpened immediately; no final acceptance as template-like |
 | Godot implementation delayed too long | Medium | Spec Kit required | Prepare implementation only after core leaf tasks are real |
 | Tool/status false signals | Low-medium | Dashboard/status fixed | Continue precise blocker detection |
 
@@ -239,7 +243,7 @@ This is not a command to rework all completed nodes now. It is a quality gate be
 | Finish current `core-match-systems` depth path before switching branches | Stabilizes rules, timers, state, actions, Claim events | More planning before visual proof | Strong | Yes | P1 | Now after review |
 | Add a “visual proof readiness” checkpoint after core match branch | Prevents text-square drift before implementation | Adds a review gate | Strong | Yes | P2 | Soon |
 | Prioritize `presentation-art-audio-motion` immediately after minimum core match contracts | Converts theme into concrete assets/motion requirements | Delays bots/multiplayer branch slightly | Strong | Yes | P2 | Soon |
-| Sharpen repetitive depth-4 leaves only when implementation needs them | Avoids wasteful rework now | Some weak text remains temporarily | Good | Yes | P1/P2 | Later, targeted |
+| Sharpen any weak/template-like depth-4 leaf immediately when discovered | Protects REQUIRED_DEPTH=4 quality and prevents placeholder depth | May interrupt forward momentum | Strong | Yes | P0/P1 | Now and ongoing |
 | Use Inkscape/Krita before Blender for first placeholders | Fast 2D mobile-readable assets | Less depth than rendered tokens | Strong | Yes | P2 | Later when leaf tasks authorize |
 | Use Blender only for simple seals/tokens/board references if needed | Strong game-object identity | Can waste time if overused | Conditional | Yes with limits | P2 | Later |
 | Create simulator metrics after core rule formulas exist | Prevents dominant strategies | Requires finalized rules | Strong | Yes | P3 | Later |
@@ -255,14 +259,14 @@ This is a **minor sequencing adjustment**, not a concept reboot.
 
 ### Decision made
 
-Continue with the current Banner of the Majlis direction, but adjust the next phase of work to explicitly protect P2 Game Feel from being delayed too far. Complete the necessary `core-match-systems` depth-4 planning first, then prioritize presentation/art/audio/motion and visual proof readiness before spending too much effort on deeper P3 systems.
+Continue with the current Banner of the Majlis direction, but adjust the next phase of work to explicitly protect P2 Game Feel from being delayed too far while preserving strict REQUIRED_DEPTH=4 quality. Complete the necessary `core-match-systems` depth-4 planning first, sharpen any weak depth-4 node immediately when discovered, then prioritize presentation/art/audio/motion and visual proof readiness before spending too much effort on deeper P3 systems.
 
 ### Options compared
 
 | Option | Benefit | Downside | Fit | Clarity | Fun | Godot Suitability | Complexity | Recommendation |
 |---|---|---|---|---|---|---|---|---|
 | CONTINUE_AS_PLANNED with no adjustment | Simplest; follows current tree order | May keep producing abstract rules while visual proof remains weak | Medium | Medium | Medium-low until visuals exist | High | Low | Reject as insufficient because the user explicitly rejects text-square/prototype outcomes |
-| REWORK_WEAK_NODES now | Improves repeated depth-4 leaves | Risks re-documenting existing work without better game direction | Medium | Medium | Low immediate fun gain | Neutral | Medium-high | Reject now; use targeted rework only before implementation consumes a weak leaf |
+| REWORK_WEAK_NODES globally now | Improves repeated depth-4 leaves | Risks broad re-documenting without targeted evidence | Medium | Medium | Low immediate fun gain | Neutral | Medium-high | Reject broad rework, but require immediate targeted sharpening whenever a specific weak depth-4 leaf is discovered |
 | PRIORITIZE_GAME_FEEL immediately before core match contracts | Fights text-square risk fastest | Art/motion may detach from unresolved state/actions/Claim formulas | Medium | Medium | High if done well | High | Medium | Reject as immediate next step; accept as next major emphasis after concrete trigger below |
 | PRIORITIZE_GODOT_PROTOTYPE_PREPARATION now | Tangible proof sooner | Risks premature implementation from incomplete contracts | Low now | Medium | Medium | High | High | Reject now; prepare later after rule/state/action/Claim leaf tasks authorize it |
 | ADJUST_DIRECTION | Preserves strong concept and Spec Kit discipline while correcting delayed game-feel risk | Slightly changes branch emphasis after core match work | High | High | High | High | Medium | Accept |

@@ -80,3 +80,9 @@
 ## Current Blockers
 
 - Game implementation is intentionally blocked until leaf Spec Kit tasks exist and a future implementer is explicitly authorized. Opening Council now has implementation instructions, but no game code is authorized by this task.
+
+## Quality Enforcement Notes
+
+- REQUIRED_DEPTH=4 and MAX_DEPTH=4 remain strict.
+- Full Spec Kit is required for every node at every depth through 4.
+- Any depth-4 node discovered as weak, generic, or template-like must be sharpened immediately when discovered; it must not be accepted as finally complete merely because files exist.

@@ -13,6 +13,7 @@ MAX_DEPTH = 4
 - No early stopping before depth 4.
 - No depth beyond 4.
 - No placeholder-only nodes.
+- No depth-4 node may be accepted as complete if it is formal, generic, repetitive without game value, or template-like.
 
 ## Full Spec Kit Per Node
 
@@ -46,9 +47,26 @@ Each `.spec-tree/` node must include:
 
 A branch is allowed only if it represents an independent system, reduces parent complexity, solves a real design/technical/integration problem, or prevents future conflict. Branches must not exist only to increase count.
 
+## Strict Depth-4 Quality Rule
+
+Depth 4 is not a paperwork target. Every depth-4 node must contain important, concrete, game-serving content. At least one of the following must be present in every depth-4 node:
+
+- data contract or event schema,
+- UI/game-object output,
+- simulator or balance metric,
+- Godot-facing acceptance criterion,
+- asset/audio/motion requirement,
+- concrete gameplay decision,
+- concrete validation rule,
+- localization/RTL/LTR rule with testable acceptance.
+
+If any depth-4 node is discovered to be weak, shape-only, too general, or template-like, it must be sharpened immediately at discovery. Do not defer the fix to implementation. Do not mark it complete or final until it is useful to the actual game.
+
+If the director cannot find a meaningful depth-4 split or repair, call `spec-critic` to propose a stronger branch or concrete artifacts. Creating placeholders to satisfy depth count is forbidden.
+
 ## Critic and Reviewer Duties
 
-`spec-critic` and `reviewer` must reject shallow output, repetitive branches, premature implementation, missing option comparison, and any tree that fails required depth 4.
+`spec-critic` and `reviewer` must reject shallow output, repetitive branches, premature implementation, missing option comparison, any tree that fails required depth 4, and any depth-4 leaf that is only template-like or not concretely useful to the game.
 
 ## Full Autonomy Rule for Spec Tree Decisions
 
