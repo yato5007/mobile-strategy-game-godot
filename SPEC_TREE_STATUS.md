@@ -58,7 +58,11 @@
 | game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing/arabic-patronage-naming | 4 | DONE | Arabic/English patronage naming conventions planned |
 | core-match-systems | 1 | DONE | Full depth-1 planning artifacts complete; child nodes must reach depth 4 |
 | core-match-systems/match-flow-and-phase-structure | 2 | DONE | Full depth-2 planning artifacts complete; selects 9-phase three-act fixed match and depth-3 children |
-| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope | 3 | TODO | Must validate 9-phase timing, act pacing, caps, and under-30-minute envelope through depth 4 |
+| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope | 3 | DONE | Full depth-3 planning artifacts complete; validates 9-phase timing, act pacing, caps, mobile interruption reserve, and under-30-minute envelope; depth-4 leaves pending |
+| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing | 4 | TODO | Must specify phases 1-3 onboarding, first Claim comprehension, opening timer tolerances, and anti-runaway checks |
+| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing | 4 | TODO | Must specify phases 4-6 mid-match pressure cadence, strategy shifts, FFA leader threat, and 2v2 teammate awareness |
+| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing | 4 | TODO | Must specify phases 7-9 urgency, final counterplay timing, final uncertainty, and no-early-victory reinforcement |
+| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/duration-cap-and-interruption-validation | 4 | TODO | Must specify duration formulas, reconnect grace scenarios, auto-ready validation, and under-30-minute metrics |
 | core-match-systems/match-flow-and-phase-structure/phase-state-machine-and-handoffs | 3 | TODO | Must define phase states, transitions, commit lock, resolver handoff, Claim update, and pressure shift through depth 4 |
 | core-match-systems/match-flow-and-phase-structure/final-reveal-and-mode-completion | 3 | TODO | Must define no-early-end completion, FFA/2v2 final reveal, ties, and localizable explanation through depth 4 |
 | core-match-systems/simultaneous-planning-and-resolution | 2 | TODO | Must define commit lock, reveal order, conflicts, tie-breakers, and explanation through depth 4 |

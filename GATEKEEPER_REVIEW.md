@@ -143,3 +143,19 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why the downside is acceptable: This depth-2 node is scoped to choose the match envelope and branch boundaries; the planned depth-3 children explicitly cover timing validation, state-machine handoffs, and final reveal/mode completion before implementation can begin.
 - Later verification method: Gatekeeper/QA/reviewer must verify the three depth-3 children and their depth-4 leaves define timing scenarios, transition contracts, lock boundaries, no-early-end completion, FFA/2v2 reveal readability, and integration with resolver/Claim systems.
 - Artifact proof: Required node artifacts exist (`constitution.md`, `spec.md`, `clarification.md`, `plan.md`, `tasks.md`, `analysis.md`, `checklist.md`, `implementation-result.md`, `qa-result.md`, `review-result.md`, `integration-notes.md`, `NODE_SUMMARY.md`); `DECISIONS.md` includes DEC-CMS-MFPS-001; `SPEC_TREE.md`, `SPEC_TREE_STATUS.md`, `REQUIREMENTS_TRACE.md`, and `SYSTEM_CONTRACTS.md` link the node and pending children.
+
+## 2026-05-25 — Phase Count and Timing Envelope Depth-3 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`
+- Decision made: Accept the depth-3 node for planning scope and continue automatically to the first depth-4 leaf, `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing/`.
+- Options compared:
+  - BLOCKED_EXTERNAL_ONLY: rejected because there is no external blocker, account, credential, legal, or financial dependency.
+  - FIX_AUTONOMOUSLY: rejected because required Spec Kit artifacts exist, checklist/QA/review pass, no game code was created, timing is concrete and under 30 minutes, option comparison is present, and integration risks are documented rather than unresolved conflicts.
+  - CONTINUE: accepted because the node satisfies its depth-3 planning scope and proposes four meaningful depth-4 leaves for act pacing and duration/interruption validation.
+- Why it serves the final game goal: The variable capped 9-phase timing envelope protects strategic deliberation without reaction-speed pressure, preserves simultaneous no-turn play, supports FFA/2v2 pacing, keeps expected matches around 18-23 minutes with a conservative ~22.3-minute cap, and reinforces no early victory before the Final Majlis Reveal.
+- Potential downside: Variable timers and capped interruption recovery may be harder for future UI/multiplayer systems to explain than a single flat timer.
+- Why the downside is acceptable: The node requires act/phase timer clarity, localization-aware HUD work, and future duration/reconnect validation; the added complexity directly supports onboarding, mid-match adaptation, and final-act drama.
+- Later verification method: Depth-4 leaves must complete full Spec Kit and later implementation must provide duration table tests, simulator duration distributions, FFA/2v2 human pacing QA, reconnect/default-plan stress checks, and portrait Arabic/English timer readability validation.
+- Artifact proof: Required node artifacts exist (`constitution.md`, `spec.md`, `clarification.md`, `plan.md`, `tasks.md`, `analysis.md`, `checklist.md`, `implementation-result.md`, `qa-result.md`, `review-result.md`, `integration-notes.md`, `NODE_SUMMARY.md`); `DECISIONS.md` includes DEC-CMS-PCTE-001; `SPEC_TREE_STATUS.md`, `REQUIREMENTS_TRACE.md`, `SYSTEM_CONTRACTS.md`, and `PROGRESS_DASHBOARD.md` link the completed depth-3 node and pending depth-4 leaves.

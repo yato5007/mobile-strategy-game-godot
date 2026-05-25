@@ -34,6 +34,12 @@ Any branch that changes a system contract must update this file and request `int
 | 9-Phase Match Flow | Match config, mode, phase index, ready/commit status, resolver completion events | Phase state transitions, timer boundaries, final reveal trigger, Claim update handoff, pressure shift handoff | Future core match state | Conflict formulas, action costs, Claim math, rendering, network transport | Depth-2 linked; refine in `core-match-systems/match-flow-and-phase-structure/phase-state-machine-and-handoffs` |
 | Final Majlis Reveal | Phase-9 resolved Claim state, mode context, explanation events | Winner/standing reveal, no-early-end completion event, localizable final explanation needs | Future core match completion state | UI art direction, localization implementation, tiebreak formulas not yet specified | Depth-2 linked; refine in `core-match-systems/match-flow-and-phase-structure/final-reveal-and-mode-completion` |
 
+## Phase Count and Timing Envelope Contract
+
+| System | Inputs | Outputs | State Owner | Must Not Control | Status |
+|---|---|---|---|---|---|
+| Phase Timing Envelope | Match mode, phase index 1-9, act name, ready/commit status, interruption/reconnect signals | Planning timer range, commit-lock grace, reveal/update budget, final reveal timing budget, under-30-minute validation target | Future core match configuration/state machine | Action legality, Claim formulas, rendering details, online transport policy, final tiebreak rules | Depth-3 linked; refine in `core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/*` depth-4 leaves |
+
 ## Root Cross-Branch Interfaces
 
 Detailed notes live in `.spec-tree/root/integration-notes.md`. No final contract is stable until the relevant depth-1 branch completes full Spec Kit.

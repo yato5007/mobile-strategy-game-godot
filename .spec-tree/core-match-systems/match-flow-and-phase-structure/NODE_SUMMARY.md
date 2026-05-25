@@ -11,6 +11,7 @@ Parent: `.spec-tree/core-match-systems/`
 ## Decisions Made
 
 - DEC-CMS-MFPS-001: Adopt a 9-phase, three-act default match structure: Opening Council, Rising Debate, Final Petition.
+- DEC-CMS-PCTE-001: Depth-3 child adopts variable capped timing envelope targeting 18-23 minutes with hard under-30-minute validation.
 - Require no early victory; winner is determined only after phase 9 final reveal.
 - Require every phase to include Phase Brief, Council Planning, Commit Lock, Reveal Handoff, Claim Update, and Pressure Shift.
 
@@ -47,4 +48,4 @@ Planning only. No game code, Godot scenes, assets, networking, bots, simulator, 
 
 ## Next Step
 
-Create full Spec Kit for first depth-3 child: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`, then continue this branch to depth 4.
+Create full Spec Kit for first depth-4 leaf: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing/`, then complete the remaining timing envelope depth-4 leaves.

@@ -1,13 +1,13 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "match-flow-depth2-complete",
-  "overallPercent": 31,
+  "phase": "phase-count-timing-depth3-complete",
+  "overallPercent": 32,
   "areas": {
-    "mainSpecKit": 18,
-    "recursiveSpecTree": 44,
-    "gameDesignDecisions": 22,
-    "coreGameLogic": 7,
+    "mainSpecKit": 19,
+    "recursiveSpecTree": 45,
+    "gameDesignDecisions": 23,
+    "coreGameLogic": 8,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
@@ -15,6 +15,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 2
   },
-  "nextStep": "Start core-match-systems/match-flow-and-phase-structure depth-3 child phase-count-and-timing-envelope and continue this branch to required depth 4.",
+  "nextStep": "Start depth-4 leaf core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing and complete all timing envelope leaves to required depth 4.",
   "blocked": []
 }

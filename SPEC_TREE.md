@@ -68,7 +68,11 @@ root: mobile-strategy-game-godot (depth 0)
 │           └── arabic-patronage-naming (depth 4, DONE)
 ├── core-match-systems (depth 1, DONE planning; expands below)
 │   ├── match-flow-and-phase-structure (depth 2, DONE; expands below)
-│   │   ├── phase-count-and-timing-envelope (depth 3, TODO)
+│   │   ├── phase-count-and-timing-envelope (depth 3, DONE; expands below)
+│   │   │   ├── opening-council-pacing (depth 4, TODO)
+│   │   │   ├── rising-debate-pacing (depth 4, TODO)
+│   │   │   ├── final-petition-pacing (depth 4, TODO)
+│   │   │   └── duration-cap-and-interruption-validation (depth 4, TODO)
 │   │   ├── phase-state-machine-and-handoffs (depth 3, TODO)
 │   │   └── final-reveal-and-mode-completion (depth 3, TODO)
 │   ├── simultaneous-planning-and-resolution (depth 2, TODO)
@@ -85,9 +89,9 @@ root: mobile-strategy-game-godot (depth 0)
 
 All current depth-2 branches under `game-concept-and-win-condition` are complete through depth 4.
 
-1. Continue the first TODO child under `.spec-tree/core-match-systems/match-flow-and-phase-structure/`: `phase-count-and-timing-envelope`.
-2. Expand `match-flow-and-phase-structure` to meaningful depth-3 and depth-4 nodes.
-3. Continue remaining depth-2 branches under `core-match-systems` until all branches reach required depth 4.
+1. Continue the first TODO depth-4 leaf under `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`: `opening-council-pacing`.
+2. Complete all four depth-4 leaves for `phase-count-and-timing-envelope`.
+3. Continue remaining depth-3 and depth-2 branches under `core-match-systems` until all branches reach required depth 4.
 4. Do not implement game code until leaf-node tasks explicitly authorize implementation.
 
 ## Root Artifacts
@@ -108,3 +112,5 @@ Depth-2 `anti-dominant-strategy-and-active-play` artifacts live in `.spec-tree/g
 Depth-1 `core-match-systems` artifacts live in `.spec-tree/core-match-systems/`. Its depth-2 children are planned: `match-flow-and-phase-structure` is complete at depth 2 and must continue through depth 4; `simultaneous-planning-and-resolution`, `action-economy-and-legal-actions`, and `claim-objective-state-model` remain pending full Spec Kit.
 
 Depth-2 `match-flow-and-phase-structure` artifacts live in `.spec-tree/core-match-systems/match-flow-and-phase-structure/`; it plans three depth-3 children: `phase-count-and-timing-envelope`, `phase-state-machine-and-handoffs`, and `final-reveal-and-mode-completion`.
+
+Depth-3 `phase-count-and-timing-envelope` artifacts live in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`; it plans four depth-4 leaves: `opening-council-pacing`, `rising-debate-pacing`, `final-petition-pacing`, and `duration-cap-and-interruption-validation`.

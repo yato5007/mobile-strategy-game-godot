@@ -150,3 +150,20 @@ Only significant decisions are recorded here.
 - Why downside is acceptable: Future child and sibling nodes must define pressure shifts, objective variety, leader exposure, and balance validation.
 - Later verification: QA and balance simulator must validate match duration, perceived variety, comeback frequency, passive win rate, and final-phase uncertainty.
 - Artifact proof: Full depth-2 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/`.
+
+## DEC-CMS-PCTE-001 — Phase timing uses variable capped 9-phase envelope
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Use a variable-but-capped 9-phase timing envelope: longer opening planning, slightly shorter late planning, richer late reveal/update beats, one short capped mobile recovery reserve, expected 18-23 minutes, and hard under-30-minute validation.
+- Options compared:
+  - Flat identical timers: rejected as default because onboarding and final-act event density need different pacing.
+  - 30-45 second short phases: rejected because they push reaction-speed play and hurt accessibility.
+  - Long asynchronous timers: rejected because they break active simultaneous mobile multiplayer.
+  - Variable capped timers by act: accepted because they preserve strategy, clarity, and mobile pacing.
+- Why this serves the final game: It makes the 9-phase Majlis match feel like a readable strategic arc while preventing long multiplayer fatigue.
+- Potential downside: Variable timers may be harder to communicate than one constant timer.
+- Why downside is acceptable: Future UX/localization nodes must expose act, phase, and timer state clearly in portrait UI.
+- Later verification: Duration table validation, simulator duration distribution, human FFA/2v2 pacing QA, and interruption stress scenarios.
+- Artifact proof: Full depth-3 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`.
