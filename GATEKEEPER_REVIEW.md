@@ -64,3 +64,19 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why acceptable: The HUD adaptation spec defines a simple mode enum with clear layout rules (2v2: paired colors, team claim total; FFA: individual colors, solo claim count). The adaptation layer is thin and doesn't affect game rules.
 - Later verification: Future mobile UX QA on both 2v2 and FFA modes: HUD correctly shows team vs individual claims, contribution display works in win screen, FFA standings show all 4 ranks.
 - Artifact proof: Full depth-3 Spec Kit under `team-and-ffa-win-readability/` and full depth-4 Spec Kit under 3 leaf nodes (32 files total). Table entries in SPEC_TREE_STATUS.md, SPEC_TREE.md, and REQUIREMENTS_TRACE.md updated.
+
+## 2026-05-25 — Strategic Tension & Comeback Depth 2-4 Subtree Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/` and its 12 child nodes (3 depth-3 + 9 depth-4 leaves, 104 files total)
+- Decision: Accept the full subtree and continue automatically to `anti-dominant-strategy-and-active-play`.
+- Options compared:
+  - Partial acceptance and user consultation: rejected by Full Autonomy Rule and consistent prior CONTINUE pattern.
+  - Rework any leaf: rejected — all 104 files have ≥25 lines, concrete Godot references, RTL analysis, mobile portrait focus, and checklist/QA/review PASS.
+  - Continue to next pending depth-2 sibling: accepted.
+- Why it serves the final game: This subtree directly supports P1 constraints: no single dominant strategy, comeback must remain possible until late match, active play must be rewarded, match outcome must remain competitive until the end. The three pillars (comeback mechanics, phase tension, anti-snowball) together prevent boring or runaway matches.
+- Potential downside: Comeback mechanics (catch-up bonus, threshold adaptation) could feel unfair to the leader if poorly tuned. Phase progression adds match complexity that must not confuse new players.
+- Why acceptable: All mechanics are bounded — catch-up bonus is capped at 1 claim worth of advantage, threshold adaptation maxes at 1 claim reduction. Phase progression uses clear UI markers (phase banners, color shifts) that experienced sibling nodes like claim-progress-display already handle. Balance simulator (future branch) will validate tuning.
+- Later verification: Playtest scenarios: (1) early leader wins less than 40% of matches, (2) trailing player at mid-point can still win within final phase, (3) no match ends before 50% of time has elapsed.
+- Artifact proof: 104 Spec Kit files under `strategic-tension-and-comeback/` covering all depth levels. Table entries in SPEC_TREE_STATUS.md, SPEC_TREE.md, and REQUIREMENTS_TRACE.md updated automatically.

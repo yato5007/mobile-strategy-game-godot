@@ -1,0 +1,40 @@
+# Plan — Mid Game Intensification
+
+- Node slug: `mid-game-intensification`
+- Depth: 4
+- Parent: `/workspaces/mobile-strategy-game-godot/.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/phase-progression-and-tension/`
+- Purpose: Define the mid phase where objective count, Claim costs, and tactical intersections increase to create meaningful pressure.
+- Claim reference: DEC-GCWC-001 fixed-length visible Claim win condition for Banner of the Majlis.
+- Scope: Spec Kit planning artifact only; no Godot game implementation is created here.
+
+## Implementation Planning Phases
+1. Confirm parent Claim contracts from `.spec-tree/game-concept-and-win-condition/`.
+2. Map rule state needed by this node into future Game Rules data structures.
+3. Define Resource-driven tuning so balance values are not hardcoded in UI scenes.
+4. Specify signal boundaries between rules, UI, bots, and simulator.
+5. Design portrait HUD placement with Control containers and safe-area margins.
+6. Add localization-key inventory for Arabic and English labels.
+7. Create simulator scenarios for early leader, active trailer, passive trailer, and team pressure.
+8. Create QA scripts for 6-inch touch readability and RTL mirroring.
+9. Validate that no mechanic grants Claim progress without player action or contested objective investment.
+10. Validate that leader pressure is public and predictable enough for counterplay.
+11. Validate that phase progression teaches the game before intensifying it.
+12. Defer Godot implementation until matching leaf tasks are selected by future implementer.
+
+## Cross-Node Coordination
+13. `core-match-systems` must own final state transitions and Claim resolution.
+14. `balance-and-validation` must own simulation pass/fail thresholds.
+15. `presentation-art-audio-motion` must own banner VFX, audio cues, and non-spreadsheet feel.
+16. `mobile-ux-localization-accessibility` must own RTL/LTR layout and localization resource generation.
+17. `multiplayer-and-bots` must consume the same public tension state for bot decisions and mock multiplayer sync.
+
+## Milestones
+18. Milestone A: finish depth-2 artifact set and child branch map.
+19. Milestone B: finish all depth-3 artifacts with exact depth-4 leaves.
+20. Milestone C: finish all depth-4 leaves with task-ready acceptance.
+21. Milestone D: update SPEC_TREE, SPEC_TREE_STATUS, and REQUIREMENTS_TRACE.
+22. Milestone E: checkpoint after artifact creation and count verification.
+
+## Child Work
+23. This is a depth-4 leaf; no further children are allowed.
+24. Future implementer should use this leaf as the smallest authorized task scope.

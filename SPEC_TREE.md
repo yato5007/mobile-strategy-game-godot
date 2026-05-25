@@ -27,7 +27,19 @@ root: mobile-strategy-game-godot (depth 0)
 │   │       ├── team-contribution-display (depth 4, DONE)
 │   │       ├── ffa-final-standings-board (depth 4, DONE)
 │   │       └── mode-specific-hud-adaptation (depth 4, DONE)
-│   ├── strategic-tension-and-comeback (depth 2, TODO)
+│   ├── strategic-tension-and-comeback (depth 2, DONE)
+│   │   ├── comeback-mechanics-and-events (depth 3, DONE)
+│   │   │   ├── catch-up-claim-bonus (depth 4, DONE)
+│   │   │   ├── leader-target-pressure (depth 4, DONE)
+│   │   │   └── strategic-reset-points (depth 4, DONE)
+│   │   ├── phase-progression-and-tension (depth 3, DONE)
+│   │   │   ├── early-game-ramp-up (depth 4, DONE)
+│   │   │   ├── mid-game-intensification (depth 4, DONE)
+│   │   │   └── final-phase-showdown (depth 4, DONE)
+│   │   └── anti-snowball-and-balance (depth 3, DONE)
+│   │       ├── claim-cost-escalation (depth 4, DONE)
+│   │       ├── leader-vulnerability-windows (depth 4, DONE)
+│   │       └── comeback-threshold-adaptation (depth 4, DONE)
 │   ├── anti-dominant-strategy-and-active-play (depth 2, TODO)
 │   └── concept-presentation-and-theme (depth 2, TODO)
 ├── core-match-systems (depth 1, TODO)
@@ -56,3 +68,5 @@ Depth-2 `win-condition-clarity` artifacts live in `.spec-tree/game-concept-and-w
 Depth-3 `claim-progress-display` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/`.
 Depth-3 `win-loss-explanation` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/`.
 Depth-3 `team-and-ffa-win-readability` artifacts live in `.spec-tree/game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability/`.
+
+Depth-2 `strategic-tension-and-comeback` artifacts live in `.spec-tree/game-concept-and-win-condition/strategic-tension-and-comeback/` with three depth-3 children and nine depth-4 leaves.
