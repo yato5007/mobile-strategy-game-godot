@@ -88,10 +88,10 @@ root: mobile-strategy-game-godot (depth 0)
 ├── multiplayer-and-bots (depth 1, TODO)
 ├── balance-and-validation (depth 1, TODO)
 ├── presentation-art-audio-motion (depth 1, DONE; all depth-4 complete)
-├── multiplayer-and-bots (depth 1, DONE; expands below)
-├── balance-and-validation (depth 1, DONE; expands below)
-├── mobile-ux-localization-accessibility (depth 1, DONE; expands below)
-└── godot-architecture-and-delivery (depth 1, DONE; expands below)
+├── multiplayer-and-bots (depth 1, DONE; complete through depth 4)
+├── balance-and-validation (depth 1, DONE; complete through depth 4)
+├── mobile-ux-localization-accessibility (depth 1, DONE; complete through depth 4)
+└── godot-architecture-and-delivery (depth 1, DONE; complete through depth 4)
 ```
 
 ## Next Required Step
