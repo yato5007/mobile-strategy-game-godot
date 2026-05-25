@@ -47,6 +47,57 @@ def badge_class(status):
         return 'good'
     return 'neutral'
 
+def esc(x): return html.escape(str(x))
+
+def project_progress_blockers(pj):
+    """Return real blockers from PROJECT_PROGRESS.json only.
+
+    A real blocker is an explicit status value of BLOCKED or a non-empty blocked
+    list. Plain prose containing the word "blocked" is intentionally ignored.
+    """
+    reasons = []
+    if str(pj.get('status', '')).strip().upper() == 'BLOCKED':
+        reasons.append('[PROJECT_PROGRESS.json] Top-level status is BLOCKED')
+    for key in ('areas', 'items', 'tasks', 'nodes'):
+        value = pj.get(key)
+        if isinstance(value, dict):
+            for name, item in value.items():
+                if isinstance(item, dict) and str(item.get('status', '')).strip().upper() == 'BLOCKED':
+                    reasons.append(f'[PROJECT_PROGRESS.json] {key}.{name} status is BLOCKED')
+        elif isinstance(value, list):
+            for idx, item in enumerate(value):
+                if isinstance(item, dict) and str(item.get('status', '')).strip().upper() == 'BLOCKED':
+                    label = item.get('name') or item.get('id') or f'{key}[{idx}]'
+                    reasons.append(f'[PROJECT_PROGRESS.json] {label} status is BLOCKED')
+    for b in pj.get('blocked', []) or []:
+        reasons.append(f'[PROJECT_PROGRESS.json] {b}')
+    return reasons
+
+def spec_tree_status_blockers(text):
+    """Return rows whose Status column is exactly BLOCKED.
+
+    This avoids false positives from general instructions, examples, or the
+    historical "Current Blockers" prose section.
+    """
+    reasons = []
+    for line in text.splitlines():
+        if not line.startswith('|') or '---' in line:
+            continue
+        parts = [c.strip().strip('`') for c in line.strip('|').split('|')]
+        if len(parts) >= 3 and parts[0] not in {'Item', 'Area'} and parts[2].upper() == 'BLOCKED':
+            node_name = parts[0] or 'unknown'
+            reasons.append(f'[SPEC_TREE_STATUS.md] Node "{node_name}" status is BLOCKED')
+    return reasons
+
+def gatekeeper_last_result(text):
+    """Return the last explicit gatekeeper result, ignoring prose examples."""
+    results = re.findall(r'^-\s*Result:\s*([^\n]+)', text, flags=re.MULTILINE)
+    if not results:
+        return ''
+    raw = results[-1].strip()
+    normalized = re.split(r'\s|→|-', raw, maxsplit=1)[0].strip().upper()
+    return normalized
+
 progress = read_json('PROJECT_PROGRESS.json')
 project = progress.get('project', 'mobile-strategy-game-godot')
 percent = int(progress.get('overallPercent', 0) or 0)
@@ -97,53 +148,21 @@ try:
 except Exception:
     pass
 
-# Determine if BLOCKED — use precise checks, avoid false positives
-has_blocked = False
-blocked_reasons = []  # human-readable reasons for display
-
-# 1. Check PROJECT_PROGRESS.json blocked array (most reliable source)
+# Determine if BLOCKED — use precise checks, avoid false positives from prose.
 pj = read_json('PROJECT_PROGRESS.json')
-if pj.get('blocked') and len(pj['blocked']) > 0:
-    has_blocked = True
-    for b in pj['blocked']:
-        blocked_reasons.append(f'[PROJECT_PROGRESS.json] {b}')
-
-# 2. Check GATEKEEPER_REVIEW.md for last Result: BLOCKED (not substring)
-gk = read_text('GATEKEEPER_REVIEW.md')
-# Find all Result lines in gatekeeper review
-gk_results = re.findall(r'-\s*Result:\s*(BLOCKED|CONTINUE|PASS|REWORK)', gk)
-if gk_results and gk_results[-1].strip().upper() == 'BLOCKED':
-    has_blocked = True
-    blocked_reasons.append('[GATEKEEPER_REVIEW.md] Last gatekeeper result is BLOCKED')
-
-# 3. Check SPEC_TREE_STATUS.md table for nodes with status=BLOCKED (not the structural rule)
-# The structural rule is: "Game implementation is intentionally blocked until leaf Spec Kit tasks exist."
-# This is a design constraint, NOT a real blocker. Only nodes marked BLOCKED in the tree matter.
 st = read_text('SPEC_TREE_STATUS.md')
-# Parse table rows looking for status=BLOCKED
-for line in st.splitlines():
-    # Match table rows like | item | depth | BLOCKED | notes |
-    if line.startswith('|') and '|' in line[1:]:
-        parts = [c.strip() for c in line.strip('|').split('|')]
-        if len(parts) >= 3 and parts[2] == 'BLOCKED':
-            has_blocked = True
-            node_name = parts[0] if parts else 'unknown'
-            blocked_reasons.append(f'[SPEC_TREE_STATUS.md] Node "{node_name}" is BLOCKED')
+gk = read_text('GATEKEEPER_REVIEW.md')
+progress_blockers = project_progress_blockers(pj)
+tree_blockers = spec_tree_status_blockers(st)
+gk_result = gatekeeper_last_result(gk)
+gatekeeper_blockers = []
+if gk_result == 'BLOCKED':
+    gatekeeper_blockers.append('[GATEKEEPER_REVIEW.md] Last gatekeeper result is BLOCKED')
+elif gk_result in {'CONTINUE', 'PASS'}:
+    gatekeeper_blockers = []
 
-# 4. If last gatekeeper decision is CONTINUE, override any soft blockers
-if gk_results and gk_results[-1].strip().upper() in ('CONTINUE', 'PASS'):
-    # Only keep hard blockers from PROJECT_PROGRESS.json and SPEC_TREE_STATUS table
-    hard_has_blocked = bool(pj.get('blocked') and len(pj['blocked']) > 0)
-    table_has_blocked = any(
-        line.startswith('|') and '|' in line[1:] and
-        [c.strip() for c in line.strip('|').split('|')][2] == 'BLOCKED'
-        if len([c.strip() for c in line.strip('|').split('|')]) >= 3 else False
-        for line in st.splitlines()
-    )
-    has_blocked = hard_has_blocked or table_has_blocked
-    # Filter blocked_reasons to only hard blockers
-    blocked_reasons = [r for r in blocked_reasons
-                       if 'PROJECT_PROGRESS.json' in r or 'SPEC_TREE_STATUS.md' in r]
+blocked_reasons = progress_blockers + tree_blockers + gatekeeper_blockers
+has_blocked = bool(blocked_reasons)
 
 # Determine status based on BLOCKED and activity freshness
 seconds_since_last = now_ts - last_commit_ts if last_commit_ts > 0 else 999999
@@ -179,33 +198,12 @@ current_task = next_step
 last_dashboard_update_str = dashboard_update_ts.strftime('%Y-%m-%d %H:%M:%S UTC')
 last_dashboard_update_iso = dashboard_update_ts.strftime('%Y-%m-%dT%H:%M:%SZ')
 
-# --- Build blocked lines for display (only REAL blockers, not structural rules) ---
-STRUCTURAL_BLOCKER = 'Game implementation is intentionally blocked until leaf Spec Kit tasks exist.'
-blocked_lines = []
-in_blockers = False
-for line in read_text('SPEC_TREE_STATUS.md').splitlines():
-    if line.strip().lower().startswith('## current blockers'):
-        in_blockers = True
-        continue
-    if in_blockers and line.startswith('## '):
-        break
-    if in_blockers and line.strip().startswith('-'):
-        item = line.strip('- ').strip()
-        # Skip the structural design-constraint blocker — it is NOT a real blocker
-        if STRUCTURAL_BLOCKER in item:
-            continue
-        blocked_lines.append(item)
-# Add items from PROJECT_PROGRESS.json blocked array
-blocked_lines.extend(str(x) for x in blocked)
-if not blocked_lines:
-    blocked_lines = ['All systems clear — no real BLOCKED items.']
-
-needs_user = any(re.search(r'credential|account|apple|legal|financial|external|user', b, re.I) for b in blocked_lines)
+needs_user = any(re.search(r'credential|account|apple|legal|financial|external|user', b, re.I) for b in blocked_reasons)
 
 # Build blocked_reason HTML — only shown when has_blocked is True
 blocked_reason_html = ''
 if has_blocked and blocked_reasons:
-    blocked_reason_html = '  <h2>Blocked Reason</h2>\n  <div class="card"><ul>\n'
+    blocked_reason_html = '  <h2>Blocked reason</h2>\n  <div class="card"><ul>\n'
     for r in blocked_reasons:
         blocked_reason_html += f'    <li><span class="badge bad-bg">BLOCKED</span> {esc(r)}</li>\n'
     blocked_reason_html += '  </ul></div>\n'
@@ -222,8 +220,6 @@ progress_cards = []
 for cols in progress_rows[:12]:
     if len(cols) >= 4:
         progress_cards.append(cols[:4])
-
-def esc(x): return html.escape(str(x))
 
 # Build Recent Activity items
 recent_activity_html = ''
@@ -426,13 +422,7 @@ for item, depth, status, notes, cls in branch_cards:
 html_doc += '  </div>\n\n  <h2>Progress Areas</h2>\n  <div class="grid">\n'
 for area, weight, status, notes in progress_cards:
     html_doc += f'    <div class="card"><div class="row"><strong>{esc(area)}</strong><span class="badge {badge_class(status)}">{esc(status)}</span></div><div class="muted">Weight {esc(weight)} · {esc(notes)}</div></div>\n'
-html_doc += '  </div>\n\n  <h2>Blocked / Problems</h2>\n  <div class="card"><ul>\n'
-for b in blocked_lines:
-    is_all_clear = 'all systems clear' in b.lower()
-    cls = 'good-bg' if is_all_clear else ('bad-bg' if 'blocked' in b.lower() else 'warn-bg')
-    label = 'OK' if is_all_clear else ('BLOCKED' if 'blocked' in b.lower() else 'INFO')
-    html_doc += f'    <li><span class="badge {cls}">{esc(label)}</span> {esc(b)}</li>\n'
-html_doc += f'''  </ul></div>
+html_doc += f'''  </div>
 
   <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · {esc(last_dashboard_update_str)} · Static HTML only.</footer>
 </main>
