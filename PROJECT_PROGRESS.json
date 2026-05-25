@@ -1,14 +1,14 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "depth3-claim-progress-display-complete",
+  "phase": "depth4-leader-threat-indicator-complete",
   "gameImplementationStarted": false,
   "requiredDepth": 4,
   "maxDepth": 4,
-  "overallPercent": 3,
+  "overallPercent": 4,
   "areas": {
     "mainSpecKit": 4,
-    "recursiveSpecTree": 4,
+    "recursiveSpecTree": 5,
     "gameDesignDecisions": 2,
     "coreGameLogic": 0,
     "botsAndAiOpponents": 0,
@@ -18,6 +18,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 2
   },
-  "nextStep": "Run full Spec Kit for .spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/leader-threat-indicator/ at depth 4.",
+  "nextStep": "Continue remaining game-concept-and-win-condition siblings to depth 4, starting with comeback-path-cue.",
   "blocked": []
 }

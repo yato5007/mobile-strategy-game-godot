@@ -24,6 +24,6 @@ echo
 echo "== Key Pending Items =="
 printf '%s\n' \
   "TODO: Run full Spec Kit for game-concept-and-win-condition" \
-  "TODO: Complete leader-threat-indicator depth-4 full Spec Kit" \
+  "TODO: Complete remaining game-concept-and-win-condition depth-4 siblings" \
   "TODO: Complete full Spec Kit for every node through depth 4" \
   "BLOCKED: Game implementation until leaf Spec Kit tasks exist"
