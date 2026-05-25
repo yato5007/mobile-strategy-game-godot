@@ -1,13 +1,13 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "reveal-resolver-depth4-complete",
-  "overallPercent": 42,
+  "phase": "phase-state-machine-depth4-complete",
+  "overallPercent": 44,
   "areas": {
-    "mainSpecKit": 24,
-    "recursiveSpecTree": 52,
-    "gameDesignDecisions": 28,
-    "coreGameLogic": 14,
+    "mainSpecKit": 25,
+    "recursiveSpecTree": 56,
+    "gameDesignDecisions": 30,
+    "coreGameLogic": 16,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
@@ -15,6 +15,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 4
   },
-  "nextStep": "phase-state-machine-and-handoffs depth-3 complete (4 depth-4 children pending). Continue to commit-lock-and-action-binding depth-4 leaf.",
+  "nextStep": "phase-state-machine-and-handoffs complete through depth 4. Continue to final-reveal-and-mode-completion depth-3.",
   "blocked": []
 }
