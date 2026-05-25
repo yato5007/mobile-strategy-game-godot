@@ -1,13 +1,13 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "phase-count-and-timing-envelope-complete",
-  "overallPercent": 38,
+  "phase": "phase-state-machine-depth3-complete",
+  "overallPercent": 40,
   "areas": {
-    "mainSpecKit": 23,
-    "recursiveSpecTree": 50,
-    "gameDesignDecisions": 27,
-    "coreGameLogic": 12,
+    "mainSpecKit": 24,
+    "recursiveSpecTree": 52,
+    "gameDesignDecisions": 28,
+    "coreGameLogic": 14,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
@@ -15,6 +15,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 4
   },
-  "nextStep": "phase-count-and-timing-envelope complete (all 4 depth-4 leaves). Continue to phase-state-machine-and-handoffs depth-3 under match-flow-and-phase-structure per DEC-PDR-001 minimum contracts trigger.",
+  "nextStep": "phase-state-machine-and-handoffs depth-3 complete (4 depth-4 children pending). Continue to commit-lock-and-action-binding depth-4 leaf.",
   "blocked": []
 }
