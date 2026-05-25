@@ -159,3 +159,35 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why the downside is acceptable: The node requires act/phase timer clarity, localization-aware HUD work, and future duration/reconnect validation; the added complexity directly supports onboarding, mid-match adaptation, and final-act drama.
 - Later verification method: Depth-4 leaves must complete full Spec Kit and later implementation must provide duration table tests, simulator duration distributions, FFA/2v2 human pacing QA, reconnect/default-plan stress checks, and portrait Arabic/English timer readability validation.
 - Artifact proof: Required node artifacts exist (`constitution.md`, `spec.md`, `clarification.md`, `plan.md`, `tasks.md`, `analysis.md`, `checklist.md`, `implementation-result.md`, `qa-result.md`, `review-result.md`, `integration-notes.md`, `NODE_SUMMARY.md`); `DECISIONS.md` includes DEC-CMS-PCTE-001; `SPEC_TREE_STATUS.md`, `REQUIREMENTS_TRACE.md`, `SYSTEM_CONTRACTS.md`, and `PROGRESS_DASHBOARD.md` link the completed depth-3 node and pending depth-4 leaves.
+
+## 2026-05-25 — Project Direction Review Gatekeeper Check
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed artifact: `PROJECT_DIRECTION_REVIEW.md`
+- Decision made: Accept the project direction review after one minimal artifact-proof wording fix. Continue from the first true TODO: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/`.
+- Options compared:
+  - BLOCKED_EXTERNAL_ONLY: rejected because there is no external account, credential, legal, financial, or user-stop blocker.
+  - FIX_AUTONOMOUSLY with broad rewrite: rejected because the review already aligns with `MASTER_PROJECT_PLAN.md`, Full Autonomy Rule, and `SPEC_TREE_RULES.md`; broad rework would add documentation churn.
+  - Minimal fix then CONTINUE: accepted because the only issue was a line implying future `DECISIONS.md` proof; it was corrected to cite current artifacts and this gatekeeper entry.
+- Why it serves the final game goal: The review preserves Godot 4.x, portrait-only, Android/iOS support, mandatory depth 4, full Spec Kit per node, no premature implementation, the visible Claim win condition, and the Arabic-first Majlis direction while honestly flagging the main risk: planning without tangible P2 game-feel proof.
+- Potential downside: Continuing without immediate visual/Godot implementation leaves the anti-spreadsheet goal proven by planning artifacts rather than runtime assets for now.
+- Why the downside is acceptable: Current project rules intentionally block implementation until authorized leaf tasks exist. The accepted action plan finishes the active P1 timing path first, then brings P2 presentation/art/audio/motion forward before P3 systems dominate.
+- Later verification method: Future gatekeeper/QA/reviewer checks must verify remaining timing leaves, presentation-art-audio-motion artifacts, `ASSET_MANIFEST.md`, `ASSET_PIPELINE.md`, Godot scene proof when authorized, and spreadsheet/admin-panel comparison in QA.
+- Artifact proof: `PROJECT_DIRECTION_REVIEW.md` now cites current artifacts instead of a future decision entry; `SPEC_TREE_STATUS.md` and `PROJECT_PROGRESS.json` identify `rising-debate-pacing` as the next TODO; no Godot implementation files were created; this `GATEKEEPER_REVIEW.md` entry records the autonomous decision.
+
+## 2026-05-25 — Corrected Project Direction Review Final Gatekeeper Check
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed artifact: `PROJECT_DIRECTION_REVIEW.md` after spec-critic fixes and `DEC-PDR-001` addition.
+- Decision made: Accept the corrected Project Direction Review and accept the spec-critic PASS and integration PASS as valid for this direction-level review. Continue from `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing/`.
+- Options compared:
+  - BLOCKED_EXTERNAL_ONLY: rejected because there is no account, credential, legal, financial, or explicit user-stop blocker.
+  - FIX_AUTONOMOUSLY: rejected because the prior artifact-proof issue is now corrected by `DEC-PDR-001`, the review includes options comparison and verification criteria, and no unresolved integration contradiction is present.
+  - CONTINUE: accepted because the review preserves the approved concept, no-premature-implementation rule, required depth-4 workflow, and brings P2 game-feel proof forward after minimum P1 contracts.
+- Why it serves the final game goal: It keeps the project moving toward a real portrait Godot strategy game with clear Claim victory, Arabic-first Majlis identity, and near-term protection against text-square drift.
+- Potential downside: P3 bots/multiplayer/balance may start after additional P1/P2 contract work.
+- Why the downside is acceptable: Bots and multiplayer need stable rule/state contracts, and P2 game feel is required for final game quality rather than optional polish.
+- Later verification method: Future reviews must verify completion of the listed P1 contract trigger, then ensure `presentation-art-audio-motion`, `ASSET_MANIFEST.md`, `ASSET_PIPELINE.md`, and later Godot scene artifacts prove Claim/feedback as game objects.
+- Artifact proof: `PROJECT_DIRECTION_REVIEW.md` lines 250-303 contain the corrected autonomous decision and artifact proof; `DECISIONS.md` contains `DEC-PDR-001`; `SPEC_TREE_STATUS.md` identifies `rising-debate-pacing` as the next TODO; no implementation or checkpoint was created for this review.

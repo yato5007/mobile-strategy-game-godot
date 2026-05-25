@@ -40,6 +40,12 @@ Any branch that changes a system contract must update this file and request `int
 |---|---|---|---|---|---|
 | Phase Timing Envelope | Match mode, phase index 1-9, act name, ready/commit status, interruption/reconnect signals | Planning timer range, commit-lock grace, reveal/update budget, final reveal timing budget, under-30-minute validation target | Future core match configuration/state machine | Action legality, Claim formulas, rendering details, online transport policy, final tiebreak rules | Depth-3 linked; refine in `core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/*` depth-4 leaves |
 
+## Opening Council Pacing Contract
+
+| System | Inputs | Outputs | State Owner | Must Not Control | Status |
+|---|---|---|---|---|---|
+| Opening Council Pacing | Match mode (FFA/2v2), phase index 1-3, first-match/replay context, ready/commit status, localized objective/Claim context | Phase brief content requirements, planning target/range, lock grace, reveal/update budget, no-early-victory reminder, opening anti-runaway constraints | Future core match configuration/state machine | Exact Claim formula, action legality, UI layout, animation assets, networking/default-plan policy | Depth-4 linked; future implementation must consume `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing/` |
+
 ## Root Cross-Branch Interfaces
 
 Detailed notes live in `.spec-tree/root/integration-notes.md`. No final contract is stable until the relevant depth-1 branch completes full Spec Kit.

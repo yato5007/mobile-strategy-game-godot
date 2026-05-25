@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Progress Dashboard</title>
-  <!-- lastDashboardUpdate: 2026-05-25T21:15:46Z -->
+  <!-- lastDashboardUpdate: 2026-05-25T21:29:38Z -->
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -81,7 +81,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:32%; background:var(--good); }
+    .bar > div { height:100%; width:34%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -122,16 +122,16 @@
       <div class="pulse-status good">🟢 WORKING</div>
     </div>
     <div style="font-size:.85rem;color:var(--muted);margin-bottom:8px;">
-      Last activity 5m ago — recent
+      Last activity 13m ago — recent
     </div>
     <div class="pulse-grid">
       <div class="pulse-item">
         <div class="pulse-label">Last Dashboard Update</div>
-        <div class="pulse-value">2026-05-25 21:15:46 UTC</div>
+        <div class="pulse-value">2026-05-25 21:29:38 UTC</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Checkpoint</div>
-        <div class="pulse-value">complete match-flow-and-phase-structure depth2 spec node</div>
+        <div class="pulse-value">complete phase-count-and-timing-envelope depth3 spec node</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Completed Node</div>
@@ -139,11 +139,11 @@
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Current Node / Task</div>
-        <div class="pulse-value">Start depth-4 leaf core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope...</div>
+        <div class="pulse-value">Resume from the first true TODO after the accepted Project Direction Review: core-match-systems/matc...</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Checkpoints / Commits</div>
-        <div class="pulse-value">23 checkpoints · 24 total commits</div>
+        <div class="pulse-value">24 checkpoints · 25 total commits</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Decision Mode</div>
@@ -156,30 +156,30 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">32%</div>
+    <div class="percent">34%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> phase-count-timing-depth3-complete</p>
+    <p><strong>Current phase:</strong> project-direction-review-complete</p>
     <p><strong>Current wave:</strong> No active wave file</p>
     <p><strong>User intervention needed:</strong> <span class="badge good-bg">NO</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">Start depth-4 leaf core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing and complete all timing envelope leaves to required depth 4.</div>
+  <div class="card">Resume from the first true TODO after the accepted Project Direction Review: core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing. Preserve DEC-PDR-001 sequencing: after minimum core-match contracts complete through depth 4, bring presentation-art-audio-motion forward to protect game feel.</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
-    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — Phase Count and Timing Envelope Depth-3 Review</span></div>
-    <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-CMS-PCTE-001 — Phase timing uses variable capped 9-phase envelope</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete match-flow-and-phase-structure depth2 spec node</span></div>
+    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — Corrected Project Direction Review Final Gatekeeper Check</span></div>
+    <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-PDR-001 — Direction review adopts minor sequencing adjustment to protect game feel</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete phase-count-and-timing-envelope depth3 spec node</span></div>
   </div>
 
   <h2>Recent Activity</h2>
   <div class="card activity-list">
+    <div class="activity-item"><span class="commit-hash">2d3f265</span> checkpoint: complete phase-count-and-timing-envelope depth3 spec node</div>
     <div class="activity-item"><span class="commit-hash">9998f6f</span> checkpoint: complete match-flow-and-phase-structure depth2 spec node</div>
     <div class="activity-item"><span class="commit-hash">1b2b00d</span> checkpoint: complete core-match-systems depth1 spec node</div>
     <div class="activity-item"><span class="commit-hash">cc6a9d0</span> checkpoint: gatekeeper review core-match-systems depth1</div>
     <div class="activity-item"><span class="commit-hash">eb9a8c3</span> checkpoint: fix dynamic resume status output</div>
-    <div class="activity-item"><span class="commit-hash">31db925</span> checkpoint: fix false blocked status in mobile dashboard</div>
   </div>
 
 
@@ -229,19 +229,19 @@
 
   <h2>Progress Areas</h2>
   <div class="grid">
-    <div class="card"><div class="row"><strong>Main Spec Kit</strong><span class="badge neutral">6.5%</span></div><div class="muted">Weight 10% · Root, game-concept subtree, core-match-systems depth-1, first core depth-2 node, and first match-flow depth-3 node complete</div></div>
-    <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">11.5%</span></div><div class="muted">Weight 15% · Game-concept subtree complete through depth 4; match-flow phase timing depth-3 complete with depth-4 leaves pending</div></div>
-    <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">6.5%</span></div><div class="muted">Weight 10% · Claim win condition, comeback tension, Majlis presentation, anti-dominance, core loop, 9-phase flow, and timing envelope selected</div></div>
-    <div class="card"><div class="row"><strong>Core Game Logic</strong><span class="badge neutral">2.5%</span></div><div class="muted">Weight 15% · Planning only: 9-phase match flow and timing envelope complete; resolver, action economy, and Claim state still pending</div></div>
+    <div class="card"><div class="row"><strong>Main Spec Kit</strong><span class="badge neutral">6.7%</span></div><div class="muted">Weight 10% · Root, game-concept subtree, core-match-systems depth-1, first core depth-2 node, first match-flow depth-3 node, and first timing depth-4 leaf complete</div></div>
+    <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">11.8%</span></div><div class="muted">Weight 15% · Game-concept subtree complete through depth 4; match-flow phase timing depth-3 complete with opening-council-pacing leaf complete</div></div>
+    <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">6.7%</span></div><div class="muted">Weight 10% · Claim win condition, comeback tension, Majlis presentation, anti-dominance, core loop, 9-phase flow, timing envelope, and opening pacing selected</div></div>
+    <div class="card"><div class="row"><strong>Core Game Logic</strong><span class="badge neutral">2.7%</span></div><div class="muted">Weight 15% · Planning only: 9-phase match flow, timing envelope, and opening act pacing complete; resolver, action economy, and Claim state still pending</div></div>
     <div class="card"><div class="row"><strong>Bots and AI Opponents</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
     <div class="card"><div class="row"><strong>Multiplayer Mock / Online Ready</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
     <div class="card"><div class="row"><strong>Arabic / English / RTL / LTR</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Scaffold only</div></div>
     <div class="card"><div class="row"><strong>Android / iOS Readiness</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 5% · Build plan only</div></div>
     <div class="card"><div class="row"><strong>Tests / Balance Simulator / QA</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
-    <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">2%</span></div><div class="muted">Weight 5% · Bootstrap and root docs scaffolded</div></div>
+    <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">3%</span></div><div class="muted">Weight 5% · Bootstrap/root docs scaffolded; Project Direction Review completed with gatekeeper/spec-critic/integration review</div></div>
   </div>
 
-  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 21:15:46 UTC · Static HTML only.</footer>
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 21:29:38 UTC · Static HTML only.</footer>
 </main>
 </body>
 </html>

@@ -69,7 +69,7 @@ root: mobile-strategy-game-godot (depth 0)
 ├── core-match-systems (depth 1, DONE planning; expands below)
 │   ├── match-flow-and-phase-structure (depth 2, DONE; expands below)
 │   │   ├── phase-count-and-timing-envelope (depth 3, DONE; expands below)
-│   │   │   ├── opening-council-pacing (depth 4, TODO)
+│   │   │   ├── opening-council-pacing (depth 4, DONE)
 │   │   │   ├── rising-debate-pacing (depth 4, TODO)
 │   │   │   ├── final-petition-pacing (depth 4, TODO)
 │   │   │   └── duration-cap-and-interruption-validation (depth 4, TODO)
@@ -89,8 +89,8 @@ root: mobile-strategy-game-godot (depth 0)
 
 All current depth-2 branches under `game-concept-and-win-condition` are complete through depth 4.
 
-1. Continue the first TODO depth-4 leaf under `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`: `opening-council-pacing`.
-2. Complete all four depth-4 leaves for `phase-count-and-timing-envelope`.
+1. Continue the next TODO depth-4 leaf under `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`: `rising-debate-pacing`.
+2. Complete the remaining three depth-4 leaves for `phase-count-and-timing-envelope`.
 3. Continue remaining depth-3 and depth-2 branches under `core-match-systems` until all branches reach required depth 4.
 4. Do not implement game code until leaf-node tasks explicitly authorize implementation.
 
@@ -113,4 +113,4 @@ Depth-1 `core-match-systems` artifacts live in `.spec-tree/core-match-systems/`.
 
 Depth-2 `match-flow-and-phase-structure` artifacts live in `.spec-tree/core-match-systems/match-flow-and-phase-structure/`; it plans three depth-3 children: `phase-count-and-timing-envelope`, `phase-state-machine-and-handoffs`, and `final-reveal-and-mode-completion`.
 
-Depth-3 `phase-count-and-timing-envelope` artifacts live in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`; it plans four depth-4 leaves: `opening-council-pacing`, `rising-debate-pacing`, `final-petition-pacing`, and `duration-cap-and-interruption-validation`.
+Depth-3 `phase-count-and-timing-envelope` artifacts live in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`; it plans four depth-4 leaves: `opening-council-pacing` is complete, while `rising-debate-pacing`, `final-petition-pacing`, and `duration-cap-and-interruption-validation` remain pending.

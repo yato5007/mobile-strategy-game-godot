@@ -167,3 +167,39 @@ Only significant decisions are recorded here.
 - Why downside is acceptable: Future UX/localization nodes must expose act, phase, and timer state clearly in portrait UI.
 - Later verification: Duration table validation, simulator duration distribution, human FFA/2v2 pacing QA, and interruption stress scenarios.
 - Artifact proof: Full depth-3 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/`.
+
+## DEC-CMS-OCP-001 — Opening Council uses guided strategic ramp
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Phases 1-3 use a guided strategic ramp: phase 1 planning is 90s first-match or 75s replay, phase 2 is 75s, phase 3 is 70s, with 4-5s lock grace, 35-45s reveal/update windows, localized icon-first briefs, and capped recoverable early Claim swings.
+- Options compared:
+  - Uniform 75s opening phases: rejected as default because phase 1 onboarding is too compressed for new-player clarity.
+  - 120s tutorial-heavy opening: rejected because it slows active mobile multiplayer and hurts replay pacing.
+  - Guided strategic ramp: accepted because it teaches the match rhythm while keeping active choices meaningful.
+  - 45-60s opening: rejected because it pushes reaction-speed play and harms Arabic/English portrait readability.
+- Why this serves the final game: It makes the first match readable, preserves strategic decision quality, and prevents the opening from creating unrecoverable leads before the Rising Debate act.
+- Potential downside: Phase 1 can feel slow to expert players.
+- Why downside is acceptable: Replay context can use 75s and future all-ready fast-forward can reduce waiting without changing the strategic ceiling.
+- Later verification: Future timing config tests, first-match QA, FFA/2v2 walkthroughs, localization layout checks, and opening anti-runaway simulator metrics.
+- Artifact proof: Full depth-4 Spec Kit artifacts in `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing/`.
+
+## DEC-PDR-001 — Direction review adopts minor sequencing adjustment to protect game feel
+
+- Date: 2026-05-25
+- Node: project-direction-review/global
+- Type: AUTONOMOUS_DECISION
+- Decision: Continue with `Banner of the Majlis`, Godot 4.x, portrait-only Android/iOS, REQUIRED_DEPTH=4/MAX_DEPTH=4, and no premature implementation; adjust sequencing so P2 game-feel proof is brought forward after minimum P1 core-match contracts are complete through depth 4.
+- Options compared:
+  - CONTINUE_AS_PLANNED with no adjustment: rejected because it could let abstract rules continue while visual/game-feel proof remains weak.
+  - REWORK_WEAK_NODES now: rejected because broad rework would duplicate completed planning; weak leaves should be sharpened only before implementation consumes them.
+  - PRIORITIZE_GAME_FEEL immediately: rejected as immediate next step because art/motion would be detached from incomplete state/action/Claim contracts, but accepted as the next major emphasis after the trigger.
+  - PRIORITIZE_GODOT_PROTOTYPE_PREPARATION now: rejected because it risks premature implementation before sufficient leaf-node contracts exist.
+  - ADJUST_DIRECTION: accepted because it preserves the current strong concept while reducing the risk of a documentation-heavy, artifact-poor project.
+- Concrete trigger: after `phase-count-and-timing-envelope`, `phase-state-machine-and-handoffs`, `simultaneous-planning-and-resolution`, `action-economy-and-legal-actions`, and `claim-objective-state-model` complete through depth 4, prioritize `presentation-art-audio-motion` before extended P3 work.
+- Why this serves the final game: It keeps P1 core rules coherent while enforcing P2 game feel as a near-term requirement, preventing the game from becoming a text-square dashboard.
+- Potential downside: Some P3 bots/multiplayer/balance work may start later than a strict root branch order.
+- Why downside is acceptable: Bots and multiplayer need stable rule contracts, and the master plan treats game feel as essential rather than decorative.
+- Later verification: `presentation-art-audio-motion`, `ASSET_MANIFEST.md`, `ASSET_PIPELINE.md`, future Godot scenes, and QA/reviewer checks must prove Claim and feedback appear as game objects with visual/audio/motion clarity.
+- Artifact proof: `PROJECT_DIRECTION_REVIEW.md`, gatekeeper/spec-critic/integration reviews, and this decision entry.

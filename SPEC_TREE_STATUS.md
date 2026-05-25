@@ -59,7 +59,7 @@
 | core-match-systems | 1 | DONE | Full depth-1 planning artifacts complete; child nodes must reach depth 4 |
 | core-match-systems/match-flow-and-phase-structure | 2 | DONE | Full depth-2 planning artifacts complete; selects 9-phase three-act fixed match and depth-3 children |
 | core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope | 3 | DONE | Full depth-3 planning artifacts complete; validates 9-phase timing, act pacing, caps, mobile interruption reserve, and under-30-minute envelope; depth-4 leaves pending |
-| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing | 4 | TODO | Must specify phases 1-3 onboarding, first Claim comprehension, opening timer tolerances, and anti-runaway checks |
+| core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/opening-council-pacing | 4 | DONE | Full depth-4 leaf artifacts complete; specifies phase 1-3 guided strategic ramp, onboarding, lock/reveal pacing, FFA/2v2 briefs, localization needs, and anti-runaway checks |
 | core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/rising-debate-pacing | 4 | TODO | Must specify phases 4-6 mid-match pressure cadence, strategy shifts, FFA leader threat, and 2v2 teammate awareness |
 | core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/final-petition-pacing | 4 | TODO | Must specify phases 7-9 urgency, final counterplay timing, final uncertainty, and no-early-victory reinforcement |
 | core-match-systems/match-flow-and-phase-structure/phase-count-and-timing-envelope/duration-cap-and-interruption-validation | 4 | TODO | Must specify duration formulas, reconnect grace scenarios, auto-ready validation, and under-30-minute metrics |
@@ -79,4 +79,4 @@
 
 ## Current Blockers
 
-- Game implementation is intentionally blocked until leaf Spec Kit tasks exist.
+- Game implementation is intentionally blocked until leaf Spec Kit tasks exist and a future implementer is explicitly authorized. Opening Council now has implementation instructions, but no game code is authorized by this task.
