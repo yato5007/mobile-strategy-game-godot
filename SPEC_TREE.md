@@ -14,7 +14,11 @@ Bootstrap prepared. Root Spec Kit completed for planning scope. Game implementat
 
 ```text
 root: mobile-strategy-game-godot (depth 0)
-├── game-concept-and-win-condition (depth 1, TODO)
+├── game-concept-and-win-condition (depth 1, DONE planning; expands below)
+│   ├── win-condition-clarity (depth 2, TODO)
+│   ├── strategic-tension-and-comeback (depth 2, TODO)
+│   ├── anti-dominant-strategy-and-active-play (depth 2, TODO)
+│   └── concept-presentation-and-theme (depth 2, TODO)
 ├── core-match-systems (depth 1, TODO)
 ├── multiplayer-and-bots (depth 1, TODO)
 ├── balance-and-validation (depth 1, TODO)
@@ -25,12 +29,14 @@ root: mobile-strategy-game-godot (depth 0)
 
 ## Next Required Step
 
-Run full Spec Kit for the first depth-1 branch:
+Run full Spec Kit for the first depth-2 node under the first depth-1 branch:
 
-1. `.spec-tree/game-concept-and-win-condition/`
-2. Continue branch expansion until required depth 4.
+1. `.spec-tree/game-concept-and-win-condition/win-condition-clarity/`
+2. Continue this branch until required depth 4.
 3. Do not implement game code until leaf-node tasks exist.
 
 ## Root Artifacts
 
 Root artifacts live in `.spec-tree/root/` and include constitution, spec, clarification, plan, tasks, analysis, checklist, implementation instructions, QA, review, integration notes, and `NODE_SUMMARY.md`.
+
+Depth-1 `game-concept-and-win-condition` artifacts live in `.spec-tree/game-concept-and-win-condition/`.

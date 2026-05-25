@@ -4,9 +4,9 @@ Progress is an indicator, not proof of quality.
 
 | Area | Weight | Status | Notes |
 |---|---:|---|---|
-| Main Spec Kit | 10% | 3% | Root Spec Kit planning artifacts complete |
-| Recursive Spec Tree | 15% | 1% | Depth-1 branches identified; depth 4 pending |
-| Game Design Decisions | 10% | 0% | Must come from Spec Kit |
+| Main Spec Kit | 10% | 4% | Root and first depth-1 branch artifacts complete |
+| Recursive Spec Tree | 15% | 2% | First depth-1 branch expanded to meaningful depth-2 nodes; depth 4 pending |
+| Game Design Decisions | 10% | 2% | Provisional visible Claim win-condition direction selected |
 | Core Game Logic | 15% | 0% | Not started during bootstrap |
 | Bots and AI Opponents | 10% | 0% | Pending |
 | Multiplayer Mock / Online Ready | 10% | 0% | Pending |
@@ -17,4 +17,4 @@ Progress is an indicator, not proof of quality.
 
 ## Overall
 
-Root Spec Kit is complete for planning scope. The game is not implemented yet by design.
+Root Spec Kit and first P1 depth-1 branch are complete for planning scope. The game is not implemented yet by design.

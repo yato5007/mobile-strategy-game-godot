@@ -15,5 +15,10 @@ No final PASS is allowed while requirements are unlinked.
 | Arabic/English RTL/LTR | MASTER 8 | `.spec-tree/root/`, future `mobile-ux-localization-accessibility` | DEC-ROOT-001 | Pending future leaf tasks | Pending branch validation | Pending | Pending | TODO |
 | Asset manifest/pipeline | MASTER 22.1 | `.spec-tree/root/`, future `presentation-art-audio-motion` | DEC-ROOT-001 | `ASSET_MANIFEST.md`, `ASSET_PIPELINE.md`; assets pending | Pending branch validation | Pending | Pending | TODO |
 | Android build deliverable | MASTER 9.1 | `.spec-tree/root/`, future `godot-architecture-and-delivery` | DEC-ROOT-001 | `BUILD_DELIVERABLES.md`; APK pending | Pending build validation | Pending | Pending | TODO |
+| Clear win condition | MASTER 4.1.4, 6 | `.spec-tree/game-concept-and-win-condition/`, future `win-condition-clarity` | DEC-GCWC-001 | Pending future leaf tasks | Depth-1 checklist | Depth-1 QA PASS | Depth-1 review PASS | ROOT_AND_D1_LINKED |
+| No early match end | MASTER 6.19-20 | `.spec-tree/game-concept-and-win-condition/` | DEC-GCWC-001 | Pending future leaf tasks | Depth-1 checklist | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
+| Comeback possible | MASTER 6.10, 6.22 | `.spec-tree/game-concept-and-win-condition/`, future `strategic-tension-and-comeback` | DEC-GCWC-001 | Pending future leaf tasks | Pending child validation | Pending | Pending | TODO |
+| Anti-passive active play | MASTER 6.16-17 | `.spec-tree/game-concept-and-win-condition/`, future `anti-dominant-strategy-and-active-play` | DEC-GCWC-001 | Pending future leaf tasks | Pending child validation | Pending | Pending | TODO |
+| Anti-spreadsheet game feel | MASTER 4.1.7 | `.spec-tree/game-concept-and-win-condition/`, future `concept-presentation-and-theme` | DEC-GCWC-001 | Pending future leaf tasks | Depth-1 checklist | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
 
 Root links are planning-level links. Future child nodes must replace remaining `Pending` items with exact artifacts before implementation claims.
