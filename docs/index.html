@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Progress Dashboard</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,sans-serif; background:linear-gradient(180deg,#0f172a,#1e293b); color:var(--text); }
+    main { width:min(760px,100%); margin:0 auto; padding:18px; }
+    .hero { padding:22px; border-radius:24px; background:#020617; box-shadow:0 12px 40px #0008; }
+    h1 { margin:0 0 8px; font-size:1.35rem; }
+    h2 { margin:22px 0 10px; font-size:1.05rem; }
+    .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
+    .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
+    .bar > div { height:100%; width:4%; background:var(--good); }
+    .grid { display:grid; gap:12px; }
+    .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
+    .muted { color:var(--muted); }
+    .badge { display:inline-block; padding:4px 9px; border-radius:999px; font-size:.78rem; font-weight:800; color:#020617; }
+    .good { background:var(--good); } .warn { background:var(--warn); } .bad { background:var(--bad); color:white; } .neutral { background:var(--neutral); }
+    .row { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
+    ul { padding-left:20px; }
+    footer { color:var(--muted); text-align:center; padding:28px 0 10px; font-size:.82rem; }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>mobile-strategy-game-godot</h1>
+    <div class="muted">Mobile Progress Dashboard</div>
+    <div class="percent">4%</div>
+    <div class="bar"><div></div></div>
+    <p><strong>Current phase:</strong> depth4-leader-threat-indicator-complete</p>
+    <p><strong>Current wave:</strong> No active wave file</p>
+    <p><strong>User intervention needed:</strong> <span class="badge good">NO</span></p>
+  </section>
+
+  <h2>Next Step</h2>
+  <div class="card">Continue remaining game-concept-and-win-condition siblings to depth 4, starting with comeback-path-cue.</div>
+
+  <h2>Latest Control Signals</h2>
+  <div class="grid">
+    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">No report-gatekeeper decision recorded yet</span></div>
+    <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-GCWC-001 — Game concept uses fixed-length visible Claim win condition</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">61f314b checkpoint: complete depth4 leader threat indicator spec kit</span></div>
+  </div>
+
+  <h2>Branches and Status</h2>
+  <div class="grid">
+    <div class="card"><div class="row"><strong>Bootstrap files and tooling</strong><span class="badge good">DONE</span></div><div class="muted">Depth N/A · Checkpoint: complete bootstrap ai tooling and controls</div></div>
+    <div class="card"><div class="row"><strong>Root Spec Kit</strong><span class="badge good">DONE</span></div><div class="muted">Depth 0 · Root artifacts created in `.spec-tree/root/`; no game implementation</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition</strong><span class="badge good">DONE</span></div><div class="muted">Depth 1 · Full depth-1 artifacts complete; child nodes must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity</strong><span class="badge good">DONE</span></div><div class="muted">Depth 2 · Full depth-2 artifacts complete; child nodes must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/claim-progress-display</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · Full depth-3 artifacts complete; depth-4 children pending</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/claim-progress-display/leader-threat-indicator</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/claim-progress-display/comeback-path-cue</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 4 · Must define visible route back cues for trailing players</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/win-loss-explanation</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 3 · Must define final explanation model</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 3 · Must define 2v2/FFA readability differences</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/strategic-tension-and-comeback</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must define fair comeback and tension model</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/anti-dominant-strategy-and-active-play</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must prevent one perfect plan and passive hiding</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/concept-presentation-and-theme</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must prevent text-square concept presentation</div></div>
+    <div class="card"><div class="row"><strong>core-match-systems</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>multiplayer-and-bots</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>balance-and-validation</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>presentation-art-audio-motion</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>mobile-ux-localization-accessibility</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>godot-architecture-and-delivery</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
+    <div class="card"><div class="row"><strong>Depth-2 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 2 · First depth-1 branch has four meaningful depth-2 nodes pending</div></div>
+    <div class="card"><div class="row"><strong>Depth-3 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 3 · First depth-2 node has three meaningful depth-3 nodes pending</div></div>
+    <div class="card"><div class="row"><strong>Depth-4 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 4 · First depth-4 leaf complete; remaining depth-4 siblings still pending</div></div>
+  </div>
+
+  <h2>Progress Areas</h2>
+  <div class="grid">
+    <div class="card"><div class="row"><strong>Main Spec Kit</strong><span class="badge neutral">4%</span></div><div class="muted">Weight 10% · Root and first depth-1 branch artifacts complete</div></div>
+    <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">5%</span></div><div class="muted">Weight 15% · First depth-4 leaf completed; remaining branch siblings pending</div></div>
+    <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">2%</span></div><div class="muted">Weight 10% · Provisional visible Claim win-condition direction selected</div></div>
+    <div class="card"><div class="row"><strong>Core Game Logic</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 15% · Not started during bootstrap</div></div>
+    <div class="card"><div class="row"><strong>Bots and AI Opponents</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
+    <div class="card"><div class="row"><strong>Multiplayer Mock / Online Ready</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
+    <div class="card"><div class="row"><strong>Arabic / English / RTL / LTR</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Scaffold only</div></div>
+    <div class="card"><div class="row"><strong>Android / iOS Readiness</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 5% · Build plan only</div></div>
+    <div class="card"><div class="row"><strong>Tests / Balance Simulator / QA</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>
+    <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">2%</span></div><div class="muted">Weight 5% · Bootstrap and root docs scaffolded</div></div>
+  </div>
+
+  <h2>Blocked / Problems</h2>
+  <div class="card"><ul>
+    <li><span class="badge bad">BLOCKED</span> Game implementation is intentionally blocked until leaf Spec Kit tasks exist.</li>
+  </ul></div>
+
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code>. Static HTML only.</footer>
+</main>
+</body>
+</html>
