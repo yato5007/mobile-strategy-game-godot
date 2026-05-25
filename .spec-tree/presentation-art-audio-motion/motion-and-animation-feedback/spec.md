@@ -1,0 +1,2 @@
+# spec.md — Motion and Animation Feedback
+Animation catalog: phase_transition (carpet slide 0.8s), claim_change (banner scroll 0.5s), commit_lock (seal stamp 0.6s), leader_threat (ring pulse 0.4s loop, 3 intensities), victory (banner unfurl 1.2s + confetti 1.5s), pressure_increase (lantern glow 0.5s), comeback_path (lane highlight 0.6s). All animations: interruptible (tap to skip), capped 0.3-1.5s, respect reduced-motion accessibility. 3 depth-3 children: transition-and-phase-animation, feedback-and-status-animation, accessibility-and-motion-preferences. No implementation.
