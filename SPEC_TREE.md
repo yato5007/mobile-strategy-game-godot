@@ -87,7 +87,7 @@ root: mobile-strategy-game-godot (depth 0)
 │   └── claim-objective-state-model (depth 2, DONE; all depth-4 complete)
 ├── multiplayer-and-bots (depth 1, TODO)
 ├── balance-and-validation (depth 1, TODO)
-├── presentation-art-audio-motion (depth 1, TODO)
+├── presentation-art-audio-motion (depth 1, DONE; expands below)
 ├── mobile-ux-localization-accessibility (depth 1, TODO)
 └── godot-architecture-and-delivery (depth 1, TODO)
 ```
