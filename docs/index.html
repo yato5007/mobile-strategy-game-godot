@@ -14,7 +14,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:4%; background:var(--good); }
+    .bar > div { height:100%; width:5%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -30,21 +30,21 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">4%</div>
+    <div class="percent">5%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> depth4-leader-threat-indicator-complete</p>
+    <p><strong>Current phase:</strong> depth4-comeback-path-cue-complete</p>
     <p><strong>Current wave:</strong> No active wave file</p>
     <p><strong>User intervention needed:</strong> <span class="badge good">NO</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">Continue remaining game-concept-and-win-condition siblings to depth 4 autonomously, starting with comeback-path-cue.</div>
+  <div class="card">Continue game-concept-and-win-condition autonomously with win-loss-explanation at depth 3 and its depth-4 leaves.</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
-    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — Full Autonomy Rule Governance Review</span></div>
+    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — Comeback Path Cue Depth-4 Review</span></div>
     <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-AUTO-001 — Full Autonomy Rule adopted</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">c8dac20 checkpoint: add mobile progress dashboard</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">f7b37da checkpoint: add full autonomy rule and autonomous decision workflow</span></div>
   </div>
 
   <h2>Branches and Status</h2>
@@ -55,7 +55,7 @@
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity</strong><span class="badge good">DONE</span></div><div class="muted">Depth 2 · Full depth-2 artifacts complete; child nodes must reach depth 4</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/claim-progress-display</strong><span class="badge good">DONE</span></div><div class="muted">Depth 3 · Full depth-3 artifacts complete; depth-4 children pending</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/claim-progress-display/leader-threat-indicator</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
-    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/claim-progress-display/comeback-path-cue</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 4 · Must define visible route back cues for trailing players</div></div>
+    <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/claim-progress-display/comeback-path-cue</strong><span class="badge good">DONE</span></div><div class="muted">Depth 4 · Full depth-4 leaf artifacts complete</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/win-loss-explanation</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 3 · Must define final explanation model</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 3 · Must define 2v2/FFA readability differences</div></div>
     <div class="card"><div class="row"><strong>game-concept-and-win-condition/strategic-tension-and-comeback</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 2 · Must define fair comeback and tension model</div></div>
@@ -69,13 +69,13 @@
     <div class="card"><div class="row"><strong>godot-architecture-and-delivery</strong><span class="badge warn">TODO</span></div><div class="muted">Depth 1 · Must reach depth 4</div></div>
     <div class="card"><div class="row"><strong>Depth-2 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 2 · First depth-1 branch has four meaningful depth-2 nodes pending</div></div>
     <div class="card"><div class="row"><strong>Depth-3 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 3 · First depth-2 node has three meaningful depth-3 nodes pending</div></div>
-    <div class="card"><div class="row"><strong>Depth-4 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 4 · First depth-4 leaf complete; remaining depth-4 siblings still pending</div></div>
+    <div class="card"><div class="row"><strong>Depth-4 nodes</strong><span class="badge warn">IN_PROGRESS</span></div><div class="muted">Depth 4 · Two depth-4 leaves complete; remaining depth-4 siblings still pending</div></div>
   </div>
 
   <h2>Progress Areas</h2>
   <div class="grid">
     <div class="card"><div class="row"><strong>Main Spec Kit</strong><span class="badge neutral">4%</span></div><div class="muted">Weight 10% · Root and first depth-1 branch artifacts complete</div></div>
-    <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">5%</span></div><div class="muted">Weight 15% · First depth-4 leaf completed; remaining branch siblings pending</div></div>
+    <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">6%</span></div><div class="muted">Weight 15% · Two depth-4 leaves completed; remaining branch siblings pending</div></div>
     <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">2%</span></div><div class="muted">Weight 10% · Provisional visible Claim win-condition direction selected</div></div>
     <div class="card"><div class="row"><strong>Core Game Logic</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 15% · Not started during bootstrap</div></div>
     <div class="card"><div class="row"><strong>Bots and AI Opponents</strong><span class="badge neutral">0%</span></div><div class="muted">Weight 10% · Pending</div></div>

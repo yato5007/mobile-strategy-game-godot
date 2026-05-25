@@ -18,7 +18,7 @@ root: mobile-strategy-game-godot (depth 0)
 │   ├── win-condition-clarity (depth 2, TODO)
 │   │   ├── claim-progress-display (depth 3, TODO)
 │   │   │   ├── leader-threat-indicator (depth 4, TODO)
-│   │   │   └── comeback-path-cue (depth 4, TODO)
+│   │   │   └── comeback-path-cue (depth 4, DONE)
 │   │   ├── win-loss-explanation (depth 3, TODO)
 │   │   └── team-and-ffa-win-readability (depth 3, TODO)
 │   ├── strategic-tension-and-comeback (depth 2, TODO)
@@ -36,8 +36,9 @@ root: mobile-strategy-game-godot (depth 0)
 
 Run full Spec Kit for the first depth-4 node under the first depth-3 node:
 
-1. `.spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/leader-threat-indicator/`
-2. Continue all sibling nodes until the full branch reaches required depth 4.
+1. `.spec-tree/game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/`
+2. Expand it to meaningful depth-4 leaves.
+3. Continue all sibling nodes until the full branch reaches required depth 4.
 3. Do not implement game code until leaf-node tasks exist.
 
 ## Root Artifacts

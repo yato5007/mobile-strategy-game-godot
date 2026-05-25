@@ -1,16 +1,16 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "depth4-leader-threat-indicator-complete",
+  "phase": "depth4-comeback-path-cue-complete",
   "gameImplementationStarted": false,
   "fullAutonomyRule": true,
   "decisionMode": "AUTONOMOUS_DECISION_BY_DEFAULT",
   "requiredDepth": 4,
   "maxDepth": 4,
-  "overallPercent": 4,
+  "overallPercent": 5,
   "areas": {
     "mainSpecKit": 4,
-    "recursiveSpecTree": 5,
+    "recursiveSpecTree": 6,
     "gameDesignDecisions": 2,
     "coreGameLogic": 0,
     "botsAndAiOpponents": 0,
@@ -20,6 +20,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 2
   },
-  "nextStep": "Continue remaining game-concept-and-win-condition siblings to depth 4 autonomously, starting with comeback-path-cue.",
+  "nextStep": "Continue game-concept-and-win-condition autonomously with win-loss-explanation at depth 3 and its depth-4 leaves.",
   "blocked": []
 }
