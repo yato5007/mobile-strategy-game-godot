@@ -1,0 +1,1 @@
+# clarification.md — Q1: Reveal is simultaneous, not turn-based. Q2: Intensity values 1-3 determine conflict outcomes. Q3: Shared objectives split Claim 50/50. Q4: 2v2: teammates cannot contest each other.

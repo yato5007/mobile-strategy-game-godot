@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Progress Dashboard</title>
-  <!-- lastDashboardUpdate: 2026-05-25T23:14:23Z -->
+  <!-- lastDashboardUpdate: 2026-05-25T23:15:22Z -->
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -81,7 +81,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:46%; background:var(--good); }
+    .bar > div { height:100%; width:47%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -127,11 +127,11 @@
     <div class="pulse-grid">
       <div class="pulse-item">
         <div class="pulse-label">Last Dashboard Update</div>
-        <div class="pulse-value">2026-05-25 23:14:23 UTC</div>
+        <div class="pulse-value">2026-05-25 23:15:22 UTC</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Checkpoint</div>
-        <div class="pulse-value">complete claim-update and pressure-shift depth4 leaves; phase-state-machine fully complete through depth4</div>
+        <div class="pulse-value">complete final-reveal-and-mode-completion depth3</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Completed Node</div>
@@ -139,11 +139,11 @@
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Current Node / Task</div>
-        <div class="pulse-value">final-reveal-and-mode-completion depth-3 complete. Continue to simultaneous-planning-and-resolution ...</div>
+        <div class="pulse-value">Continue to action-economy-and-legal-actions depth-2. Remaining minimum contracts: action-economy, c...</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Checkpoints / Commits</div>
-        <div class="pulse-value">33 checkpoints · 34 total commits</div>
+        <div class="pulse-value">34 checkpoints · 35 total commits</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Decision Mode</div>
@@ -156,30 +156,30 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">46%</div>
+    <div class="percent">47%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> final-reveal-depth3-complete</p>
+    <p><strong>Current phase:</strong> simultaneous-planning-depth2-complete</p>
     <p><strong>Current wave:</strong> No active wave file</p>
     <p><strong>User intervention needed:</strong> <span class="badge good-bg">NO</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">final-reveal-and-mode-completion depth-3 complete. Continue to simultaneous-planning-and-resolution depth-2. match-flow-and-phase-structure is fully planned; remaining depth-4 children under final-reveal will complete after minimum contracts trigger.</div>
+  <div class="card">Continue to action-economy-and-legal-actions depth-2. Remaining minimum contracts: action-economy, claim-objective-state-model.</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
     <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — phase-count-and-timing-envelope Completion</span></div>
     <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-CMS-FPP-001 — Final Petition uses accelerated urgency cadence</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete claim-update and pressure-shift depth4 leaves; phase-state-machine fully complete through depth4</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete final-reveal-and-mode-completion depth3</span></div>
   </div>
 
   <h2>Recent Activity</h2>
   <div class="card activity-list">
+    <div class="activity-item"><span class="commit-hash">4e36ef4</span> checkpoint: complete final-reveal-and-mode-completion depth3</div>
     <div class="activity-item"><span class="commit-hash">aca2b8f</span> checkpoint: complete claim-update and pressure-shift depth4 leaves; phase-state-machine fully complete through depth4</div>
     <div class="activity-item"><span class="commit-hash">66df9c1</span> checkpoint: complete reveal-and-resolver-handoff depth4</div>
     <div class="activity-item"><span class="commit-hash">a369fc4</span> checkpoint: complete commit-lock-and-action-binding depth4 leaf</div>
     <div class="activity-item"><span class="commit-hash">b4fd1c0</span> checkpoint: complete phase-state-machine-and-handoffs depth3</div>
-    <div class="activity-item"><span class="commit-hash">a325e7c</span> checkpoint: complete duration-cap leaf and phase-count-and-timing-envelope</div>
   </div>
 
 
@@ -241,7 +241,7 @@
     <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">3%</span></div><div class="muted">Weight 5% · Bootstrap/root docs scaffolded; Project Direction Review completed with gatekeeper/spec-critic/integration review</div></div>
   </div>
 
-  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 23:14:23 UTC · Static HTML only.</footer>
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 23:15:22 UTC · Static HTML only.</footer>
 </main>
 </body>
 </html>
