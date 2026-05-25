@@ -1,14 +1,14 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "bootstrap",
+  "phase": "root-speckit-complete",
   "gameImplementationStarted": false,
   "requiredDepth": 4,
   "maxDepth": 4,
-  "overallPercent": 1,
+  "overallPercent": 2,
   "areas": {
-    "mainSpecKit": 0,
-    "recursiveSpecTree": 0,
+    "mainSpecKit": 3,
+    "recursiveSpecTree": 1,
     "gameDesignDecisions": 0,
     "coreGameLogic": 0,
     "botsAndAiOpponents": 0,
@@ -16,8 +16,8 @@
     "arabicEnglishRtlLtr": 0,
     "androidIosReadiness": 0,
     "testsBalanceQa": 0,
-    "integrationDocumentationHandoff": 1
+    "integrationDocumentationHandoff": 2
   },
-  "nextStep": "Run root Spec Kit after bootstrap checkpoint.",
+  "nextStep": "Run full Spec Kit for .spec-tree/game-concept-and-win-condition/ and continue every depth-1 branch to depth 4.",
   "blocked": []
 }

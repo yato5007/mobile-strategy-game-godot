@@ -2,7 +2,7 @@
 
 ## Status
 
-Bootstrap prepared. Root Spec Kit has not started yet.
+Bootstrap prepared. Root Spec Kit completed for planning scope. Game implementation has not started.
 
 ## Depth Contract
 
@@ -14,18 +14,23 @@ Bootstrap prepared. Root Spec Kit has not started yet.
 
 ```text
 root: mobile-strategy-game-godot (depth 0)
-└── pending: root Spec Kit must define meaningful depth-1 branches
+├── game-concept-and-win-condition (depth 1, TODO)
+├── core-match-systems (depth 1, TODO)
+├── multiplayer-and-bots (depth 1, TODO)
+├── balance-and-validation (depth 1, TODO)
+├── presentation-art-audio-motion (depth 1, TODO)
+├── mobile-ux-localization-accessibility (depth 1, TODO)
+└── godot-architecture-and-delivery (depth 1, TODO)
 ```
 
 ## Next Required Step
 
-Run full root Spec Kit only after bootstrap:
+Run full Spec Kit for the first depth-1 branch:
 
-1. `/speckit.constitution`
-2. `/speckit.specify`
-3. `/speckit.clarify`
-4. `/speckit.plan`
-5. `/speckit.tasks`
-6. `/speckit.analyze`
-7. `/speckit.checklist`
-8. `/speckit.implement` for root-level preparation only, not game implementation.
+1. `.spec-tree/game-concept-and-win-condition/`
+2. Continue branch expansion until required depth 4.
+3. Do not implement game code until leaf-node tasks exist.
+
+## Root Artifacts
+
+Root artifacts live in `.spec-tree/root/` and include constitution, spec, clarification, plan, tasks, analysis, checklist, implementation instructions, QA, review, integration notes, and `NODE_SUMMARY.md`.

@@ -2,10 +2,18 @@
 set -euo pipefail
 
 echo "== Project Status =="
-echo "Phase: bootstrap / pre-root-Spec-Kit"
+echo "Phase: $(python - <<'PY'
+import json
+print(json.load(open('PROJECT_PROGRESS.json')).get('phase', 'unknown'))
+PY
+)"
 echo "Required depth: 4"
 echo "Max depth: 4"
-echo "Game implementation started: false"
+echo "Game implementation started: $(python - <<'PY'
+import json
+print(str(json.load(open('PROJECT_PROGRESS.json')).get('gameImplementationStarted', False)).lower())
+PY
+)"
 echo
 echo "== Git Status =="
 git status --short
@@ -15,7 +23,7 @@ git log --oneline -5 || true
 echo
 echo "== Key Pending Items =="
 printf '%s\n' \
-  "TODO: Run root Spec Kit after bootstrap checkpoint" \
-  "TODO: Derive meaningful depth-1 branches via Spec Kit" \
+  "TODO: Run full Spec Kit for game-concept-and-win-condition" \
+  "TODO: Run full Spec Kit for all remaining depth-1 branches" \
   "TODO: Complete full Spec Kit for every node through depth 4" \
-  "BLOCKED: Game implementation until Spec Kit tasks exist"
+  "BLOCKED: Game implementation until leaf Spec Kit tasks exist"
