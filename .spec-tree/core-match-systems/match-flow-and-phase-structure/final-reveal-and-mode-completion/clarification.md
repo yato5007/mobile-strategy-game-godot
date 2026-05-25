@@ -1,0 +1,1 @@
+# clarification.md — Q1: Tie-break uses contested-objective wins first (rewards aggression). Q2: Shared rank acceptable if truly identical. Q3: Contribution % = individual Claim / team Claim × 100%. No implementation.

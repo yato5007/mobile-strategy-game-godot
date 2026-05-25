@@ -1,20 +1,20 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "phase-state-machine-depth4-complete",
-  "overallPercent": 44,
+  "phase": "final-reveal-depth3-complete",
+  "overallPercent": 46,
   "areas": {
-    "mainSpecKit": 25,
-    "recursiveSpecTree": 56,
-    "gameDesignDecisions": 30,
-    "coreGameLogic": 16,
+    "mainSpecKit": 26,
+    "recursiveSpecTree": 58,
+    "gameDesignDecisions": 31,
+    "coreGameLogic": 17,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
     "androidIosReadiness": 0,
     "testsBalanceQa": 0,
-    "integrationDocumentationHandoff": 4
+    "integrationDocumentationHandoff": 5
   },
-  "nextStep": "phase-state-machine-and-handoffs complete through depth 4. Continue to final-reveal-and-mode-completion depth-3.",
+  "nextStep": "final-reveal-and-mode-completion depth-3 complete. Continue to simultaneous-planning-and-resolution depth-2. match-flow-and-phase-structure is fully planned; remaining depth-4 children under final-reveal will complete after minimum contracts trigger.",
   "blocked": []
 }
