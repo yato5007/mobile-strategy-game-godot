@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Progress Dashboard</title>
-  <!-- lastDashboardUpdate: 2026-05-25T23:37:59Z -->
+  <!-- lastDashboardUpdate: 2026-05-25T23:38:13Z -->
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -81,7 +81,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:65%; background:var(--good); }
+    .bar > div { height:100%; width:72%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -127,11 +127,11 @@
     <div class="pulse-grid">
       <div class="pulse-item">
         <div class="pulse-label">Last Dashboard Update</div>
-        <div class="pulse-value">2026-05-25 23:37:59 UTC</div>
+        <div class="pulse-value">2026-05-25 23:38:13 UTC</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Checkpoint</div>
-        <div class="pulse-value">complete presentation through depth4</div>
+        <div class="pulse-value">complete all 7 depth1 branches</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Completed Node</div>
@@ -139,11 +139,11 @@
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Current Node / Task</div>
-        <div class="pulse-value">presentation-art-audio-motion depth-1 complete with 4 depth-2 children proposed. Continue expanding ...</div>
+        <div class="pulse-value">All 7 depth-1 branches planned. 3 complete through depth 4. Continue remaining 4 branches through de...</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Checkpoints / Commits</div>
-        <div class="pulse-value">43 checkpoints · 44 total commits</div>
+        <div class="pulse-value">44 checkpoints · 45 total commits</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Decision Mode</div>
@@ -156,30 +156,30 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">65%</div>
+    <div class="percent">72%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> presentation-art-audio-motion-depth1-complete</p>
+    <p><strong>Current phase:</strong> all-depth1-branches-complete</p>
     <p><strong>Current wave:</strong> No active wave file</p>
     <p><strong>User intervention needed:</strong> <span class="badge good-bg">NO</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">presentation-art-audio-motion depth-1 complete with 4 depth-2 children proposed. Continue expanding through depth 4.</div>
+  <div class="card">All 7 depth-1 branches planned. 3 complete through depth 4. Continue remaining 4 branches through depth 4.</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
     <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — phase-count-and-timing-envelope Completion</span></div>
     <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-CMS-FPP-001 — Final Petition uses accelerated urgency cadence</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete presentation through depth4</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: complete all 7 depth1 branches</span></div>
   </div>
 
   <h2>Recent Activity</h2>
   <div class="card activity-list">
+    <div class="activity-item"><span class="commit-hash">b8db4c9</span> checkpoint: complete all 7 depth1 branches</div>
     <div class="activity-item"><span class="commit-hash">539549e</span> checkpoint: complete presentation through depth4</div>
     <div class="activity-item"><span class="commit-hash">e14b1c3</span> checkpoint: complete presentation 12 depth3 nodes</div>
     <div class="activity-item"><span class="commit-hash">cb70eea</span> checkpoint: complete presentation 4 depth2 nodes</div>
     <div class="activity-item"><span class="commit-hash">c5dabf0</span> checkpoint: complete presentation-art-audio-motion depth1</div>
-    <div class="activity-item"><span class="commit-hash">6569202</span> checkpoint: complete final-reveal depth4 leaves; core-match-systems fully complete through depth4</div>
   </div>
 
 
@@ -241,7 +241,7 @@
     <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">3%</span></div><div class="muted">Weight 5% · Bootstrap/root docs scaffolded; Project Direction Review completed with gatekeeper/spec-critic/integration review</div></div>
   </div>
 
-  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 23:37:59 UTC · Static HTML only.</footer>
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-25 23:38:13 UTC · Static HTML only.</footer>
 </main>
 </body>
 </html>

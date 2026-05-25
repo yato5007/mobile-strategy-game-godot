@@ -1,20 +1,20 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "presentation-art-audio-motion-depth1-complete",
-  "overallPercent": 65,
+  "phase": "all-depth1-branches-complete",
+  "overallPercent": 72,
   "areas": {
-    "mainSpecKit": 38,
-    "recursiveSpecTree": 84,
-    "gameDesignDecisions": 40,
+    "mainSpecKit": 42,
+    "recursiveSpecTree": 90,
+    "gameDesignDecisions": 44,
     "coreGameLogic": 30,
-    "botsAndAiOpponents": 0,
-    "multiplayerMockOnlineReady": 0,
-    "arabicEnglishRtlLtr": 0,
-    "androidIosReadiness": 0,
-    "testsBalanceQa": 0,
-    "integrationDocumentationHandoff": 8
+    "botsAndAiOpponents": 5,
+    "multiplayerMockOnlineReady": 5,
+    "arabicEnglishRtlLtr": 5,
+    "androidIosReadiness": 5,
+    "testsBalanceQa": 5,
+    "integrationDocumentationHandoff": 10
   },
-  "nextStep": "presentation-art-audio-motion depth-1 complete with 4 depth-2 children proposed. Continue expanding through depth 4.",
+  "nextStep": "All 7 depth-1 branches planned. 3 complete through depth 4. Continue remaining 4 branches through depth 4.",
   "blocked": []
 }
