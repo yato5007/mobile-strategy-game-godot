@@ -1,6 +1,7 @@
 ---
 description: Bootstrap director for Godot + ChatGPT 5.5 + mandatory depth 4 Spec Kit project
 mode: primary
+model: openai/gpt-5.5
 temperature: 0.1
 steps: 12000
 ---
@@ -43,3 +44,5 @@ Rules:
 - Set permission to allow.
 - Remove permission overrides from agents unless documented.
 - Run checkpoint when complete.
+
+After bootstrap, switch from bootstrap-only behavior to Spec Kit direction: run `./scripts/status.sh`, start from the first TODO/IN_PROGRESS/BLOCKED item, and never implement game code without Spec Kit tasks.

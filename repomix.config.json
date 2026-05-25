@@ -1,0 +1,33 @@
+{
+  "$schema": "https://repomix.com/schemas/latest/schema.json",
+  "output": {
+    "filePath": "_bmad-output/repomix-output.md",
+    "style": "markdown",
+    "removeComments": false,
+    "removeEmptyLines": false,
+    "showLineNumbers": true
+  },
+  "include": [
+    "*.md",
+    "*.json",
+    ".opencode/**/*.md",
+    ".ai-skills/**/*.md",
+    ".cursor/**/*.mdc",
+    "scripts/**/*.sh",
+    ".spec-tree/**/*.md",
+    ".specify/**/*.md",
+    ".specify/**/*.json"
+  ],
+  "ignore": {
+    "customPatterns": [
+      ".git/**",
+      "node_modules/**",
+      "_bmad-output/**",
+      "*.apk",
+      "*.aab",
+      "*.ipa",
+      "*.pck",
+      "*.import"
+    ]
+  }
+}

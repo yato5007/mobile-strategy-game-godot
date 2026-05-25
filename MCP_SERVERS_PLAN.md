@@ -1,23 +1,23 @@
-# MCP Servers Plan
+# MCP_SERVERS_PLAN.md
 
-## Context7
+This is a plan only. Do not add active MCP servers unless their benefit is documented and they directly serve the project.
 
-Purpose:
-- Fetch fresh documentation for Godot, GDScript, export presets, Android/iOS export, Blender pipelines, and any libraries/tools used later.
+## Priority Order
 
-Status:
-- Planned / enable when needed.
+| MCP | Status | Benefit | Downside | Activation Rule |
+|---|---|---|---|---|
+| Context7 | Planned/available when needed | Fresh docs for Godot, GDScript, multiplayer, export, and tools | Can distract if queried unnecessarily | Use when APIs/build steps are uncertain |
+| Filesystem | Deferred | Structured file access for external assistants | OpenCode already has file tools | Add only if external workflow needs it |
+| Git | Deferred | Git-aware automation | Can duplicate scripts | Add only if checkpoint workflow needs richer automation |
+| GitHub | Deferred | Issues/PR integration | Requires auth and can add process overhead | Add after Spec Kit tasks stabilize |
+| Online multiplayer service MCP | Future | Could help later network integration | Premature service coupling | Only after multiplayer solution decision |
 
-Rule:
-- Do not use MCP servers randomly.
-- Use Context7 when the agent is unsure about current API or build/export steps.
+## Context7 Usage Plan
 
-## Other MCP servers
+- Query when Godot/GDScript/export APIs are uncertain.
+- Prefer official/current docs over memory.
+- Do not use Context7 as proof that code works; validate with tests/builds.
 
-Possible later:
-- GitHub MCP
-- Filesystem MCP
-- Documentation MCP
-- Asset pipeline MCP
+## Rule for New MCP Servers
 
-Any new MCP must be justified in DECISIONS.md first.
+Before adding any MCP config, update `DECISIONS.md` with benefit, downside, project fit, activation timing, and stop condition.

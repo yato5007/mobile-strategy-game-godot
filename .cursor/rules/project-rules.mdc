@@ -3,9 +3,16 @@ description: Project rules for mobile strategy Godot game
 alwaysApply: true
 ---
 
-Read MASTER_PROJECT_PLAN.md first.
-Follow AGENTS.md.
-Use Godot.
-Required Spec Kit depth is 4.
-Do not create shallow placeholder nodes.
-Prioritize final game quality over prototype shortcuts.
+Read `MASTER_PROJECT_PLAN.md` first. Follow `AGENTS.md` and `AI_TOOLING_GUIDE.md`.
+
+- `MASTER_PROJECT_PLAN.md` is the highest source of truth.
+- Use Godot Engine 4.x.
+- Primary OpenCode model: ChatGPT 5.5 (`openai/gpt-5.5`).
+- Portrait-only.
+- Android and iPhone/iOS required.
+- Required Spec Kit depth is 4; max depth is 4.
+- Every node at every depth must use full Spec Kit.
+- Do not create shallow placeholder nodes.
+- Do not implement the game before Spec Kit tasks exist.
+- Prioritize final game quality, clarity, game feel, and artifacts over prototype shortcuts.
+- Context7, Repomix, Task Master, BMAD, and Kiro follow `AI_TOOLING_GUIDE.md`.

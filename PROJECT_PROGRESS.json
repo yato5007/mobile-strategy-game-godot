@@ -1,0 +1,23 @@
+{
+  "project": "mobile-strategy-game-godot",
+  "date": "2026-05-25",
+  "phase": "bootstrap",
+  "gameImplementationStarted": false,
+  "requiredDepth": 4,
+  "maxDepth": 4,
+  "overallPercent": 1,
+  "areas": {
+    "mainSpecKit": 0,
+    "recursiveSpecTree": 0,
+    "gameDesignDecisions": 0,
+    "coreGameLogic": 0,
+    "botsAndAiOpponents": 0,
+    "multiplayerMockOnlineReady": 0,
+    "arabicEnglishRtlLtr": 0,
+    "androidIosReadiness": 0,
+    "testsBalanceQa": 0,
+    "integrationDocumentationHandoff": 1
+  },
+  "nextStep": "Run root Spec Kit after bootstrap checkpoint.",
+  "blocked": []
+}
