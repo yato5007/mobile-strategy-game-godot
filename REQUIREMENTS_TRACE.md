@@ -32,6 +32,11 @@ No final PASS is allowed while requirements are unlinked.
 | Comeback possible | MASTER 6.10, 6.22 | `.spec-tree/game-concept-and-win-condition/`, future `strategic-tension-and-comeback` | DEC-GCWC-001 | Pending future leaf tasks | Pending child validation | Pending | Pending | TODO |
 | Anti-passive active play | MASTER 6.16-17 | `.spec-tree/game-concept-and-win-condition/anti-dominant-strategy-and-active-play/` | DEC-GCWC-001, DEC-GCWC-003 | Future leaf tasks documented | Depth-2 checklist PASS | Planning QA represented | Planning review represented | D2_LINKED |
 | Anti-spreadsheet game feel | MASTER 4.1.7 | `.spec-tree/game-concept-and-win-condition/`, future `concept-presentation-and-theme` | DEC-GCWC-001 | Pending future leaf tasks | Depth-1 checklist | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
+| Core match phase loop | MASTER 6, 10 | `.spec-tree/core-match-systems/`, future `match-flow-and-phase-structure` | DEC-CMS-001 | Future leaf tasks documented | Depth-1 checklist PASS | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
+| Simultaneous non-turn play | MASTER 6.4, 10 | `.spec-tree/core-match-systems/`, future `simultaneous-planning-and-resolution` | DEC-CMS-001 | Future leaf tasks documented | Depth-1 checklist PASS | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
+| Public information and counterplay | MASTER 4.1.4, 7 | `.spec-tree/core-match-systems/`, future `claim-objective-state-model` | DEC-CMS-002 | Future leaf tasks documented | Depth-1 checklist PASS | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
+| Compact action economy | MASTER 6.6-7, 4.1.7 | `.spec-tree/core-match-systems/`, future `action-economy-and-legal-actions` | DEC-CMS-003 | Future leaf tasks documented | Depth-1 checklist PASS | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
+| Under-30-minute match envelope | MASTER 6.8 | `.spec-tree/core-match-systems/`, future `match-flow-and-phase-structure` | DEC-CMS-001 | Future leaf tasks documented | Depth-1 checklist PASS | Depth-1 QA PASS | Depth-1 review PASS | D1_LINKED |
 
 Root links are planning-level links. Future child nodes must replace remaining `Pending` items with exact artifacts before implementation claims.
 

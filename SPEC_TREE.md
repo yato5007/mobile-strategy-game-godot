@@ -66,7 +66,11 @@ root: mobile-strategy-game-godot (depth 0)
 │           ├── majlis-council-concept (depth 4, DONE)
 │           ├── match-narrative-arc (depth 4, DONE)
 │           └── arabic-patronage-naming (depth 4, DONE)
-├── core-match-systems (depth 1, TODO)
+├── core-match-systems (depth 1, DONE planning; expands below)
+│   ├── match-flow-and-phase-structure (depth 2, TODO)
+│   ├── simultaneous-planning-and-resolution (depth 2, TODO)
+│   ├── action-economy-and-legal-actions (depth 2, TODO)
+│   └── claim-objective-state-model (depth 2, TODO)
 ├── multiplayer-and-bots (depth 1, TODO)
 ├── balance-and-validation (depth 1, TODO)
 ├── presentation-art-audio-motion (depth 1, TODO)
@@ -78,8 +82,8 @@ root: mobile-strategy-game-godot (depth 0)
 
 All current depth-2 branches under `game-concept-and-win-condition` are complete through depth 4.
 
-1. Continue the next TODO depth-1 branch: `.spec-tree/core-match-systems/`.
-2. Expand it to meaningful depth-2, depth-3, and depth-4 nodes.
+1. Continue the first TODO child under `.spec-tree/core-match-systems/`: `match-flow-and-phase-structure`.
+2. Expand `core-match-systems` to meaningful depth-2, depth-3, and depth-4 nodes.
 3. Continue remaining depth-1 branches until all branches reach required depth 4.
 4. Do not implement game code until leaf-node tasks explicitly authorize implementation.
 
@@ -97,3 +101,5 @@ Depth-2 `strategic-tension-and-comeback` artifacts live in `.spec-tree/game-conc
 Depth-2 `concept-presentation-and-theme` artifacts live in `.spec-tree/game-concept-and-win-condition/concept-presentation-and-theme/` with three depth-3 children and nine depth-4 leaves.
 
 Depth-2 `anti-dominant-strategy-and-active-play` artifacts live in `.spec-tree/game-concept-and-win-condition/anti-dominant-strategy-and-active-play/` with three depth-3 children and nine depth-4 leaves.
+
+Depth-1 `core-match-systems` artifacts live in `.spec-tree/core-match-systems/`. Its depth-2 children are planned and pending full Spec Kit: `match-flow-and-phase-structure`, `simultaneous-planning-and-resolution`, `action-economy-and-legal-actions`, and `claim-objective-state-model`.

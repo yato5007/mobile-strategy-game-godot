@@ -56,7 +56,11 @@
 | game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing/majlis-council-concept | 4 | DONE | Majlis council premise planned |
 | game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing/match-narrative-arc | 4 | DONE | Match visual narrative arc planned |
 | game-concept-and-win-condition/concept-presentation-and-theme/theme-narrative-framing/arabic-patronage-naming | 4 | DONE | Arabic/English patronage naming conventions planned |
-| core-match-systems | 1 | TODO | Must reach depth 4 |
+| core-match-systems | 1 | DONE | Full depth-1 planning artifacts complete; child nodes must reach depth 4 |
+| core-match-systems/match-flow-and-phase-structure | 2 | TODO | Must define phase count, pacing, final reveal, and timing envelope through depth 4 |
+| core-match-systems/simultaneous-planning-and-resolution | 2 | TODO | Must define commit lock, reveal order, conflicts, tie-breakers, and explanation through depth 4 |
+| core-match-systems/action-economy-and-legal-actions | 2 | TODO | Must define Council Focus, legal actions, constraints, support/counter/prep, and anti-spam through depth 4 |
+| core-match-systems/claim-objective-state-model | 2 | TODO | Must define Claim ledger, objective state, public/private information, and event outputs through depth 4 |
 | multiplayer-and-bots | 1 | TODO | Must reach depth 4 |
 | balance-and-validation | 1 | TODO | Must reach depth 4 |
 | presentation-art-audio-motion | 1 | TODO | Must reach depth 4 |

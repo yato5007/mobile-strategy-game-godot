@@ -18,6 +18,15 @@ Any branch that changes a system contract must update this file and request `int
 | Presentation/Assets | Game state events, UI states | Visual/audio feedback | Presentation layer | Rule resolution | Root linked; refine in `presentation-art-audio-motion` |
 | Build/Export | Godot project, export presets | Android/iOS deliverables/docs | Build pipeline | Game design | Root linked; refine in `godot-architecture-and-delivery` |
 
+## Core Match Systems Planning Contract
+
+| System | Inputs | Outputs | State Owner | Must Not Control | Status |
+|---|---|---|---|---|---|
+| Match Phase Loop | Match config, phase index, player/bot commitments | Phase transitions, planning/reveal/final states | Future core match state | Rendering, networking transport, bot intent | Depth-1 linked; refine in `core-match-systems/match-flow-and-phase-structure` |
+| Simultaneous Resolver | Locked legal actions, public objective state, resources/constraints | Deterministic action outcomes, conflicts, tie-breaks, explanation events | Future core match resolver | UI animation timing, online transport | Depth-1 linked; refine in `core-match-systems/simultaneous-planning-and-resolution` |
+| Action Economy | Player state, Council Focus, Influence/position constraints | Legal action set, spend/constraint results | Future core rules state | Claim presentation, bot personality | Depth-1 linked; refine in `core-match-systems/action-economy-and-legal-actions` |
+| Claim Objective State | Objective state, resolved actions, phase pressure | Claim ledger updates, public state events, final reveal data | Future core objective/Claim state | Art/audio, localization, build/export | Depth-1 linked; refine in `core-match-systems/claim-objective-state-model` |
+
 ## Root Cross-Branch Interfaces
 
 Detailed notes live in `.spec-tree/root/integration-notes.md`. No final contract is stable until the relevant depth-1 branch completes full Spec Kit.

@@ -86,3 +86,51 @@ Only significant decisions are recorded here.
 - Why downside is acceptable: The subtree requires icon-first Control widgets, tap-to-expand Label cards, capped Resources, and RTL/LTR QA checks.
 - Later verification: Future balance simulator metrics must check passive win rate, strategy repetition success, strategy shift frequency, FFA dogpile risk, and 2v2 support fairness.
 - Artifact proof: Complete 104-file depth-2 through depth-4 Spec Kit subtree for `anti-dominant-strategy-and-active-play`.
+
+## DEC-CMS-001 — Core match uses fixed simultaneous Majlis phase loop
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Use a fixed sequence of Majlis phases with simultaneous Council Planning, commit lock, deterministic reveal/resolve, visible Claim update, pressure shift, and final reveal.
+- Options compared:
+  - Traditional turn-by-turn rounds: rejected because they create waiting and violate the no-turn-waiting multiplayer requirement.
+  - Continuous real-time action: rejected because it risks reaction-speed gameplay and mobile chaos.
+  - Fixed simultaneous phase loop: accepted because it supports strategic planning, multiplayer synchronization, fair pacing, and under-30-minute matches.
+- Why this serves the final game: It keeps all players engaged at the same time while preserving the fixed-length Claim contest selected by DEC-GCWC-001.
+- Potential downside: Simultaneous conflicts can become hard to understand.
+- Why downside is acceptable: A required child branch will define deterministic conflict resolution, tie-breakers, and explanation events.
+- Later verification: QA and balance simulator must validate conflict readability, match duration, idle time, and fairness.
+- Artifact proof: `.spec-tree/core-match-systems/` full depth-1 Spec Kit artifacts.
+
+## DEC-CMS-002 — Match state is mostly public with hidden committed plans
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Keep objectives, Claim, phase count, public pressure, leader threat, and constraints visible; hide selected plans only until reveal by default.
+- Options compared:
+  - Fully hidden strategy layer: rejected because it weakens first-match clarity and win/loss explanation.
+  - Fully public selected actions before lock: rejected because it invites last-second reaction play.
+  - Mostly public state with hidden commits: accepted because it preserves clarity, suspense, and fair simultaneous planning.
+- Why this serves the final game: Players can read what matters, understand why Claim changed, and plan counterplay without opaque scoring.
+- Potential downside: Reduced bluffing depth.
+- Why downside is acceptable: Depth comes from objective timing, action constraints, pressure shifts, and simultaneous commitment.
+- Later verification: UX and QA must confirm players can identify objective, leader, comeback path, and reveal explanation.
+- Artifact proof: `.spec-tree/core-match-systems/spec.md` and `analysis.md`.
+
+## DEC-CMS-003 — Core choices use compact Council Focus action economy
+
+- Date: 2026-05-25
+- Node: `.spec-tree/core-match-systems/`
+- Type: AUTONOMOUS_DECISION
+- Decision: Use a compact Council Focus action budget with minimal Influence/position constraints instead of a heavy multi-resource economy.
+- Options compared:
+  - Many resource tracks: rejected because they risk spreadsheet feel and portrait overload.
+  - No resource constraints: rejected because legal actions become spammed and strategically flat.
+  - Small action budget with visible constraints: accepted because it creates hard choices without heavy administration.
+- Why this serves the final game: It supports tactical tradeoffs that can be represented through Majlis game objects and icons.
+- Potential downside: Too few constraints could limit long-term depth.
+- Why downside is acceptable: Objective rotation, public counterpressure, team support limits, and phase progression add depth without bookkeeping.
+- Later verification: Balance tests must check action diversity, dominant spam, passive success, and decision clarity.
+- Artifact proof: `.spec-tree/core-match-systems/` tasks require `action-economy-and-legal-actions` depth-2 branch.

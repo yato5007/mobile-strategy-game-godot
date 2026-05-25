@@ -1,13 +1,13 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "game-concept-branch-complete",
-  "overallPercent": 28,
+  "phase": "core-match-systems-depth1-complete",
+  "overallPercent": 30,
   "areas": {
-    "mainSpecKit": 15,
-    "recursiveSpecTree": 40,
-    "gameDesignDecisions": 18,
-    "coreGameLogic": 0,
+    "mainSpecKit": 17,
+    "recursiveSpecTree": 42,
+    "gameDesignDecisions": 20,
+    "coreGameLogic": 5,
     "botsAndAiOpponents": 0,
     "multiplayerMockOnlineReady": 0,
     "arabicEnglishRtlLtr": 0,
@@ -15,6 +15,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 2
   },
-  "nextStep": "Start the next depth-1 branch core-match-systems and expand it to required depth 4.",
+  "nextStep": "Start core-match-systems depth-2 child match-flow-and-phase-structure and expand the branch to required depth 4.",
   "blocked": []
 }

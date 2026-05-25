@@ -111,3 +111,19 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
   - concept-presentation-and-theme: 3 depth-3 + 9 depth-4 leaves = 12 sub-nodes
   - Plus depth-1 and 4 depth-2 nodes = 52 total nodes, 416 files
 - Next branch priority: `core-match-systems` (P1 — Core Fun and Gameplay), per Priority System section 4.2.1.
+
+## 2026-05-25 — Core Match Systems Depth-1 Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed node: `.spec-tree/core-match-systems/`
+- Decision made: Accept the newly completed depth-1 `core-match-systems` node for planning scope and continue automatically to `.spec-tree/core-match-systems/match-flow-and-phase-structure/` as the first depth-2 child.
+- Options compared:
+  - BLOCKED: rejected because all required depth-1 Spec Kit artifacts exist, QA/review are PASS, no game implementation was created, and no external blocker exists.
+  - FIX_AUTONOMOUSLY before continuing: rejected because findings are future child-node risks rather than defects in this depth-1 node.
+  - CONTINUE to the first depth-2 child: accepted because the node is complete for its intended scope and clearly defines meaningful child branches to reach depth 4.
+- Why it serves the final game goal: The node converts `Banner of the Majlis` from a concept into a concrete P1 match-system frame: fixed simultaneous phases, commit lock, deterministic reveal/resolve direction, visible Claim updates, public information boundaries, compact Council Focus action economy, and under-30-minute pacing. This directly protects strategic clarity, no-turn-waiting multiplayer, comeback potential, active play, and anti-spreadsheet game feel.
+- Potential downside: Several important details remain unresolved at this depth, especially exact phase count, conflict tie-breakers, action costs, Claim deltas, and event schemas.
+- Why the downside is acceptable: Depth-1 is correctly scoped to define the system frame and child boundaries, not formulas. The four proposed depth-2 children are necessary, non-duplicative, and explicitly tasked to resolve those details through depth 4 before any implementation is authorized.
+- Later verification method: Future gatekeeper/QA/reviewer checks must verify that `match-flow-and-phase-structure`, `simultaneous-planning-and-resolution`, `action-economy-and-legal-actions`, and `claim-objective-state-model` each complete full Spec Kit to depth 4, provide deterministic rule details, preserve DEC-GCWC-001/002/003, and avoid authorizing game code before leaf tasks.
+- Artifact proof: Required files exist under `.spec-tree/core-match-systems/` (`constitution.md`, `spec.md`, `clarification.md`, `plan.md`, `tasks.md`, `analysis.md`, `checklist.md`, `implementation-result.md`, `qa-result.md`, `review-result.md`, `integration-notes.md`, `NODE_SUMMARY.md`); `SPEC_TREE.md`, `SPEC_TREE_STATUS.md`, `REQUIREMENTS_TRACE.md`, `DECISIONS.md`, `SYSTEM_CONTRACTS.md`, `PROGRESS_DASHBOARD.md`, and `PROJECT_PROGRESS.json` reflect the completed depth-1 node and pending depth-2 children.

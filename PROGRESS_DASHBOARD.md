@@ -4,10 +4,10 @@ Progress is an indicator, not proof of quality.
 
 | Area | Weight | Status | Notes |
 |---|---:|---|---|
-| Main Spec Kit | 10% | 4% | Root and first depth-1 branch artifacts complete |
-| Recursive Spec Tree | 15% | 9% | All game-concept depth-2 branches are complete through depth 4; remaining depth-1 branches pending |
-| Game Design Decisions | 10% | 4% | Claim win condition, comeback tension, Majlis presentation, and anti-dominance active-play direction selected |
-| Core Game Logic | 15% | 0% | Not started during bootstrap |
+| Main Spec Kit | 10% | 5% | Root, game-concept depth-1, and core-match-systems depth-1 artifacts complete |
+| Recursive Spec Tree | 15% | 10% | Game-concept subtree complete through depth 4; core-match-systems depth-1 complete with depth-2 children pending |
+| Game Design Decisions | 10% | 5% | Claim win condition, comeback tension, Majlis presentation, anti-dominance, and core match loop direction selected |
+| Core Game Logic | 15% | 1% | Planning only: match phases, simultaneous model, action categories, Claim state branch scope |
 | Bots and AI Opponents | 10% | 0% | Pending |
 | Multiplayer Mock / Online Ready | 10% | 0% | Pending |
 | Arabic / English / RTL / LTR | 10% | 0% | Scaffold only |
@@ -23,4 +23,4 @@ Progress is an indicator, not proof of quality.
 
 ## Overall
 
-Root Spec Kit and all current game-concept depth-2 through depth-4 subtrees are complete for planning scope, including anti-dominant active-play. The game is not implemented yet by design.
+Root Spec Kit, the full game-concept subtree, and core-match-systems depth-1 planning are complete. Core-match-systems depth-2 children are now the next required work. The game is not implemented yet by design.
