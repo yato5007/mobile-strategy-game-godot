@@ -32,3 +32,19 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why acceptable: UX/presentation branches must validate layout and can simplify or throttle the cue.
 - Later verification: future UX/presentation QA and playable readability test: trailing player identifies opportunity within 5 seconds.
 - Artifact proof: Full depth-4 Spec Kit artifacts under `comeback-path-cue/`.
+
+## 2026-05-25 — Win-Loss Explanation Depth 3+4 Subtree Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Reviewed nodes: `.spec-tree/game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/` and its 3 depth-4 leaves (`win-postmortem`, `loss-decision-crossroads`, `closeness-gauge`)
+- Decision: Accept all 4 nodes (1 depth-3 + 3 depth-4) and continue automatically to `team-and-ffa-win-readability`.
+- Options compared:
+  - Stop and ask user about explanation tone or content: rejected by Full Autonomy Rule.
+  - Rework any leaf now: rejected because all 32 files are concrete, checklist/QA/review pass, and content serves P1 game clarity.
+  - Continue to next pending sibling: accepted.
+- Why it serves the final game: The three depth-4 nodes collectively provide instant understanding (within 3s), earned-feeling win screens, instructional loss feedback with "could have" language, and visual closeness comparison. This directly supports the Clear Win Condition Rule and Fun Validation Rule.
+- Potential downside: Scrollable portrait layout with 3 stacked sections (postmortem, crossroads, gauge) may feel long on small screens. Loss decision analysis may misidentify turning points in complex 2v2 scenarios.
+- Why acceptable: Each section is independently skippable. The decision algorithm is simple (claim availability only) to avoid incorrect judgments. UX polish iterations will refine the layout.
+- Later verification: Future mobile UX QA on 6-inch portrait viewport: all three sections readable, skip button accessible, closeness bars comparable at a glance. Playable readability test: loser understands why they lost within 10 seconds.
+- Artifact proof: Full depth-3 Spec Kit under `win-loss-explanation/` and full depth-4 Spec Kit under `win-postmortem/`, `loss-decision-crossroads/`, and `closeness-gauge/` (32 files total).

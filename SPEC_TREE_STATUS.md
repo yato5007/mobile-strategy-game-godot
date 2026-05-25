@@ -9,7 +9,10 @@
 | game-concept-and-win-condition/win-condition-clarity/claim-progress-display | 3 | DONE | Full depth-3 artifacts complete; depth-4 children pending |
 | game-concept-and-win-condition/win-condition-clarity/claim-progress-display/leader-threat-indicator | 4 | DONE | Full depth-4 leaf artifacts complete |
 | game-concept-and-win-condition/win-condition-clarity/claim-progress-display/comeback-path-cue | 4 | DONE | Full depth-4 leaf artifacts complete |
-| game-concept-and-win-condition/win-condition-clarity/win-loss-explanation | 3 | TODO | Must define final explanation model |
+| game-concept-and-win-condition/win-condition-clarity/win-loss-explanation | 3 | DONE | Full depth-3 artifacts complete; depth-4 children complete |
+| game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/win-postmortem | 4 | DONE | Full depth-4 leaf artifacts complete |
+| game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/loss-decision-crossroads | 4 | DONE | Full depth-4 leaf artifacts complete |
+| game-concept-and-win-condition/win-condition-clarity/win-loss-explanation/closeness-gauge | 4 | DONE | Full depth-4 leaf artifacts complete |
 | game-concept-and-win-condition/win-condition-clarity/team-and-ffa-win-readability | 3 | TODO | Must define 2v2/FFA readability differences |
 | game-concept-and-win-condition/strategic-tension-and-comeback | 2 | TODO | Must define fair comeback and tension model |
 | game-concept-and-win-condition/anti-dominant-strategy-and-active-play | 2 | TODO | Must prevent one perfect plan and passive hiding |
@@ -21,8 +24,8 @@
 | mobile-ux-localization-accessibility | 1 | TODO | Must reach depth 4 |
 | godot-architecture-and-delivery | 1 | TODO | Must reach depth 4 |
 | Depth-2 nodes | 2 | IN_PROGRESS | First depth-1 branch has four meaningful depth-2 nodes pending |
-| Depth-3 nodes | 3 | IN_PROGRESS | First depth-2 node has three meaningful depth-3 nodes pending |
-| Depth-4 nodes | 4 | IN_PROGRESS | Two depth-4 leaves complete; remaining depth-4 siblings still pending |
+| Depth-3 nodes | 3 | IN_PROGRESS | Two depth-3 nodes complete; remaining depth-3 sibling pending
+| Depth-4 nodes | 4 | IN_PROGRESS | Five depth-4 leaves complete; remaining depth-4 siblings still pending |
 
 ## Current Blockers
 
