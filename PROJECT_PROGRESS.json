@@ -1,14 +1,14 @@
 {
   "project": "mobile-strategy-game-godot",
   "date": "2026-05-25",
-  "phase": "depth1-game-concept-complete",
+  "phase": "depth2-win-condition-clarity-complete",
   "gameImplementationStarted": false,
   "requiredDepth": 4,
   "maxDepth": 4,
   "overallPercent": 3,
   "areas": {
     "mainSpecKit": 4,
-    "recursiveSpecTree": 2,
+    "recursiveSpecTree": 3,
     "gameDesignDecisions": 2,
     "coreGameLogic": 0,
     "botsAndAiOpponents": 0,
@@ -18,6 +18,6 @@
     "testsBalanceQa": 0,
     "integrationDocumentationHandoff": 2
   },
-  "nextStep": "Run full Spec Kit for .spec-tree/game-concept-and-win-condition/win-condition-clarity/ and continue this branch to depth 4.",
+  "nextStep": "Run full Spec Kit for .spec-tree/game-concept-and-win-condition/win-condition-clarity/claim-progress-display/ and continue this path to depth 4.",
   "blocked": []
 }
