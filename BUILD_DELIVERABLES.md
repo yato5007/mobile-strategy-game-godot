@@ -23,6 +23,22 @@ godot --path godot/ --headless --quit  # validate project
 godot --path godot/                     # run game (requires display)
 ```
 
+## APK Runtime Error Fix (Couldn't load project data at path "..")
+
+If Android shows:
+- `Couldn't load project data at path ".."`
+- `Unable to setup the Godot engine`
+
+then the installed APK is usually the **engine template APK** (for example `android_debug.apk`) and not the exported project APK that includes `assets/game.pck`.
+
+Use the project build script instead:
+
+```bash
+./scripts/build_android_apk.sh
+```
+
+This script fails fast if `assets/game.pck` is missing, which prevents shipping a broken APK.
+
 ## How to Export APK
 
 ```bash
