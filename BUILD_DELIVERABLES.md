@@ -48,12 +48,20 @@ This script fails fast if `assets/game.pck` is missing, which prevents shipping 
 
 What this script does:
 - tries Godot direct export from preset `Android`
+- tries Godot direct export from preset `Android`
 - falls back to Gradle template build if direct export fails
+- auto-discovers `android_source.zip` if template version path changed
 - verifies `assets/game.pck` exists inside final APK
 - verifies archive integrity with `unzip -t`
+- verifies APK signature when `apksigner` is available
 
 > Important: do not install template APKs directly from export templates.
 > Install only `godot/builds/banner_of_the_majlis.apk`.
+
+Optional override for template version:
+```bash
+GODOT_TEMPLATE_VERSION=4.4.1.stable ./scripts/build_android_apk.sh
+```
 
 ## APK File
 

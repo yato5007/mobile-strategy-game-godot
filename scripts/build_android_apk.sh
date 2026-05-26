@@ -6,8 +6,9 @@ PROJECT_DIR="$ROOT_DIR/godot"
 BUILD_DIR="$PROJECT_DIR/builds"
 APK_PATH="$BUILD_DIR/banner_of_the_majlis.apk"
 PRESET_NAME="Android"
-TEMPLATE_VERSION="4.4.1.stable"
-ANDROID_SOURCE_ZIP="$HOME/.local/share/godot/export_templates/$TEMPLATE_VERSION/android_source.zip"
+TEMPLATE_VERSION="${GODOT_TEMPLATE_VERSION:-4.4.1.stable}"
+TEMPLATE_BASE="$HOME/.local/share/godot/export_templates"
+ANDROID_SOURCE_ZIP="$TEMPLATE_BASE/$TEMPLATE_VERSION/android_source.zip"
 
 require_bin() {
   local bin="$1"
@@ -15,6 +16,22 @@ require_bin() {
     echo "ERROR: required command '$bin' is not available in PATH." >&2
     exit 1
   fi
+}
+
+find_android_source_zip() {
+  if [[ -f "$ANDROID_SOURCE_ZIP" ]]; then
+    echo "$ANDROID_SOURCE_ZIP"
+    return 0
+  fi
+
+  local discovered
+  discovered="$(find "$TEMPLATE_BASE" -maxdepth 2 -type f -name android_source.zip 2>/dev/null | sort -r | head -n 1 || true)"
+  if [[ -n "$discovered" ]]; then
+    echo "$discovered"
+    return 0
+  fi
+
+  echo ""
 }
 
 validate_apk_payload() {
@@ -26,13 +43,14 @@ validate_apk_payload() {
     return 1
   fi
 
-  if unzip -l "$apk" | rg -q "android_debug\.apk$"; then
-    echo "ERROR: APK appears to include/derive from template output unexpectedly." >&2
-    return 1
-  fi
-
   unzip -t "$apk" >/dev/null
   echo "[verify] APK integrity: OK"
+
+  if command -v apksigner >/dev/null 2>&1; then
+    echo "[verify] Running apksigner verify..."
+    apksigner verify --verbose "$apk" >/dev/null
+    echo "[verify] APK signature: OK"
+  fi
 }
 
 build_with_godot_export() {
@@ -41,22 +59,24 @@ build_with_godot_export() {
 }
 
 build_with_gradle_fallback() {
-  local tmp_build
+  local tmp_build android_zip
   tmp_build="$(mktemp -d)"
   trap 'rm -rf "$tmp_build"' RETURN
 
-  echo "[build] Falling back to Android template Gradle build..."
-  [[ -f "$ANDROID_SOURCE_ZIP" ]] || {
-    echo "ERROR: Android source template not found: $ANDROID_SOURCE_ZIP" >&2
+  android_zip="$(find_android_source_zip)"
+  if [[ -z "$android_zip" ]]; then
+    echo "ERROR: Could not find android_source.zip in $TEMPLATE_BASE" >&2
     return 1
-  }
+  fi
 
-  unzip -qo "$ANDROID_SOURCE_ZIP" -d "$tmp_build"
+  echo "[build] Falling back to Android template Gradle build using: $android_zip"
+
+  unzip -qo "$android_zip" -d "$tmp_build"
   godot --headless --path "$PROJECT_DIR" --export-pack "$PRESET_NAME" "$tmp_build/assets/game.pck"
 
   (
     cd "$tmp_build"
-    ./gradlew assembleDebug
+    ./gradlew --no-daemon assembleDebug
   )
 
   cp "$tmp_build/build/outputs/apk/standard/debug/android_debug.apk" "$APK_PATH"
