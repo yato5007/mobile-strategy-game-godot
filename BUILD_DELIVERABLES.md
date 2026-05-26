@@ -23,20 +23,44 @@ godot --path godot/ --headless --quit  # validate project
 godot --path godot/                     # run game (requires display)
 ```
 
+## APK Runtime Error Fix (Couldn't load project data at path "..")
+
+If Android shows:
+- `Couldn't load project data at path ".."`
+- `Unable to setup the Godot engine`
+
+then the installed APK is usually the **engine template APK** (for example `android_debug.apk`) and not the exported project APK that includes `assets/game.pck`.
+
+Use the project build script instead:
+
+```bash
+./scripts/build_android_apk.sh
+```
+
+This script fails fast if `assets/game.pck` is missing, which prevents shipping a broken APK.
+
 ## How to Export APK
 
 ```bash
-# Prerequisites: Java 17, Android SDK, export templates installed.
-# These are already set up in this environment.
+# Recommended one-command build + payload validation
+./scripts/build_android_apk.sh
+```
 
-# Export using Godot CLI:
-godot --path godot/ --export-debug "Android" godot/builds/banner_of_the_majlis.apk
+What this script does:
+- tries Godot direct export from preset `Android`
+- tries Godot direct export from preset `Android`
+- falls back to Gradle template build if direct export fails
+- auto-discovers `android_source.zip` if template version path changed
+- verifies `assets/game.pck` exists inside final APK
+- verifies archive integrity with `unzip -t`
+- verifies APK signature when `apksigner` is available
 
-# Or manual Gradle build (if Godot export fails):
-unzip -qo ~/.local/share/godot/export_templates/4.4.1.stable/android_source.zip -d /tmp/build
-godot --path godot/ --export-pack "Android" /tmp/build/assets/game.pck
-cd /tmp/build && export JAVA_HOME=/usr/local/sdkman/candidates/java/17.0.12-ms && ./gradlew assembleDebug
-cp build/outputs/apk/standard/debug/android_debug.apk godot/builds/banner_of_the_majlis.apk
+> Important: do not install template APKs directly from export templates.
+> Install only `godot/builds/banner_of_the_majlis.apk`.
+
+Optional override for template version:
+```bash
+GODOT_TEMPLATE_VERSION=4.4.1.stable ./scripts/build_android_apk.sh
 ```
 
 ## APK File
