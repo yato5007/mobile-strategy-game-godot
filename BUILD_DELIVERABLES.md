@@ -42,18 +42,18 @@ This script fails fast if `assets/game.pck` is missing, which prevents shipping 
 ## How to Export APK
 
 ```bash
-# Prerequisites: Java 17, Android SDK, export templates installed.
-# These are already set up in this environment.
-
-# Export using Godot CLI:
-godot --path godot/ --export-debug "Android" godot/builds/banner_of_the_majlis.apk
-
-# Or manual Gradle build (if Godot export fails):
-unzip -qo ~/.local/share/godot/export_templates/4.4.1.stable/android_source.zip -d /tmp/build
-godot --path godot/ --export-pack "Android" /tmp/build/assets/game.pck
-cd /tmp/build && export JAVA_HOME=/usr/local/sdkman/candidates/java/17.0.12-ms && ./gradlew assembleDebug
-cp build/outputs/apk/standard/debug/android_debug.apk godot/builds/banner_of_the_majlis.apk
+# Recommended one-command build + payload validation
+./scripts/build_android_apk.sh
 ```
+
+What this script does:
+- tries Godot direct export from preset `Android`
+- falls back to Gradle template build if direct export fails
+- verifies `assets/game.pck` exists inside final APK
+- verifies archive integrity with `unzip -t`
+
+> Important: do not install template APKs directly from export templates.
+> Install only `godot/builds/banner_of_the_majlis.apk`.
 
 ## APK File
 
