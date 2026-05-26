@@ -112,5 +112,14 @@ offset_bottom = 630.0
 text = "v0.1.0 · Spec Kit Phase → Implementation"
 horizontal_alignment = 1
 
+[node name="LangToggle" type="Button" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 260.0
+offset_top = 220.0
+offset_right = 330.0
+offset_bottom = 250.0
+text = "عرب / EN"
+
 [node name="Localization" type="Node" parent="."]
 script = ExtResource("2")

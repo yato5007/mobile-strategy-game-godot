@@ -9,6 +9,9 @@ run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/windows_native_icon="res://assets/sprites/icon.png"
 
+[autoload]
+localization="*res://scripts/localization.gd"
+
 [display]
 window/size/viewport_width=360
 window/size/viewport_height=640
