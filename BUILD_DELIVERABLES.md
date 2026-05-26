@@ -8,8 +8,10 @@
 | Project validation | ✅ PASS | No errors on `--headless --quit` |
 | Portrait config (360×640) | ✅ CONFIGURED | In project.godot |
 | export_presets.cfg | ✅ CREATED | Android + iOS presets in godot/export_presets.cfg |
-| Android export templates | ❌ BLOCKED | 1.15GB download timed out in this environment |
-| Android APK | ❌ NOT BUILT | Requires export templates + signing keystore |
+| Android SDK | ✅ INSTALLED | platform 35, build-tools 35.0.1 at /opt/android-sdk |
+| Java 17 | ✅ INSTALLED | Required by Godot Android template |
+| Android export templates | ✅ INSTALLED | 4.4.1.stable templates in ~/.local/share/godot/export_templates/ |
+| Android APK | ✅ GENERATED | 119MB at godot/builds/banner_of_the_majlis.apk (not in git — exceeds GH 100MB limit) |
 | iOS build | 📋 DOCUMENTED | Requires macOS + Apple Developer account |
 
 ## How to Run
@@ -20,25 +22,29 @@ godot --path godot/ --headless --quit  # validate project
 godot --path godot/                     # run game (requires display)
 ```
 
-## How to Build APK (when templates available)
+## How to Export APK
 
-1. Install export templates:
 ```bash
-wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_export_templates.tpz
-mkdir -p ~/.local/share/godot/export_templates/4.4.1.stable/
-unzip Godot_v4.4.1-stable_export_templates.tpz -d ~/.local/share/godot/export_templates/4.4.1.stable/
+# Prerequisites: Java 17, Android SDK, export templates installed.
+# These are already set up in this environment.
+
+# Export using Godot CLI:
+godot --path godot/ --export-debug "Android" godot/builds/banner_of_the_majlis.apk
+
+# Or manual Gradle build (if Godot export fails):
+unzip -qo ~/.local/share/godot/export_templates/4.4.1.stable/android_source.zip -d /tmp/build
+godot --path godot/ --export-pack "Android" /tmp/build/assets/game.pck
+cd /tmp/build && export JAVA_HOME=/usr/local/sdkman/candidates/java/17.0.12-ms && ./gradlew assembleDebug
+cp build/outputs/apk/standard/debug/android_debug.apk godot/builds/banner_of_the_majlis.apk
 ```
 
-2. Configure debug keystore:
-```bash
-keytool -genkey -v -keystore ~/.android/debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000
-```
+## APK File
 
-3. Export APK:
-```bash
-godot --path godot/ --export-debug Android --headless
-```
-Output: `godot/builds/banner_of_the_majlis.apk`
+The APK (`godot/builds/banner_of_the_majlis.apk`, 119MB) is NOT tracked in git because it exceeds GitHub's 100MB file size limit. It must be rebuilt locally after cloning. The APK exists in the original development environment at that path.
+
+## APK Build History
+
+- 2026-05-25: First successful APK built via manual Gradle build (Java 17, Android SDK 35).
 
 ## iOS
 
@@ -48,15 +54,11 @@ godot --path godot/ --export-debug iOS --headless
 ```
 Then open the exported Xcode project and build to device.
 
-## Known Blockers
-
-- **Android APK**: Requires Android SDK (build-tools, platform-tools) not available in this headless Codespace environment. Export templates (1.15GB) are downloaded and installed at `~/.local/share/godot/export_templates/4.4.1.stable/`. To build APK on a machine with Android SDK:
-  ```bash
-  godot --path godot/ --export-debug Android --headless
-  ```
-  Output: `godot/builds/banner_of_the_majlis.apk`
+## Known Blocker
 
 - **Godot display**: No display environment in headless Codespace. Running the editor requires a local machine with GUI.
   ```bash
   godot --path godot/  # requires display
   ```
+
+- **APK in git**: The 119MB APK exceeds GitHub's 100MB file limit. It is stored locally at `godot/builds/banner_of_the_majlis.apk` and must be rebuilt after cloning using the instructions above.
