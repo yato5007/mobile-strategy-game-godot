@@ -11,14 +11,16 @@ var player_claims = []
 	$BgPanel/PlayerArea/Player4Banner,
 ]
 @onready var seal_effect_scene = preload("res://scenes/seal_effect.tscn")
-@onready var threat_ring_scene = preload("res://scenes/threat_ring.tscn")
 
 func _ready():
 	$BgPanel/PlayerArea/ActionPanel/SealButton.pressed.connect(_on_seal_pressed)
 	_init_player_banners()
 	match_controller_ref = $MatchController
 	match_controller_ref.phase_changed.connect(_on_phase_changed)
+	match_controller_ref.match_ended.connect(_on_match_ended)
 	_update_display()
+	# Auto-start match on board load
+	start_match()
 
 func _init_player_banners():
 	var names = ["Player 1", "Player 2", "Player 3", "Player 4"]
@@ -64,9 +66,15 @@ func _on_phase_changed(phase_index):
 	_update_display()
 	_update_threat_rings()
 
+func _on_match_ended(winner_index):
+	var reveal_scene = preload("res://scenes/final_reveal.tscn").instantiate()
+	reveal_scene.set_winner(winner_index, match_controller_ref.claims)
+	get_tree().root.add_child(reveal_scene)
+	get_tree().current_scene = reveal_scene
+	queue_free()
+
 func _update_display():
 	$BgPanel/InfoRow/PhaseLabel.text = match_controller_ref.get_phase_name()
-	var total_claim = match_controller_ref.claims.values()
 	var banner_names = ["P1", "P2", "P3", "P4"]
 	for i in range(min(4, player_banners.size())):
 		var claim = player_claims[i] if i < player_claims.size() else 0.0

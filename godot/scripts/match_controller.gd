@@ -4,10 +4,11 @@ var current_phase: int = 0
 var mode: String = "ffa"
 var player_count: int = 4
 var claims = {}
+var player_names = ["Player 1", "Player 2", "Player 3", "Player 4"]
 
 signal phase_changed(phase_index)
 signal match_started
-signal match_ended(winner)
+signal match_ended(winner_index)
 
 func _ready():
 	pass
@@ -24,12 +25,25 @@ func start_match(match_mode: String = "ffa"):
 func advance_phase():
 	if current_phase < 9:
 		current_phase += 1
-		# Placeholder: simulate claim resolution
-		for player in claims:
-			claims[player] += randf_range(0.0, 2.0)
+		_simulate_bot_actions()
+		_resolve_claims()
 		phase_changed.emit(current_phase)
 		if current_phase >= 9:
 			_end_match()
+
+func _simulate_bot_actions():
+	# Simple bot: random actions with varying intensity
+	for player in range(player_count):
+		if current_phase > 0 and randf() > 0.3:
+			var gain = randf_range(0.3, 2.5)
+			claims[player] += gain * randf_range(0.5, 1.0)
+
+func _resolve_claims():
+	# All resolved claims already applied in _simulate_bot_actions
+	_pass()
+
+func _pass():
+	pass
 
 func get_phase_name() -> String:
 	var names = [
@@ -46,5 +60,10 @@ func get_phase_name() -> String:
 	return names[current_phase] if current_phase < 9 else "Final Majlis Reveal"
 
 func _end_match():
-	var winner = claims.keys().max(func(a,b): return claims[a] < claims[b])
+	var winner = 0
+	var max_claim = -1.0
+	for i in claims:
+		if claims[i] > max_claim:
+			max_claim = claims[i]
+			winner = i
 	match_ended.emit(winner)
