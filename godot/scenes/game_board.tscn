@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" path="res://scenes/threat_ring.tscn" id="4"]
 [ext_resource type="PackedScene" path="res://scenes/seal_effect.tscn" id="5"]
 [ext_resource type="PackedScene" path="res://scenes/phase_lantern.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://scenes/geometric_art.tscn" id="7"]
 
 [node name="GameBoard" type="Control"]
 layout_mode = 3
@@ -251,3 +252,5 @@ text = "✦ Seal Commit (Lock Your Plan)"
 
 [node name="MatchController" type="Node" parent="."]
 script = ExtResource("2")
+
+[node name="GeometricMotifs" type="Node" parent="." instance=ExtResource("7")]

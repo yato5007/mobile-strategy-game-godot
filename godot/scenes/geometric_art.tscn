@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://byck2xy7fbfws"]
+
+[ext_resource type="Script" path="res://scripts/geometric_art.gd" id="1"]
+
+[node name="GeometricArt" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 360.0
+offset_bottom = 640.0
+script = ExtResource("1")
