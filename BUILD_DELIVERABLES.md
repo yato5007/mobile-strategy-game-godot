@@ -11,7 +11,8 @@
 | Android SDK | ✅ INSTALLED | platform 35, build-tools 35.0.1 at /opt/android-sdk |
 | Java 17 | ✅ INSTALLED | Required by Godot Android template |
 | Android export templates | ✅ INSTALLED | 4.4.1.stable templates in ~/.local/share/godot/export_templates/ |
-| Android APK | ✅ GENERATED | 119MB at godot/builds/banner_of_the_majlis.apk (not in git — exceeds GH 100MB limit) |
+| Android APK | ✅ GENERATED + VERIFIED | 119MB at godot/builds/banner_of_the_majlis.apk (not in git — exceeds GH 100MB limit) |
+| APK integrity | ✅ PASS | Zip test passes, required Android files present, SHA256 recorded in APK_VERIFICATION_REPORT.md, apksigner verifies v1/v2/v3 |
 | iOS build | 📋 DOCUMENTED | Requires macOS + Apple Developer account |
 
 ## How to Run
@@ -40,11 +41,20 @@ cp build/outputs/apk/standard/debug/android_debug.apk godot/builds/banner_of_the
 
 ## APK File
 
-The APK (`godot/builds/banner_of_the_majlis.apk`, 119MB) is NOT tracked in git because it exceeds GitHub's 100MB file size limit. It must be rebuilt locally after cloning. The APK exists in the original development environment at that path.
+The APK (`godot/builds/banner_of_the_majlis.apk`, 119MB) is NOT tracked in git because it exceeds GitHub's 100MB file size limit. It must be rebuilt locally after cloning or downloaded from the GitHub Release asset after upload. The APK exists in the original development environment at that path.
+
+Integrity verification on 2026-05-26 passed after signing the existing APK with a local Android debug keystore. SHA256:
+
+```text
+f9b5bc5effed1c022fcb4bf051be0affbfde46829d7cce19d85442da1721cbe6  godot/builds/banner_of_the_majlis.apk
+```
+
+See `APK_VERIFICATION_REPORT.md` for the full verification record and release caveats.
 
 ## APK Build History
 
 - 2026-05-25: First successful APK built via manual Gradle build (Java 17, Android SDK 35).
+- 2026-05-26: Existing APK signed with local Android debug keystore and verified with `unzip`, `apksigner`, and `aapt`; no gameplay rebuild performed.
 
 ## iOS
 
