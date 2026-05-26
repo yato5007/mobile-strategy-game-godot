@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4j2ne3oltyoe"]
+
+[ext_resource type="Script" path="res://scripts/seal_effect.gd" id="1"]
+
+[node name="SealEffect" type="TextureRect"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 48.0
+offset_bottom = 48.0
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("1")

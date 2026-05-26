@@ -3,6 +3,9 @@
 [ext_resource type="Script" path="res://scripts/game_board.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/match_controller.gd" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/claim_banner.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/threat_ring.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/seal_effect.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/phase_lantern.tscn" id="6"]
 
 [node name="GameBoard" type="Control"]
 layout_mode = 3
@@ -49,6 +52,30 @@ offset_right = 310.0
 offset_bottom = 40.0
 text = "مجلس المطالبة"
 horizontal_alignment = 1
+
+[node name="LanternArea" type="HBoxContainer" parent="BgPanel/BoardCenter"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 60.0
+offset_top = 43.0
+offset_right = 300.0
+offset_bottom = 56.0
+alignment = 1
+
+[node name="Lantern1" type="Panel" parent="BgPanel/BoardCenter/LanternArea"]
+layout_mode = 2
+custom_minimum_size = Vector2(24, 40)
+size_flags_horizontal = 4
+
+[node name="Lantern2" type="Panel" parent="BgPanel/BoardCenter/LanternArea"]
+layout_mode = 2
+custom_minimum_size = Vector2(24, 40)
+size_flags_horizontal = 4
+
+[node name="Lantern3" type="Panel" parent="BgPanel/BoardCenter/LanternArea"]
+layout_mode = 2
+custom_minimum_size = Vector2(24, 40)
+size_flags_horizontal = 4
 
 [node name="ObjectiveSlot1" type="Panel" parent="BgPanel/BoardCenter"]
 layout_mode = 1
