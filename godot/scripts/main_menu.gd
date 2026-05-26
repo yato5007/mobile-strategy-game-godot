@@ -17,6 +17,7 @@ func _update_mode_labels():
 	$BgPanel/Mode2v2.text = localization.get_string("mode_2v2")
 
 func _on_play_pressed():
+	audio_manager.play("action_confirm")
 	var board = preload("res://scenes/game_board.tscn").instantiate()
 	board.set_meta("mode", selected_mode)
 	get_tree().root.add_child(board)
@@ -25,11 +26,13 @@ func _on_play_pressed():
 
 func _on_mode_ffa_pressed():
 	selected_mode = "ffa"
+	audio_manager.play("button_click")
 	$BgPanel/ModeFFA.text = localization.get_string("mode_ffa")
 	$BgPanel/Mode2v2.text = localization.get_string("mode_2v2")
 
 func _on_mode_2v2_pressed():
 	selected_mode = "2v2"
+	audio_manager.play("button_click")
 	$BgPanel/Mode2v2.text = localization.get_string("mode_2v2")
 	$BgPanel/ModeFFA.text = localization.get_string("mode_ffa")
 

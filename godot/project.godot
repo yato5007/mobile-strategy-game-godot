@@ -11,6 +11,7 @@ config/windows_native_icon="res://assets/sprites/icon.png"
 
 [autoload]
 localization="*res://scripts/localization.gd"
+audio_manager="*res://scripts/audio_manager.gd"
 
 [display]
 window/size/viewport_width=360

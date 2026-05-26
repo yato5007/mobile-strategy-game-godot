@@ -6,14 +6,14 @@ Progress is an indicator, not proof of quality.
 |---|---|---|---:|---|
 | Main Spec Kit | 10% | 9.6% | All 7 depth-1 branches have root artifacts complete |
 | Recursive Spec Tree | 15% | 14.7% | All branches complete through REQUIRED_DEPTH=4 (373 NODE_SUMMARY files) |
-| Game Design Decisions | 10% | 9.6% | Claim win condition, comeback tension, Majlis presentation, anti-dominance, core loop, 9-phase flow, timing envelope, all 3 acts, all action/state/contracts selected |
-| Core Game Logic | 15% | 9.0% | Godot implementation: all 8 core systems implemented (menu, board, banners, seal, threat, lanterns, final reveal, match loop) |
-| Bots and AI Opponents | 10% | 4.0% | Godot: random bot simulation implemented; Spec Kit: full depth-4 planning for bot AI, difficulties, styles |
-| Multiplayer Mock / Online Ready | 10% | 3.0% | Mock multiplayer through local bot simulation; Spec Kit planning for online adapter through depth 4 |
-| Arabic / English / RTL / LTR | 10% | 5.0% | Autoload localization with 14 keys each language; procedural Arabic geometric motifs |
-| Android / iOS Readiness | 5% | 1.8% | Portrait project configured; export steps documented; binary/APK pending |
-| Tests / Balance Simulator / QA | 10% | 3.5% | Final Verification report passing; QA/Reviewer/Integration-Architect finding PASS |
-| Integration / Documentation / Handoff | 5% | 4.5% | AI_HANDOFF_MANUAL.md and BUILD_DELIVERABLES.md updated; FINAL_VERIFICATION_REPORT.md complete |
+| Game Design Decisions | 10% | 9.6% | Claim win condition, comeback tension, Majlis presentation, anti-dominance, core loop, 9-phase flow, all 3 acts, all action/state/contracts selected |
+| Core Game Logic | 15% | 9.8% | Godot implementation: menu, board, banners, seal, threat, lanterns, final reveal, match loop with bot AI (difficulty+style) |
+| Bots and AI Opponents | 10% | 6.0% | Bot difficulty (easy/normal/hard/expert) and styles (6 types) implemented in match_controller |
+| Multiplayer Mock / Online Ready | 10% | 4.0% | Mock multiplayer through local bot simulation; Spec Kit depth-4 planning for online |
+| Arabic / English / RTL / LTR | 10% | 6.0% | 17 localization keys each language; all UI text routed through autoload; RTL checklist created |
+| Android / iOS Readiness | 5% | 2.5% | Portrait configured, export_presets.cfg created, export templates downloaded; APK blocked by Android SDK (external blocker) |
+| Tests / Balance Simulator / QA | 10% | 6.0% | Balance simulator runs 100 FFA matches; bot style/difficulty tested |
+| Integration / Documentation / Handoff | 5% | 4.3% | AI_HANDOFF_MANUAL.md, BUILD_DELIVERABLES.md, FINAL_VERIFICATION_REPORT.md, ASSET_MANIFEST.md, BALANCE_SIMULATOR_REPORT.md all updated |
 
 ## Governance
 

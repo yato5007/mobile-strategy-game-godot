@@ -26,7 +26,12 @@ func _ready():
 	start_match(match_mode)
 
 func _init_player_banners():
-	var names = ["Player 1", "Player 2", "Player 3", "Player 4"]
+	var names = [
+		localization.get_string("p1"),
+		localization.get_string("p2"),
+		localization.get_string("p3"),
+		localization.get_string("p4"),
+	]
 	var colors = [
 		Color(0.859, 0.078, 0.235),
 		Color(0.059, 0.318, 0.729),
@@ -54,6 +59,7 @@ func start_match(match_mode: String = "ffa"):
 	_update_display()
 
 func advance_phase():
+	audio_manager.play("seal_stamp")
 	var seal = seal_effect_scene.instantiate()
 	seal.position = Vector2(150, 300)
 	add_child(seal)
@@ -61,6 +67,7 @@ func advance_phase():
 	await get_tree().create_timer(0.3).timeout
 	match_controller_ref.advance_phase()
 	_update_display()
+	audio_manager.play("phase_start")
 
 func _on_phase_changed(phase_index):
 	for i in range(4):
@@ -78,12 +85,17 @@ func _on_match_ended(winner_index):
 
 func _update_display():
 	$BgPanel/InfoRow/PhaseLabel.text = match_controller_ref.get_phase_name()
-	var banner_names = ["P1", "P2", "P3", "P4"]
+	var banner_labels = [
+		localization.get_string("p1"),
+		localization.get_string("p2"),
+		localization.get_string("p3"),
+		localization.get_string("p4"),
+	]
 	for i in range(min(4, player_banners.size())):
 		var claim = player_claims[i] if i < player_claims.size() else 0.0
 		var label = player_banners[i].get_child(0) if player_banners[i].get_child_count() > 0 else null
 		if label and label is Label:
-			label.text = banner_names[i] + ": %.1f" % claim
+			label.text = banner_labels[i] + ": %.1f" % claim
 
 func _update_threat_rings():
 	var claim_values = player_claims.duplicate()

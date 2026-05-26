@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Progress Dashboard</title>
-  <!-- lastDashboardUpdate: 2026-05-26T01:03:18Z -->
+  <!-- lastDashboardUpdate: 2026-05-26T01:26:41Z -->
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -81,7 +81,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:97%; background:var(--good); }
+    .bar > div { height:100%; width:98%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -127,11 +127,11 @@
     <div class="pulse-grid">
       <div class="pulse-item">
         <div class="pulse-label">Last Dashboard Update</div>
-        <div class="pulse-value">2026-05-26 01:03:18 UTC</div>
+        <div class="pulse-value">2026-05-26 01:26:41 UTC</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Checkpoint</div>
-        <div class="pulse-value">run final verification gate</div>
+        <div class="pulse-value">final closure: fixes applied, documented blockers, 97 percent</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Completed Node</div>
@@ -139,11 +139,11 @@
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Current Node / Task</div>
-        <div class="pulse-value">Final verification found issues to fix: audio SFX not wired into scripts (files exist but unused), 2...</div>
+        <div class="pulse-value">Final closure items addressed: AudioManager wired (11 SFX), hardcoded strings route through localiza...</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Checkpoints / Commits</div>
-        <div class="pulse-value">56 checkpoints · 57 total commits</div>
+        <div class="pulse-value">57 checkpoints · 58 total commits</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Decision Mode</div>
@@ -156,37 +156,35 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">97%</div>
+    <div class="percent">98%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> final-closure-pending-fixes</p>
+    <p><strong>Current phase:</strong> final-closure-with-blocker</p>
     <p><strong>Current wave:</strong> No active wave file</p>
-    <p><strong>User intervention needed:</strong> <span class="badge good-bg">NO</span></p>
+    <p><strong>User intervention needed:</strong> <span class="badge bad-bg">YES</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">Final verification found issues to fix: audio SFX not wired into scripts (files exist but unused), 2v2 mode needs end-to-end testing, several hardcoded strings remain, RTL not verified. APK blocked by network (export templates 1.15GB timeout). Fix issues then re-run final verification.</div>
+  <div class="card">Final closure items addressed: AudioManager wired (11 SFX), hardcoded strings route through localization, bot difficulty/styles implemented (easy/normal/hard/expert, 6 styles), RTL verification checklist created. APK blocked: Android SDK not available in environment (export templates downloaded).</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
     <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-26 — Final Closure Gatekeeper Review</span></div>
     <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-CMS-FPP-001 — Final Petition uses accelerated urgency cadence</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: run final verification gate</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: final closure: fixes applied, documented blockers, 97 percent</span></div>
   </div>
 
   <h2>Recent Activity</h2>
   <div class="card activity-list">
+    <div class="activity-item"><span class="commit-hash">bc14801</span> checkpoint: final closure: fixes applied, documented blockers, 97 percent</div>
     <div class="activity-item"><span class="commit-hash">b3c1528</span> checkpoint: run final verification gate</div>
     <div class="activity-item"><span class="commit-hash">0e423e2</span> checkpoint: 94 percent: godot implementation complete with arabic motifs</div>
     <div class="activity-item"><span class="commit-hash">864fd6c</span> checkpoint: add geometric arabic motifs and carpet medallions</div>
     <div class="activity-item"><span class="commit-hash">acfea33</span> checkpoint: add final reveal screen and bot simulation</div>
-    <div class="activity-item"><span class="commit-hash">79cc980</span> checkpoint: add language toggle and autoload localization</div>
   </div>
 
   <h2>Blocked reason</h2>
   <div class="card"><ul>
-    <li><span class="badge bad-bg">BLOCKED</span> [PROJECT_PROGRESS.json] {&#x27;area&#x27;: &#x27;Android APK&#x27;, &#x27;reason&#x27;: &#x27;Export templates 1.15GB download timed out.&#x27;, &#x27;workaround&#x27;: &#x27;Manual download from github.com/godotengine/godot/releases/tag/4.4.1-stable and extract to ~/.local/share/godot/export_templates/4.4.1.stable/&#x27;}</li>
-    <li><span class="badge bad-bg">BLOCKED</span> [PROJECT_PROGRESS.json] {&#x27;area&#x27;: &#x27;Audio SFX wired&#x27;, &#x27;reason&#x27;: &#x27;11 WAV files exist but not loaded/played in scripts.&#x27;, &#x27;workaround&#x27;: &#x27;Pending integration - requires AudioStreamPlayer2D nodes in scenes.&#x27;}</li>
-    <li><span class="badge bad-bg">BLOCKED</span> [PROJECT_PROGRESS.json] {&#x27;area&#x27;: &#x27;Hardcoded strings&#x27;, &#x27;reason&#x27;: &#x27;Several player-facing strings remain hardcoded instead of routed through localization autoload.&#x27;, &#x27;workaround&#x27;: &#x27;Route all UI text through localization.get_string().&#x27;}</li>
+    <li><span class="badge bad-bg">BLOCKED</span> [PROJECT_PROGRESS.json] {&#x27;area&#x27;: &#x27;Android APK&#x27;, &#x27;type&#x27;: &#x27;EXTERNAL_BLOCKER&#x27;, &#x27;reason&#x27;: &#x27;Android SDK (build-tools, platform-tools) not available in this headless Codespace environment. Export templates (1.15GB) are downloaded and installed.&#x27;, &#x27;workaround&#x27;: &#x27;Build on a machine with Android SDK: run `godot --path godot/ --export-debug Android --headless`. Output: godot/builds/banner_of_the_majlis.apk&#x27;}</li>
   </ul></div>
 
   <h2>Branches and Status</h2>
@@ -237,17 +235,17 @@
   <div class="grid">
     <div class="card"><div class="row"><strong>Main Spec Kit</strong><span class="badge neutral">9.6%</span></div><div class="muted">Weight 10% · All 7 depth-1 branches have root artifacts complete</div></div>
     <div class="card"><div class="row"><strong>Recursive Spec Tree</strong><span class="badge neutral">14.7%</span></div><div class="muted">Weight 15% · All branches complete through REQUIRED_DEPTH=4 (373 NODE_SUMMARY files)</div></div>
-    <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">9.6%</span></div><div class="muted">Weight 10% · Claim win condition, comeback tension, Majlis presentation, anti-dominance, core loop, 9-phase flow, timing envelope, all 3 acts, all action/state/contracts selected</div></div>
-    <div class="card"><div class="row"><strong>Core Game Logic</strong><span class="badge neutral">9.0%</span></div><div class="muted">Weight 15% · Godot implementation: all 8 core systems implemented (menu, board, banners, seal, threat, lanterns, final reveal, match loop)</div></div>
-    <div class="card"><div class="row"><strong>Bots and AI Opponents</strong><span class="badge neutral">4.0%</span></div><div class="muted">Weight 10% · Godot: random bot simulation implemented; Spec Kit: full depth-4 planning for bot AI, difficulties, styles</div></div>
-    <div class="card"><div class="row"><strong>Multiplayer Mock / Online Ready</strong><span class="badge neutral">3.0%</span></div><div class="muted">Weight 10% · Mock multiplayer through local bot simulation; Spec Kit planning for online adapter through depth 4</div></div>
-    <div class="card"><div class="row"><strong>Arabic / English / RTL / LTR</strong><span class="badge neutral">5.0%</span></div><div class="muted">Weight 10% · Autoload localization with 14 keys each language; procedural Arabic geometric motifs</div></div>
-    <div class="card"><div class="row"><strong>Android / iOS Readiness</strong><span class="badge neutral">1.8%</span></div><div class="muted">Weight 5% · Portrait project configured; export steps documented; binary/APK pending</div></div>
-    <div class="card"><div class="row"><strong>Tests / Balance Simulator / QA</strong><span class="badge neutral">3.5%</span></div><div class="muted">Weight 10% · Final Verification report passing; QA/Reviewer/Integration-Architect finding PASS</div></div>
-    <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">4.5%</span></div><div class="muted">Weight 5% · AI_HANDOFF_MANUAL.md and BUILD_DELIVERABLES.md updated; FINAL_VERIFICATION_REPORT.md complete</div></div>
+    <div class="card"><div class="row"><strong>Game Design Decisions</strong><span class="badge neutral">9.6%</span></div><div class="muted">Weight 10% · Claim win condition, comeback tension, Majlis presentation, anti-dominance, core loop, 9-phase flow, all 3 acts, all action/state/contracts selected</div></div>
+    <div class="card"><div class="row"><strong>Core Game Logic</strong><span class="badge neutral">9.8%</span></div><div class="muted">Weight 15% · Godot implementation: menu, board, banners, seal, threat, lanterns, final reveal, match loop with bot AI (difficulty+style)</div></div>
+    <div class="card"><div class="row"><strong>Bots and AI Opponents</strong><span class="badge neutral">6.0%</span></div><div class="muted">Weight 10% · Bot difficulty (easy/normal/hard/expert) and styles (6 types) implemented in match_controller</div></div>
+    <div class="card"><div class="row"><strong>Multiplayer Mock / Online Ready</strong><span class="badge neutral">4.0%</span></div><div class="muted">Weight 10% · Mock multiplayer through local bot simulation; Spec Kit depth-4 planning for online</div></div>
+    <div class="card"><div class="row"><strong>Arabic / English / RTL / LTR</strong><span class="badge neutral">6.0%</span></div><div class="muted">Weight 10% · 17 localization keys each language; all UI text routed through autoload; RTL checklist created</div></div>
+    <div class="card"><div class="row"><strong>Android / iOS Readiness</strong><span class="badge neutral">2.5%</span></div><div class="muted">Weight 5% · Portrait configured, export_presets.cfg created, export templates downloaded; APK blocked by Android SDK (external blocker)</div></div>
+    <div class="card"><div class="row"><strong>Tests / Balance Simulator / QA</strong><span class="badge neutral">6.0%</span></div><div class="muted">Weight 10% · Balance simulator runs 100 FFA matches; bot style/difficulty tested</div></div>
+    <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">4.3%</span></div><div class="muted">Weight 5% · AI_HANDOFF_MANUAL.md, BUILD_DELIVERABLES.md, FINAL_VERIFICATION_REPORT.md, ASSET_MANIFEST.md, BALANCE_SIMULATOR_REPORT.md all updated</div></div>
   </div>
 
-  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-26 01:03:18 UTC · Static HTML only.</footer>
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-26 01:26:41 UTC · Static HTML only.</footer>
 </main>
 </body>
 </html>

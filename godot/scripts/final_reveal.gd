@@ -16,8 +16,8 @@ func set_winner(index: int, claims: Dictionary):
 	standings = sorted
 	
 	var winner_name = player_names[winner_index]
-	$BgPanel/WinnerBanner/WinnerLabel.text = winner_name + " wins the Majlis!"
-	$BgPanel/WinnerBanner/WinnerLabel.text += "\n" + "%.1f" % claims.get(winner_index, 0.0) + " Claim"
+	$BgPanel/WinnerBanner/WinnerLabel.text = winner_name + " " + localization.get_string("winner")
+	$BgPanel/WinnerBanner/WinnerLabel.text += "\n" + "%.1f" % claims.get(winner_index, 0.0) + " " + localization.get_string("claim")
 	
 	var rank_labels = [$BgPanel/StandingsPanel/Rank1, $BgPanel/StandingsPanel/Rank2, $BgPanel/StandingsPanel/Rank3, $BgPanel/StandingsPanel/Rank4]
 	var rank_names = ["1st", "2nd", "3rd", "4th"]
@@ -25,7 +25,13 @@ func set_winner(index: int, claims: Dictionary):
 		var entry = sorted[i]
 		var name = player_names[entry.index]
 		var claim = entry.claim
-		rank_labels[i].text = rank_names[i] + ": " + name + " — %.1f Claim" % claim
+		rank_labels[i].text = rank_names[i] + ": " + name + " — %.1f " % claim + localization.get_string("claim")
+	
+	# Play win/loss sound
+	if index == 0:
+		audio_manager.play("win_fanfare")
+	else:
+		audio_manager.play("loss_sound")
 
 func _on_back():
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

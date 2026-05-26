@@ -50,5 +50,13 @@ Then open the exported Xcode project and build to device.
 
 ## Known Blockers
 
-- Android APK: export templates download failed (1.15GB, network timeout in this environment). Must download manually from https://github.com/godotengine/godot/releases/tag/4.4.1-stable.
-- No Godot display environment in headless Codespace; running the editor requires a local machine.
+- **Android APK**: Requires Android SDK (build-tools, platform-tools) not available in this headless Codespace environment. Export templates (1.15GB) are downloaded and installed at `~/.local/share/godot/export_templates/4.4.1.stable/`. To build APK on a machine with Android SDK:
+  ```bash
+  godot --path godot/ --export-debug Android --headless
+  ```
+  Output: `godot/builds/banner_of_the_majlis.apk`
+
+- **Godot display**: No display environment in headless Codespace. Running the editor requires a local machine with GUI.
+  ```bash
+  godot --path godot/  # requires display
+  ```
