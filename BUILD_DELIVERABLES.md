@@ -2,56 +2,53 @@
 
 ## Current Status
 
-- ✅ Godot project created: `/godot/project.godot` with portrait 360×640, mobile renderer.
-- ✅ 20 game files: 10 GDScripts, 8 scenes, 1 icon, 1 project config.
-- ✅ Main menu with FFA/2v2 mode selection and Arabic/English toggle.
-- ✅ Majlis game board with carpet motif, geometric arabesque art, 3 objective slots.
-- ✅ Player claim banners (4 players, color-coded: Crimson/Sapphire/Emerald/Gold).
-- ✅ Seal commit animation, threat ring (3 intensities: watch/danger/urgent).
-- ✅ Phase lantern indicators (Opening→Rising→Final).
-- ✅ 9-phase match loop with bot simulation and auto-resolution.
-- ✅ Final Majlis Reveal screen with standings.
-- ✅ Arabic/English localization (autoload singleton).
-- ✅ Mobile-friendly touch input.
+| Item | Status | Notes |
+|---|---|---|
+| Godot 4.4.1 CLI | ✅ INSTALLED | v4.4.1.stable.official at /usr/local/bin/godot |
+| Project validation | ✅ PASS | No errors on `--headless --quit` |
+| Portrait config (360×640) | ✅ CONFIGURED | In project.godot |
+| export_presets.cfg | ✅ CREATED | Android + iOS presets in godot/export_presets.cfg |
+| Android export templates | ❌ BLOCKED | 1.15GB download timed out in this environment |
+| Android APK | ❌ NOT BUILT | Requires export templates + signing keystore |
+| iOS build | 📋 DOCUMENTED | Requires macOS + Apple Developer account |
 
-## Android APK
+## How to Run
 
-**PENDING** — Godot 4.x headless/export binary not yet installed in this environment. Steps required:
+```bash
+# Godot binary installed at /usr/local/bin/godot
+godot --path godot/ --headless --quit  # validate project
+godot --path godot/                     # run game (requires display)
+```
 
-1. Install Godot 4.4.1+ on the build machine:
-   ```
-   wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip
-   unzip Godot_v4.4.1-stable_linux.x86_64.zip
-   sudo mv Godot_v4.4.1-stable_linux.x86_64 /usr/local/bin/godot
-   ```
-2. Install Android export templates:
-   ```
-   wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_export_templates.tpz
-   # Extract to ~/.local/share/godot/export_templates/<version>/
-   ```
-3. Configure Android keystore (debug.keystore from Android SDK or self-signed).
-4. Export APK:
-   ```
-   godot --export-debug Android --headless
-   ```
-5. Result: `godot/builds/banner_of_the_majlis.apk`
+## How to Build APK (when templates available)
 
-## iOS Export
+1. Install export templates:
+```bash
+wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_export_templates.tpz
+mkdir -p ~/.local/share/godot/export_templates/4.4.1.stable/
+unzip Godot_v4.4.1-stable_export_templates.tpz -d ~/.local/share/godot/export_templates/4.4.1.stable/
+```
 
-**DOCUMENTED** — Requires macOS with Xcode and Godot iOS export templates:
+2. Configure debug keystore:
+```bash
+keytool -genkey -v -keystore ~/.android/debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000
+```
 
-1. Install Godot 4.x on macOS.
-2. Install iOS export templates.
-3. Configure signing certificate and provisioning profile (Apple Developer account required).
-4. Export Xcode project from Godot:
-   ```
-   godot --export-debug iOS --headless
-   ```
-5. Open the `.xcodeproj` in Xcode and build to device/archive.
+3. Export APK:
+```bash
+godot --path godot/ --export-debug Android --headless
+```
+Output: `godot/builds/banner_of_the_majlis.apk`
 
-## Portrait Configuration
+## iOS
 
-Already configured in `project.godot`:
-- `display/window/size/viewport_width=360`
-- `display/window/size/viewport_height=640`
-- `display/handheld/orientation=1` (portrait)
+Requires macOS with Xcode, Godot iOS export templates, and Apple Developer account.
+```bash
+godot --path godot/ --export-debug iOS --headless
+```
+Then open the exported Xcode project and build to device.
+
+## Known Blockers
+
+- Android APK: export templates download failed (1.15GB, network timeout in this environment). Must download manually from https://github.com/godotengine/godot/releases/tag/4.4.1-stable.
+- No Godot display environment in headless Codespace; running the editor requires a local machine.

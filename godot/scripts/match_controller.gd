@@ -16,7 +16,7 @@ func _ready():
 func start_match(match_mode: String = "ffa"):
 	mode = match_mode
 	current_phase = 0
-	player_count = 4 if mode == "ffa" else 2
+	player_count = 4  # 4 players in both FFA and 2v2 (2 teams of 2)
 	claims = {}
 	for i in range(player_count):
 		claims[i] = 0.0

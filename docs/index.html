@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Progress Dashboard</title>
-  <!-- lastDashboardUpdate: 2026-05-26T00:32:02Z -->
+  <!-- lastDashboardUpdate: 2026-05-26T01:03:18Z -->
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --good:#22c55e; --warn:#facc15; --bad:#ef4444; --neutral:#60a5fa; }
     * { box-sizing:border-box; margin:0; padding:0; }
@@ -81,7 +81,7 @@
     h2 { margin:22px 0 10px; font-size:1.05rem; }
     .percent { font-size:4rem; line-height:1; font-weight:900; margin:12px 0; color:var(--good); }
     .bar { height:14px; background:#334155; border-radius:999px; overflow:hidden; }
-    .bar > div { height:100%; width:94%; background:var(--good); }
+    .bar > div { height:100%; width:97%; background:var(--good); }
     .grid { display:grid; gap:12px; }
     .card { background:rgba(17,24,39,.92); border:1px solid #334155; padding:14px; border-radius:18px; }
     .muted { color:var(--muted); }
@@ -118,20 +118,20 @@
   <!-- ===== LIVE PROGRESS PULSE (highest priority) ===== -->
   <section class="pulse-section">
     <div class="pulse-header">
-      <div class="pulse-dot good"></div>
-      <div class="pulse-status good">🟢 WORKING</div>
+      <div class="pulse-dot bad"></div>
+      <div class="pulse-status bad">🔴 BLOCKED</div>
     </div>
     <div style="font-size:.85rem;color:var(--muted);margin-bottom:8px;">
-      Last activity 11m ago — recent
+      Real blocked item detected — see Blocked Reason below
     </div>
     <div class="pulse-grid">
       <div class="pulse-item">
         <div class="pulse-label">Last Dashboard Update</div>
-        <div class="pulse-value">2026-05-26 00:32:02 UTC</div>
+        <div class="pulse-value">2026-05-26 01:03:18 UTC</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Checkpoint</div>
-        <div class="pulse-value">94 percent: godot implementation complete with arabic motifs</div>
+        <div class="pulse-value">run final verification gate</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Last Completed Node</div>
@@ -139,11 +139,11 @@
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Current Node / Task</div>
-        <div class="pulse-value">Godot implementation active. 20 game files (10 scripts, 8 scenes). Next: Godot binary install for AP...</div>
+        <div class="pulse-value">Final verification found issues to fix: audio SFX not wired into scripts (files exist but unused), 2...</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Checkpoints / Commits</div>
-        <div class="pulse-value">55 checkpoints · 56 total commits</div>
+        <div class="pulse-value">56 checkpoints · 57 total commits</div>
       </div>
       <div class="pulse-item">
         <div class="pulse-label">Decision Mode</div>
@@ -156,32 +156,38 @@
   <section class="hero">
     <h1>mobile-strategy-game-godot</h1>
     <div class="muted">Mobile Progress Dashboard</div>
-    <div class="percent">94%</div>
+    <div class="percent">97%</div>
     <div class="bar"><div></div></div>
-    <p><strong>Current phase:</strong> godot-implementation-active</p>
+    <p><strong>Current phase:</strong> final-closure-pending-fixes</p>
     <p><strong>Current wave:</strong> No active wave file</p>
     <p><strong>User intervention needed:</strong> <span class="badge good-bg">NO</span></p>
   </section>
 
   <h2>Next Step</h2>
-  <div class="card">Godot implementation active. 20 game files (10 scripts, 8 scenes). Next: Godot binary install for APK export, audio/SFX, balance simulator, final sprite assets.</div>
+  <div class="card">Final verification found issues to fix: audio SFX not wired into scripts (files exist but unused), 2v2 mode needs end-to-end testing, several hardcoded strings remain, RTL not verified. APK blocked by network (export templates 1.15GB timeout). Fix issues then re-run final verification.</div>
 
   <h2>Latest Control Signals</h2>
   <div class="grid">
-    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-25 — phase-count-and-timing-envelope Completion</span></div>
+    <div class="card"><strong>Last report-gatekeeper decision</strong><br><span class="muted">2026-05-26 — Final Closure Gatekeeper Review</span></div>
     <div class="card"><strong>Last major decision</strong><br><span class="muted">DEC-CMS-FPP-001 — Final Petition uses accelerated urgency cadence</span></div>
-    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: 94 percent: godot implementation complete with arabic motifs</span></div>
+    <div class="card"><strong>Last checkpoint</strong><br><span class="muted">checkpoint: run final verification gate</span></div>
   </div>
 
   <h2>Recent Activity</h2>
   <div class="card activity-list">
+    <div class="activity-item"><span class="commit-hash">b3c1528</span> checkpoint: run final verification gate</div>
     <div class="activity-item"><span class="commit-hash">0e423e2</span> checkpoint: 94 percent: godot implementation complete with arabic motifs</div>
     <div class="activity-item"><span class="commit-hash">864fd6c</span> checkpoint: add geometric arabic motifs and carpet medallions</div>
     <div class="activity-item"><span class="commit-hash">acfea33</span> checkpoint: add final reveal screen and bot simulation</div>
     <div class="activity-item"><span class="commit-hash">79cc980</span> checkpoint: add language toggle and autoload localization</div>
-    <div class="activity-item"><span class="commit-hash">7531892</span> checkpoint: integrate seal effect and threat ring into board</div>
   </div>
 
+  <h2>Blocked reason</h2>
+  <div class="card"><ul>
+    <li><span class="badge bad-bg">BLOCKED</span> [PROJECT_PROGRESS.json] {&#x27;area&#x27;: &#x27;Android APK&#x27;, &#x27;reason&#x27;: &#x27;Export templates 1.15GB download timed out.&#x27;, &#x27;workaround&#x27;: &#x27;Manual download from github.com/godotengine/godot/releases/tag/4.4.1-stable and extract to ~/.local/share/godot/export_templates/4.4.1.stable/&#x27;}</li>
+    <li><span class="badge bad-bg">BLOCKED</span> [PROJECT_PROGRESS.json] {&#x27;area&#x27;: &#x27;Audio SFX wired&#x27;, &#x27;reason&#x27;: &#x27;11 WAV files exist but not loaded/played in scripts.&#x27;, &#x27;workaround&#x27;: &#x27;Pending integration - requires AudioStreamPlayer2D nodes in scenes.&#x27;}</li>
+    <li><span class="badge bad-bg">BLOCKED</span> [PROJECT_PROGRESS.json] {&#x27;area&#x27;: &#x27;Hardcoded strings&#x27;, &#x27;reason&#x27;: &#x27;Several player-facing strings remain hardcoded instead of routed through localization autoload.&#x27;, &#x27;workaround&#x27;: &#x27;Route all UI text through localization.get_string().&#x27;}</li>
+  </ul></div>
 
   <h2>Branches and Status</h2>
   <div class="grid">
@@ -241,7 +247,7 @@
     <div class="card"><div class="row"><strong>Integration / Documentation / Handoff</strong><span class="badge neutral">4.5%</span></div><div class="muted">Weight 5% · AI_HANDOFF_MANUAL.md and BUILD_DELIVERABLES.md updated; FINAL_VERIFICATION_REPORT.md complete</div></div>
   </div>
 
-  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-26 00:32:02 UTC · Static HTML only.</footer>
+  <footer>Generated by <code>scripts/update_mobile_dashboard.sh</code> · 2026-05-26 01:03:18 UTC · Static HTML only.</footer>
 </main>
 </body>
 </html>

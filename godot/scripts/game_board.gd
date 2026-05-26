@@ -19,8 +19,11 @@ func _ready():
 	match_controller_ref.phase_changed.connect(_on_phase_changed)
 	match_controller_ref.match_ended.connect(_on_match_ended)
 	_update_display()
-	# Auto-start match on board load
-	start_match()
+	# Auto-start match with mode from menu metadata
+	var match_mode = "ffa"
+	if has_meta("mode"):
+		match_mode = get_meta("mode")
+	start_match(match_mode)
 
 func _init_player_banners():
 	var names = ["Player 1", "Player 2", "Player 3", "Player 4"]
@@ -46,8 +49,8 @@ func _init_player_banners():
 		player_banners[i].set_meta("player_id", i)
 		player_claims.append(0.0)
 
-func start_match():
-	match_controller_ref.start_match("ffa")
+func start_match(match_mode: String = "ffa"):
+	match_controller_ref.start_match(match_mode)
 	_update_display()
 
 func advance_phase():

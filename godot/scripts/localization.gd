@@ -17,6 +17,10 @@ var strings = {
 		"seal_commit": "✦ Seal Commit (Lock Your Plan)",
 		"winner": "wins the Majlis!",
 		"claim_banner": "Your Claim Banner",
+		"play_again": "Play Again",
+		"back_menu": "Back to Main Menu",
+		"final_title": "Final Majlis Reveal",
+		"standings": "Final Standings",
 	},
 	"ar": {
 		"title": "راية المجلس",
@@ -33,10 +37,14 @@ var strings = {
 		"seal_commit": "✦ الختم (أغلق خطتك)",
 		"winner": "يفوز بالمجلس!",
 		"claim_banner": "راية مطالبتك",
+		"play_again": "العب مرة أخرى",
+		"back_menu": "العودة للقائمة الرئيسية",
+		"final_title": "الكشف الختامي للمجلس",
+		"standings": "الترتيب النهائي",
 	}
 }
 
-func tr(key: String) -> String:
+func get_string(key: String) -> String:
 	if strings.has(locale) and strings[locale].has(key):
 		return strings[locale][key]
 	if strings["en"].has(key):

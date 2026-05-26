@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dovmk2iqa72in"]
+[gd_scene load_steps=3 format=3 uid="uid://dovmk2iqa72in"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1"]
-[ext_resource type="Script" path="res://scripts/localization.gd" id="2"]
 
 [sub_resource type="Theme" id="Theme_x0q6a"]
 default_font = null
@@ -120,6 +119,3 @@ offset_top = 220.0
 offset_right = 330.0
 offset_bottom = 250.0
 text = "عرب / EN"
-
-[node name="Localization" type="Node" parent="."]
-script = ExtResource("2")

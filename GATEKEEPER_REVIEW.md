@@ -292,3 +292,20 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Decision: `phase-count-and-timing-envelope` is complete with all four required depth-4 leaves: `opening-council-pacing`, `rising-debate-pacing`, `final-petition-pacing`, `duration-cap-and-interruption-validation`. Transition to the next depth-3 child under `match-flow-and-phase-structure`: `phase-state-machine-and-handoffs`.
 - Completion summary: 4 depth-4 leaves × 12 files = 48 files plus depth-3 node = 60 total Spec Kit files. All leaves satisfy strict depth-4 quality with concrete timing tables, game-object outputs, event contracts, acceptance criteria, and FFA/2v2 handling.
 - Next: `.spec-tree/core-match-systems/match-flow-and-phase-structure/phase-state-machine-and-handoffs/`
+
+## 2026-05-26 — Final Closure Gatekeeper Review
+
+- Result: FIX_REQUIRED
+- Type: AUTONOMOUS_DECISION
+- Reviewed: `PROJECT_PROGRESS.json`, `FINAL_VERIFICATION_REPORT.md`, `BUILD_DELIVERABLES.md`, `AI_HANDOFF_MANUAL.md`, `BALANCE_SIMULATOR_REPORT.md`
+- Decision made: Keep the project at **97%**, not 100%, and require autonomous report/artifact reconciliation before final closure. The Android APK export template timeout is a documented environment/network blocker with a workaround, but the final closure artifacts contain contradictions that prevent a clean 100% PASS.
+- Options compared:
+  - **100% / CONTINUE_AS_CLOSED**: rejected because `PROJECT_PROGRESS.json` claims Godot CLI/export presets/audio/balance simulator completion while `FINAL_VERIFICATION_REPORT.md`, `BUILD_DELIVERABLES.md`, and `AI_HANDOFF_MANUAL.md` still list Godot CLI/APK/audio/balance as pending or not implemented.
+  - **BLOCKED_EXTERNAL_ONLY**: rejected because the APK issue has a documented workaround and is not an unsolvable account/credential/legal/financial blocker; it is an environment/network delivery limitation.
+  - **97% / FIX_REQUIRED**: accepted because core project closure is near-complete, APK absence is explainable, but conflicting final reports must be fixed before claiming final 100%.
+- Is APK timeout a true external blocker?: **Yes for APK generation in this environment**, but **not a project-blocking final closure blocker** if documented consistently with workaround and no APK-ready claim is made.
+- Why it serves the final game goal: Prevents false final completion while preserving valid progress on the portrait Godot strategy game, Spec Kit tree, handoff, and balance evidence.
+- Potential downside: Final closure is delayed despite a workaround existing.
+- Why downside is acceptable: Artifact Proof Rule requires consistent evidence; 100% must not rest on contradictory reports.
+- Later verification method: Reconcile the five reviewed files so APK status, Godot CLI status, export templates, audio/SFX, and balance simulator status match actual artifacts; then rerun final verification and only mark 100% if either APK exists or the documented technical blocker/workaround is consistently cited in final deliverables.
+- Artifact proof: `PROJECT_PROGRESS.json` blocked array documents Android template timeout/workaround; `BUILD_DELIVERABLES.md` documents APK export steps; `BALANCE_SIMULATOR_REPORT.md` exists; reviewed reports show unresolved status conflicts.
