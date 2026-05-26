@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/game_board.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/match_controller.gd" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/claim_banner.tscn" id="3"]
 
 [node name="GameBoard" type="Control"]
 layout_mode = 3
@@ -171,33 +172,45 @@ offset_right = 340.0
 offset_bottom = 620.0
 color = Color(0.0, 0.0, 0.0, 0.5)
 
-[node name="ClaimBanner" type="Panel" parent="BgPanel/PlayerArea"]
+[node name="Player1Banner" type="Panel" parent="BgPanel/PlayerArea"]
 layout_mode = 1
 anchors_preset = 0
 offset_left = 10.0
 offset_top = 10.0
-offset_right = 310.0
-offset_bottom = 60.0
-color = Color(0.831, 0.686, 0.216, 0.8)
+offset_right = 300.0
+offset_bottom = 30.0
 
-[node name="BannerLabel" type="Label" parent="BgPanel/PlayerArea/ClaimBanner"]
+[node name="Player2Banner" type="Panel" parent="BgPanel/PlayerArea"]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 5.0
-offset_top = 5.0
-offset_right = 295.0
-offset_bottom = 45.0
-text = "Your Claim Banner"
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 10.0
+offset_top = 34.0
+offset_right = 300.0
+offset_bottom = 54.0
+
+[node name="Player3Banner" type="Panel" parent="BgPanel/PlayerArea"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 58.0
+offset_right = 300.0
+offset_bottom = 78.0
+
+[node name="Player4Banner" type="Panel" parent="BgPanel/PlayerArea"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 82.0
+offset_right = 300.0
+offset_bottom = 102.0
 
 [node name="ActionPanel" type="Panel" parent="BgPanel/PlayerArea"]
 layout_mode = 1
 anchors_preset = 0
 offset_left = 10.0
-offset_top = 70.0
+offset_top = 105.0
 offset_right = 310.0
-offset_bottom = 130.0
+offset_bottom = 135.0
 color = Color(0.2, 0.2, 0.2, 0.8)
 
 [node name="SealButton" type="Button" parent="BgPanel/PlayerArea/ActionPanel"]

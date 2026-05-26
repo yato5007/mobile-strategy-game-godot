@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxrjhk7a7ky85"]
+
+[ext_resource type="Script" path="res://scripts/claim_banner.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/localization.gd" id="2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0j1v"]
+bg_color = Color(0.831, 0.686, 0.216, 0.9)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="ClaimBanner" type="Panel"]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 160.0
+offset_bottom = 48.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q0j1v")
+
+[node name="BannerIcon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 40.0
+offset_bottom = 44.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="PlayerName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 44.0
+offset_top = 2.0
+offset_right = 156.0
+offset_bottom = 22.0
+text = "Player"
+vertical_alignment = 1
+
+[node name="ClaimValue" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 44.0
+offset_top = 24.0
+offset_right = 156.0
+offset_bottom = 46.0
+text = "0.0"
+vertical_alignment = 1
