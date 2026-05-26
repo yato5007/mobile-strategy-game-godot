@@ -1,0 +1,1 @@
+*lfs* filter=git-lfs diff=git-lfs merge=git-lfs -text
