@@ -23,4 +23,4 @@ Progress is an indicator, not proof of quality.
 
 ## Overall
 
-Root Spec Kit, the full game-concept subtree, core-match-systems depth-1, `match-flow-and-phase-structure` depth-2, `phase-count-and-timing-envelope` depth-3 with all four depth-4 leaves complete (`opening-council-pacing`, `rising-debate-pacing`, `final-petition-pacing`, `duration-cap-and-interruption-validation`). `PROJECT_DIRECTION_REVIEW.md` is complete and accepted with `ADJUST_DIRECTION`. The next required work is `phase-state-machine-and-handoffs`. The game is not implemented yet by design.
+Root Spec Kit, the full game-concept subtree, core-match-systems, and presentation-art-audio-motion are complete through depth 4. All 7 depth-1 branches have full Spec Kit trees. **Godot implementation has started.** Portrait project created with main menu (Arabic/English), Majlis board scene, Claim banner system, match phase loop (9 phases), Arabic/English localization scaffold, and mobile-friendly touch input. The game is no longer purely planning — real Godot artifacts exist.

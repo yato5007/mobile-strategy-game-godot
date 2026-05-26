@@ -237,6 +237,21 @@ Gatekeeper decisions are documented here. This file supports the Full Autonomy R
 - Why acceptable: Priority ranking embedded (lanterns + window + banner required; path/markers/seals throttleable). Future presentation/UX branches can simplify.
 - Later verification: Timing config tests, FFA/2v2 walkthroughs, counterplay effectiveness simulator metrics, final-phase uncertainty metrics, Arabic/English portrait fit tests.
 - Artifact proof: 12 required depth-4 Spec Kit files; concrete timing values; AUTONOMOUS_DECISION with options comparison; acceptance criteria; 6 integration event contracts; tracing updates.
+
+## 2026-05-25 — Godot Implementation Transition Review
+
+- Result: CONTINUE
+- Type: AUTONOMOUS_DECISION
+- Decision: Authorize transition from Spec Kit planning phase to Godot implementation phase. Full recursive Spec Kit tree complete through REQUIRED_DEPTH=4 for all 7 branches. All minimum core-match contracts complete through depth 4 per DEC-PDR-001 trigger. 0 TODO entries in SPEC_TREE_STATUS.md. No false BLOCKED. No unresolved integration conflict. User explicitly authorized Godot implementation.
+- Conditions:
+  - Do not change Godot 4.x, portrait-only, Android/iOS targets.
+  - Do not change Banner of the Majlis concept or visible Claim win condition.
+  - Do not start from scratch; build on existing Spec Kit contracts.
+  - First implementation must prove game feel and visual direction, not text-square UI.
+  - Arabic/English localization scaffold required from the start.
+  - Each implementation step produces real Godot artifact.
+- Artifact proof: This gatekeeper entry, updated progress files, and first Godot commit.
+- Next: Create Godot project with portrait setup, main menu, Majlis board, Claim token placeholders, match state loop, win condition display, localization scaffold, mobile-friendly input.
 ## 2026-05-25 — Duration Cap and Interruption Validation Depth-4 Review
 
 - Result: CONTINUE

@@ -1,0 +1,116 @@
+[gd_scene load_steps=4 format=3 uid="uid://dovmk2iqa72in"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/localization.gd" id="2"]
+
+[sub_resource type="Theme" id="Theme_x0q6a"]
+default_font = null
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 360.0
+offset_bottom = 640.0
+script = ExtResource("1")
+
+[node name="BgPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 360.0
+offset_bottom = 640.0
+color = Color(0.129, 0.102, 0.071, 1)
+
+[node name="CarpetBorder" type="NinePatchRect" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 352.0
+offset_bottom = 632.0
+color = Color(0.502, 0.251, 0.0, 1)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="TitlePanel" type="Panel" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 40.0
+offset_right = 340.0
+offset_bottom = 180.0
+color = Color(0.831, 0.686, 0.216, 0.9)
+
+[node name="TitleLabel" type="Label" parent="BgPanel/TitlePanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 20.0
+offset_right = 310.0
+offset_bottom = 70.0
+text = "مجلس المطالبة"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="BgPanel/TitlePanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 70.0
+offset_right = 310.0
+offset_bottom = 100.0
+text = "Banner of the Majlis"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 300.0
+offset_bottom = 320.0
+text = "PLAY  ▶"
+theme_type_variation = &""
+
+[node name="ModeLabel" type="Label" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 40.0
+offset_top = 340.0
+offset_right = 320.0
+offset_bottom = 370.0
+text = "Select Game Mode"
+horizontal_alignment = 1
+
+[node name="ModeFFA" type="Button" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 40.0
+offset_top = 380.0
+offset_right = 320.0
+offset_bottom = 420.0
+text = "FFA • 1v1v1v1"
+
+[node name="Mode2v2" type="Button" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 40.0
+offset_top = 430.0
+offset_right = 320.0
+offset_bottom = 470.0
+text = "2 vs 2 • Team Battle"
+
+[node name="VersionLabel" type="Label" parent="BgPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 610.0
+offset_right = 350.0
+offset_bottom = 630.0
+text = "v0.1.0 · Spec Kit Phase → Implementation"
+horizontal_alignment = 1
+
+[node name="Localization" type="Node" parent="."]
+script = ExtResource("2")
